@@ -1,0 +1,333 @@
+{
+  "name": "Warwick",
+  "health": 620,
+  "healthPerLevel": 99,
+  "healthRegen": 4,
+  "healthRegenPerLevel": 0.75,
+  "armor": 33,
+  "armorPerLevel": 4.4,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 65,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.638,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 125,
+  "roles": [
+    "DIVER",
+    "FIGHTER",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Eternal Hunger",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Jaws of the Beast",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  165,
+                  180,
+                  195,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Healing Percentage",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  37.5,
+                  50,
+                  62.5,
+                  75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Blood Hunt",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  80,
+                  90,
+                  100,
+                  110
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  42.5,
+                  50,
+                  57.5,
+                  65
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  160,
+                  180,
+                  200,
+                  220
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  85,
+                  100,
+                  115,
+                  130
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self / Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Primal Howl",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Infinite Duress",
+      "effects": [
+        [
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  350,
+                  525
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  167,
+                  167,
+                  167
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

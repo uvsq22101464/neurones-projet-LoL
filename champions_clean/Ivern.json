@@ -1,0 +1,296 @@
+{
+  "name": "Ivern",
+  "health": 630,
+  "healthPerLevel": 99,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.85,
+  "armor": 27,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 50,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.644,
+  "attackSpeedPerLevel": 3.4,
+  "attackRange": 475,
+  "roles": [
+    "CATCHER",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Friend of the Forest",
+      "effects": [],
+      "affects": "Monsters"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Rootcaller",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  125,
+                  170,
+                  215,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.6,
+                  1.7,
+                  1.8,
+                  1.9,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Brushmaker",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  27.5,
+                  35,
+                  42.5,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Ally Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% of Ivern's AP",
+                  "% of Ivern's AP",
+                  "% of Ivern's AP",
+                  "% of Ivern's AP",
+                  "% of Ivern's AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Triggerseed",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  115,
+                  155,
+                  195,
+                  235
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  90,
+                  110,
+                  130,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies, Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Daisy!",
+      "effects": [],
+      "affects": "None"
+    }
+  ]
+}

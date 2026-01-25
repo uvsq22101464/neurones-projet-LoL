@@ -1,0 +1,391 @@
+{
+  "name": "Lee Sin",
+  "health": 645,
+  "healthPerLevel": 108,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.7,
+  "armor": 36,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 66,
+  "attackDamagePerLevel": 3.7,
+  "attackSpeed": 0.651,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "P": [
+    {
+      "name": "Flurry",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Sonic Wave",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  95,
+                  95,
+                  95,
+                  95,
+                  95
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Resonating Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  95,
+                  95,
+                  95,
+                  95,
+                  95
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  180,
+                  240,
+                  300,
+                  360
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  190,
+                  190,
+                  190,
+                  190,
+                  190
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Safeguard",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  115,
+                  160,
+                  205,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": null
+    },
+    {
+      "name": "Iron Will",
+      "effects": [
+        [
+          {
+            "attribute": "Life steal and spell vamp",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  14,
+                  18,
+                  22,
+                  26
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Tempest",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  60,
+                  85,
+                  110,
+                  135
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Cripple",
+      "effects": [
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  45,
+                  55,
+                  65,
+                  75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Dragon's Rage",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  400,
+                  625
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  200,
+                  200,
+                  200
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Collision Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  400,
+                  625
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  200,
+                  200,
+                  200
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  15,
+                  18
+                ],
+                "units": [
+                  "% of primary target's bonus health",
+                  "% of primary target's bonus health",
+                  "% of primary target's bonus health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

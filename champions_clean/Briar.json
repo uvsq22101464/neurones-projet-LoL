@@ -1,0 +1,665 @@
+{
+  "name": "Briar",
+  "health": 625,
+  "healthPerLevel": 95,
+  "healthRegen": 0,
+  "healthRegenPerLevel": 0,
+  "armor": 30,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.644,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "P": [
+    {
+      "name": "Crimson Curse",
+      "effects": [],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Head Rush",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  85,
+                  110,
+                  135,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Resistances Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12.5,
+                  15,
+                  17.5,
+                  20
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Blood Frenzy",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  65,
+                  75,
+                  85,
+                  95
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  24,
+                  33,
+                  42,
+                  51,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    },
+    {
+      "name": "Snack Attack",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  20,
+                  35,
+                  50,
+                  65
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  9,
+                  9,
+                  9,
+                  9,
+                  9
+                ],
+                "units": [
+                  "% (+ 2.5% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.5% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.5% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.5% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.5% per 100 bonus AD) of the target's missing health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Heal Percentage",
+            "modifiers": [
+              {
+                "values": [
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Non-Champion Bonus Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5.5,
+                  22,
+                  38.5,
+                  55,
+                  71.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5.5,
+                  5.5,
+                  5.5,
+                  5.5,
+                  5.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  9.9,
+                  9.9,
+                  9.9,
+                  9.9,
+                  9.9
+                ],
+                "units": [
+                  "% (+ 2.75% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.75% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.75% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.75% per 100 bonus AD) of the target's missing health",
+                  "% (+ 2.75% per 100 bonus AD) of the target's missing health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Chilling Scream",
+      "effects": [
+        [
+          {
+            "attribute": "Heal Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  2.5,
+                  2.875,
+                  3.25,
+                  3.625,
+                  4
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Heal",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  11.5,
+                  13,
+                  14.5,
+                  16
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  115,
+                  150,
+                  185,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  2.875,
+                  3.75,
+                  4.625,
+                  5.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  215,
+                  290,
+                  365,
+                  440
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  240,
+                  240,
+                  240,
+                  240,
+                  240
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  240,
+                  240,
+                  240,
+                  240,
+                  240
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  220,
+                  330,
+                  440,
+                  550,
+                  660
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  340,
+                  340,
+                  340,
+                  340,
+                  340
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  340,
+                  340,
+                  340,
+                  340,
+                  340
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Certain Death",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  130,
+                  130,
+                  130
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Life Steal",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Additional Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ]
+}

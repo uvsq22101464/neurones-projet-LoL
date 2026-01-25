@@ -1,0 +1,220 @@
+{
+  "name": "Veigar",
+  "health": 580,
+  "healthPerLevel": 108,
+  "healthRegen": 6.5,
+  "healthRegenPerLevel": 0.6,
+  "armor": 18,
+  "armorPerLevel": 5.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 52,
+  "attackDamagePerLevel": 2.7,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.24,
+  "attackRange": 550,
+  "roles": [
+    "BURST",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Phenomenal Evil Power",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Baleful Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Dark Matter",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  85,
+                  140,
+                  195,
+                  250,
+                  305
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  80,
+                  90,
+                  100,
+                  110
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Event Horizon",
+      "effects": [
+        [
+          {
+            "attribute": "Stun Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.5,
+                  1.75,
+                  2,
+                  2.25,
+                  2.5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Primordial Burst",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  250,
+                  325
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  70,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  350,
+                  500,
+                  650
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  130,
+                  140,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

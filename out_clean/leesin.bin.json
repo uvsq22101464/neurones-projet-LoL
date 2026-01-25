@@ -1,0 +1,585 @@
+{
+  "Characters/LeeSin/CharacterRecords/Root": {
+    "mCharacterName": "LeeSin",
+    "baseHP": 645.0,
+    "hpPerLevel": 108.0,
+    "baseStaticHPRegen": 1.5,
+    "hpRegenPerLevel": 0.14,
+    "primaryAbilityResource": {
+      "arType": 1,
+      "arBase": 200.0,
+      "arBaseStaticRegen": 10.0,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 66.0,
+    "damagePerLevel": 3.7,
+    "baseArmor": 36.0,
+    "armorPerLevel": 4.5,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.651,
+    "attackSpeedRatio": 0.651,
+    "attackSpeedPerLevel": 3.0,
+    "acquisitionRange": 400.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "assassin",
+    "roles": "BRAWLER"
+  },
+  "Characters/LeeSin/Spells/LeeSinPassiveAbility/LeeSinPassive": {
+    "DataValues": [
+      {
+        "mName": "PassiveAS",
+        "mValues": [
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FirstHitEnergyMult",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "EnergyReturn": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 10.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 13,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TTFirstHitEnergy": {
+        "mMultiplier": {
+          "mDataValue": "FirstHitEnergyMult",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mModifiedGameCalculation": "EnergyReturn",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/LeeSin/Spells/LeeSinQOneAbility/LeeSinQOne": {
+    "DataValues": [
+      {
+        "mName": "Q1BaseDamage",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Q2BaseDamage",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Q2ADRatio",
+        "mValues": [
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Q2MaxMissingHealthMod",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReactivateTime",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CherryBonusHaste",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Q1BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.949999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RecastDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Q2BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "Q2ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpoweredDamage": {
+        "mMultiplier": {
+          "mNumber": 2.0,
+          "__type": "NumberCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "RecastDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "castRangeDisplayOverride": [
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/LeeSin/Spells/LeeSinRAbility/LeeSinR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -50.0,
+          175.0,
+          400.0,
+          625.0,
+          850.0,
+          1075.0,
+          1300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHPCarryThrough",
+        "mValues": [
+          12.0,
+          12.0,
+          15.0,
+          18.0,
+          21.0,
+          24.0,
+          27.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KickDistance",
+        "mValues": [
+          800.0,
+          800.0,
+          800.0,
+          800.0,
+          800.0,
+          800.0,
+          800.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      100.0,
+      110.0,
+      85.0,
+      60.0,
+      60.0,
+      60.0,
+      60.0
+    ],
+    "castRange": [
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0
+    ]
+  },
+  "Characters/LeeSin/Spells/LeeSinEOneAbility/LeeSinEOne": {
+    "DataValues": [
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          25.0,
+          35.0,
+          45.0,
+          55.0,
+          65.0,
+          75.0,
+          85.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "E1Damage",
+        "mValues": [
+          10.0,
+          35.0,
+          60.0,
+          85.0,
+          110.0,
+          135.0,
+          160.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReactivateTime",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "E1Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/LeeSin/Spells/LeeSinWOneAbility/LeeSinWOne": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "LifestealAndSpellVamp",
+        "mValues": [
+          6.0,
+          10.0,
+          14.0,
+          18.0,
+          22.0,
+          26.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldValue",
+        "mValues": [
+          25.0,
+          70.0,
+          115.0,
+          160.0,
+          205.0,
+          250.0,
+          295.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "W1ReactivateTime",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "W1CooldownRecovered",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LifestealAndSpellVampTime",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ShieldAmount": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "ShieldValue",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.800000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.800000011920929,
+    "cooldownTime": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  }
+}

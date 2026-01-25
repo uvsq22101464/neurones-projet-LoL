@@ -1,0 +1,473 @@
+{
+  "name": "Anivia",
+  "health": 550,
+  "healthPerLevel": 92,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 21,
+  "armorPerLevel": 4.5,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 51,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 1.68,
+  "attackRange": 600,
+  "roles": [
+    "BATTLEMAGE",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Rebirth",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Flash Frost",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  70,
+                  90,
+                  110,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  95,
+                  130,
+                  165,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  110,
+                  165,
+                  220,
+                  275,
+                  330
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Stun Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.1,
+                  1.2,
+                  1.3,
+                  1.4,
+                  1.5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Crystallize",
+      "effects": [
+        [
+          {
+            "attribute": "Width",
+            "modifiers": [
+              {
+                "values": [
+                  600,
+                  700,
+                  800,
+                  900,
+                  1000
+                ],
+                "units": [
+                  " units",
+                  " units",
+                  " units",
+                  " units",
+                  " units"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Number of ice segments",
+            "modifiers": [
+              {
+                "values": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "units": [
+                  " chunks of ice",
+                  " chunks of ice",
+                  " chunks of ice",
+                  " chunks of ice",
+                  " chunks of ice"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Distance between outermost segments",
+            "modifiers": [
+              {
+                "values": [
+                  400,
+                  500,
+                  600,
+                  700,
+                  800
+                ],
+                "units": [
+                  " units",
+                  " units",
+                  " units",
+                  " units",
+                  " units"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Distance between individual segments",
+            "modifiers": [
+              {
+                "values": [
+                  133.33,
+                  125,
+                  120,
+                  116.67,
+                  114.29
+                ],
+                "units": [
+                  " units",
+                  " units",
+                  " units",
+                  " units",
+                  " units"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Frostbite",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  80,
+                  105,
+                  130,
+                  155
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  110,
+                  160,
+                  210,
+                  260,
+                  310
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  110,
+                  110,
+                  110,
+                  110,
+                  110
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Glacial Storm",
+      "effects": [
+        [
+          {
+            "attribute": "Slow Strength Increase",
+            "modifiers": [
+              {
+                "values": [
+                  0,
+                  10,
+                  20
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  22.5,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.25,
+                  6.25,
+                  6.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Empowered Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  67.5,
+                  90
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  18.75,
+                  18.75,
+                  18.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Empowered Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

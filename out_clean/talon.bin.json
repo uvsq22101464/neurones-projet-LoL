@@ -1,0 +1,543 @@
+{
+  "Characters/Talon/CharacterRecords/Root": {
+    "mCharacterName": "Talon",
+    "baseHP": 658.0,
+    "hpPerLevel": 109.0,
+    "baseStaticHPRegen": 1.7,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 400.0,
+      "arPerLevel": 37.0,
+      "arBaseStaticRegen": 1.5199999809265137,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 68.0,
+    "damagePerLevel": 3.1,
+    "baseArmor": 30.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 36.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.9,
+    "acquisitionRange": 400.0,
+    "searchTags": "assassin",
+    "roles": "MAGE"
+  },
+  "Characters/Talon/Spells/TalonRAbility/TalonR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          45.0,
+          90.0,
+          135.0,
+          180.0,
+          225.0,
+          270.0,
+          315.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeed",
+        "mValues": [
+          0.25,
+          0.4000000059604645,
+          0.550000011920929,
+          0.699999988079071,
+          0.8500000238418579,
+          1.0,
+          1.149999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      100.0,
+      100.0,
+      80.0,
+      60.0,
+      60.0,
+      60.0,
+      60.0
+    ],
+    "castRange": [
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Talon/Spells/TalonEAbility/TalonE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "WallCD",
+        "mValues": [
+          185.0,
+          160.0,
+          135.0,
+          110.0,
+          85.0,
+          60.0,
+          35.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      6000.0,
+      6000.0,
+      6000.0,
+      6000.0,
+      6000.0,
+      6000.0,
+      6000.0
+    ],
+    "castRangeDisplayOverride": [
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Talon/Spells/TalonPassiveAbility/TalonPassive": {
+    "DataValues": [
+      {
+        "mName": "MonsterMod",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StackDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BleedDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          2.0999999046325684,
+          2.0999999046325684,
+          2.0999999046325684,
+          2.0999999046325684,
+          2.0999999046325684,
+          2.0999999046325684,
+          2.0999999046325684
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BleedDamage": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 80.0,
+            "mEndValue": 280.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Talon/Spells/TalonWAbility/TalonW": {
+    "DataValues": [
+      {
+        "mName": "InitialBaseDamage",
+        "mValues": [
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReturnBaseDamage",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovespeedSlow",
+        "mValues": [
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104,
+          0.5,
+          0.550000011920929,
+          0.6000000238418579,
+          0.6499999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReturnDelay",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamageMod",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "InitialBonusADRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReturnBonusADRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalInitialDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "InitialBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "{0a76d866}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalReturnDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "ReturnBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "{9b8976c2}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      9.0,
+      9.0,
+      8.5,
+      8.0,
+      7.5,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Cone"
+    }
+  },
+  "Characters/Talon/Spells/TalonQAbility/TalonQ": {
+    "mSpellTags": [
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          45.0,
+          65.0,
+          85.0,
+          105.0,
+          125.0,
+          145.0,
+          165.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnhancedDamageMod",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CooldownRefund",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalHealing": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 9.0,
+            "mEndValue": 55.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "LeapDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CriticalDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mDataValue": "EnhancedDamageMod",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            {
+              "mStat": 9,
+              "mStatFormula": 2,
+              "mCoefficient": 1.0,
+              "__type": "StatByCoefficientCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "LeapDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      8.0,
+      8.0,
+      7.5,
+      7.0,
+      6.5,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      575.0,
+      575.0,
+      575.0,
+      575.0,
+      575.0,
+      575.0,
+      575.0
+    ]
+  }
+}

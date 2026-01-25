@@ -1,0 +1,1475 @@
+{
+  "name": "Rumble",
+  "health": 655,
+  "healthPerLevel": 105,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.6,
+  "armor": 36,
+  "armorPerLevel": 4.7,
+  "magicResistance": 28,
+  "magicResistancePerLevel": 1.55,
+  "attackDamage": 64,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.644,
+  "attackSpeedPerLevel": 1.85,
+  "attackRange": 125,
+  "roles": [
+    "BATTLEMAGE",
+    "FIGHTER",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Junkyard Titan",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Flamespitter",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  21.25,
+                  27.5,
+                  33.75,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.5,
+                  1.625,
+                  1.75,
+                  1.875,
+                  2
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  28.33,
+                  36.67,
+                  45,
+                  53.33
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  33.33,
+                  33.33,
+                  33.33,
+                  33.33,
+                  33.33
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2.167,
+                  2.333,
+                  2.5,
+                  2.667
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  7.083,
+                  9.167,
+                  11.25,
+                  13.333
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8.333,
+                  8.333,
+                  8.333,
+                  8.333,
+                  8.333
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.542,
+                  0.583,
+                  0.625,
+                  0.667
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  106.25,
+                  137.5,
+                  168.75,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  125,
+                  125,
+                  125,
+                  125,
+                  125
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  7.5,
+                  8.13,
+                  8.75,
+                  9.38,
+                  10
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10.5,
+                  14.88,
+                  19.25,
+                  23.63,
+                  28
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.05,
+                  1.14,
+                  1.23,
+                  1.31,
+                  1.4
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  14,
+                  19.83,
+                  25.67,
+                  31.5,
+                  37.33
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  23.33,
+                  23.33,
+                  23.33,
+                  23.33,
+                  23.33
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.4,
+                  1.52,
+                  1.63,
+                  1.75,
+                  1.87
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  3.5,
+                  4.958,
+                  6.417,
+                  7.875,
+                  9.333
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5.833,
+                  5.833,
+                  5.833,
+                  5.833,
+                  5.833
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.35,
+                  0.379,
+                  0.408,
+                  0.438,
+                  0.467
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  52.5,
+                  74.38,
+                  96.25,
+                  118.13,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  87.5,
+                  87.5,
+                  87.5,
+                  87.5,
+                  87.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  5.25,
+                  5.69,
+                  6.13,
+                  6.56,
+                  7
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Enhanced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  22.5,
+                  31.875,
+                  41.25,
+                  50.625,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  37.5,
+                  37.5,
+                  37.5,
+                  37.5,
+                  37.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2.25,
+                  2.438,
+                  2.625,
+                  2.813,
+                  3
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  42.5,
+                  55,
+                  67.5,
+                  80
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3.25,
+                  3.5,
+                  3.75,
+                  4
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  7.5,
+                  10.625,
+                  13.75,
+                  16.875,
+                  20
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12.5,
+                  12.5,
+                  12.5,
+                  12.5,
+                  12.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.75,
+                  0.813,
+                  0.875,
+                  0.938,
+                  1
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Enhanced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  112.5,
+                  159.38,
+                  206.25,
+                  253.13,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  187.5,
+                  187.5,
+                  187.5,
+                  187.5,
+                  187.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  11.25,
+                  12.19,
+                  13.13,
+                  14.06,
+                  15
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Enhanced Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  15.75,
+                  22.313,
+                  28.875,
+                  35.438,
+                  42
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  26.25,
+                  26.25,
+                  26.25,
+                  26.25,
+                  26.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.575,
+                  1.706,
+                  1.838,
+                  1.969,
+                  2.1
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Minion Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  21,
+                  29.75,
+                  38.5,
+                  47.25,
+                  56
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  35,
+                  35,
+                  35,
+                  35,
+                  35
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2.1,
+                  2.275,
+                  2.45,
+                  2.625,
+                  2.8
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Minion Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  5.25,
+                  7.438,
+                  9.625,
+                  11.813,
+                  14
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8.75,
+                  8.75,
+                  8.75,
+                  8.75,
+                  8.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.525,
+                  0.569,
+                  0.613,
+                  0.656,
+                  0.7
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Enhanced Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  78.75,
+                  124.69,
+                  170.63,
+                  216.56,
+                  262.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  131.25,
+                  131.25,
+                  131.25,
+                  131.25,
+                  131.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  7.88,
+                  8.53,
+                  9.19,
+                  9.84,
+                  10.5
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Scrap Shield",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  55,
+                  85,
+                  115,
+                  145
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Enhanced Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  37.5,
+                  82.5,
+                  127.5,
+                  172.5,
+                  217.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ],
+                "units": [
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  22.5,
+                  30,
+                  37.5,
+                  45
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Electro Harpoon",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  80,
+                  105,
+                  130,
+                  155
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  110,
+                  160,
+                  210,
+                  260,
+                  310
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Resistance Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12,
+                  14,
+                  16,
+                  18
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total MR Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  24,
+                  28,
+                  32,
+                  36
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  20,
+                  25,
+                  30,
+                  35
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50,
+                  60,
+                  70
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Enhanced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  82.5,
+                  120,
+                  157.5,
+                  195,
+                  232.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Enhanced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  165,
+                  240,
+                  315,
+                  390,
+                  465
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Magic Resistance Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  18,
+                  21,
+                  24,
+                  27
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Enhanced MR Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  36,
+                  42,
+                  48,
+                  54
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Slow",
+            "modifiers": [
+              {
+                "values": [
+                  22.5,
+                  30,
+                  37.5,
+                  45,
+                  52.5
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Enhanced Slow",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  60,
+                  75,
+                  90,
+                  105
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "The Equalizer",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  52.5,
+                  70
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8.75,
+                  8.75,
+                  8.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  210,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  35,
+                  35,
+                  35
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  700,
+                  1050,
+                  1400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  175,
+                  175,
+                  175
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

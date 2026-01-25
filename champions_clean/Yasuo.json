@@ -1,0 +1,369 @@
+{
+  "name": "Yasuo",
+  "health": 590,
+  "healthPerLevel": 110,
+  "healthRegen": 6.5,
+  "healthRegenPerLevel": 0.9,
+  "armor": 32,
+  "armorPerLevel": 4.6,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.697,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 175,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Way of the Wanderer",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Steel Tempest",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  45,
+                  70,
+                  95,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  105,
+                  105,
+                  105,
+                  105,
+                  105
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Wind Wall",
+      "effects": [
+        [
+          {
+            "attribute": "Wall Width",
+            "modifiers": [
+              {
+                "values": [
+                  320,
+                  390,
+                  460,
+                  530,
+                  600
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "None"
+    }
+  ],
+  "E": [
+    {
+      "name": "Sweeping Blade",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  85,
+                  100,
+                  115,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Damage per Stack",
+            "modifiers": [
+              {
+                "values": [
+                  17.5,
+                  21.25,
+                  25,
+                  28.75,
+                  32.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Bonus Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  85,
+                  100,
+                  115,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Combined Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  170,
+                  200,
+                  230,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Last Breath",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  350,
+                  500
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "name": "Sejuani",
+  "health": 630,
+  "healthPerLevel": 114,
+  "healthRegen": 8.5,
+  "healthRegenPerLevel": 1,
+  "armor": 34,
+  "armorPerLevel": 5.45,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 66,
+  "attackDamagePerLevel": 4,
+  "attackSpeed": 0.688,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 150,
+  "roles": [
+    "FIGHTER",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Fury of the North",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Arctic Assault",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  140,
+                  190,
+                  240,
+                  290
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Winter's Wrath",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  15,
+                  25,
+                  35,
+                  45
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  25,
+                  45,
+                  65,
+                  85
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  40,
+                  70,
+                  100,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  12,
+                  12,
+                  12,
+                  12
+                ],
+                "units": [
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health",
+                  "% of her maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Permafrost",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  105,
+                  155,
+                  205,
+                  255
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Allies, Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Glacial Prison",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  125,
+                  150,
+                  175
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

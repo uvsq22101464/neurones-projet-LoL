@@ -1,0 +1,699 @@
+{
+  "Characters/Sylas/CharacterRecords/Root": {
+    "mCharacterName": "Sylas",
+    "baseHP": 600.0,
+    "hpPerLevel": 122.0,
+    "baseStaticHPRegen": 1.8,
+    "hpRegenPerLevel": 0.18,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 400.0,
+      "arPerLevel": 70.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 61.0,
+    "damagePerLevel": 3.0,
+    "baseArmor": 29.0,
+    "armorPerLevel": 5.2,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.55,
+    "baseMoveSpeed": 340.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.645,
+    "attackSpeedRatio": 0.645,
+    "attackSpeedPerLevel": 3.5,
+    "acquisitionRange": 525.0,
+    "searchTags": "mage",
+    "searchTagsSecondary": "assassin",
+    "roles": "BRAWLER"
+  },
+  "Characters/Sylas/Spells/SylasPassiveAbility/SylasPassive": {
+    "DataValues": [
+      {
+        "mName": "AoE",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveCharges",
+        "mValues": [
+          2.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CheatingThreshold",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveAttackSpeed",
+        "mValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamageMulti",
+        "mValues": [
+          1.149999976158142,
+          1.149999976158142,
+          1.149999976158142,
+          1.149999976158142,
+          1.149999976158142,
+          1.149999976158142,
+          1.149999976158142
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PassiveDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 1.2999999523162842,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PassiveAoEDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRangeDisplayOverride": [
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Sylas/Spells/SylasWAbility/SylasW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "Damage",
+        "mValues": [
+          40.0,
+          75.0,
+          110.0,
+          145.0,
+          180.0,
+          215.0,
+          250.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Healing",
+        "mValues": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxHealingPercentAmp",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxExecuteThreshold",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageAPRatio",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealMinAPRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealMinHPRatio",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "MinDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "DamageAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinHealing": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Healing",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "HealMinAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mDataValue": "HealMinHPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MaxHealing": {
+        "mMultiplier": {
+          "mDataValue": "MaxHealingPercentAmp",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "MinHealing",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      12.0,
+      12.0,
+      10.5,
+      9.0,
+      7.5,
+      6.0,
+      5.25
+    ]
+  },
+  "Characters/Sylas/Spells/SylasRAbility/SylasR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "EnemyCooldownPercent",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnemyCooldownTooltip",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumEnemyCooldown",
+        "mValues": [
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "UltHoldDuration",
+        "mValues": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PerTargetCooldown": {
+        "mSimpleTooltipCalculationDisplay": 5,
+        "mExpandedTooltipCalculationDisplay": 5,
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mPart1": {
+              "__type": "CooldownMultiplierCalculationPart"
+            },
+            "mPart2": {
+              "mNumber": 200.0,
+              "__type": "NumberCalculationPart"
+            },
+            "__type": "ProductOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.25,
+    "cooldownTime": [
+      80.0,
+      80.0,
+      55.0,
+      30.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ]
+  },
+  "Characters/Sylas/Spells/SylasQAbility/SylasQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio1",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ExplosionBaseDamage",
+        "mValues": [
+          5.0,
+          60.0,
+          115.0,
+          170.0,
+          225.0,
+          280.0,
+          335.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio2",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.10000000149011612,
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionMod",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Q2AoE",
+        "mValues": [
+          180.0,
+          180.0,
+          180.0,
+          180.0,
+          180.0,
+          180.0,
+          180.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DetonationDelay",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterMod",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio1",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "SlowAmountCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "SlowAmount",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "ExplosionDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "ExplosionBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio2",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "castRangeDisplayOverride": [
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Sylas/Spells/SylasEAbility/SylasE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "PullDamage",
+        "mValues": [
+          30.0,
+          80.0,
+          130.0,
+          180.0,
+          230.0,
+          280.0,
+          330.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockUpDuration",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "PullDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      13.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0,
+      9.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

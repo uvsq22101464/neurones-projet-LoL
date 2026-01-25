@@ -1,0 +1,674 @@
+{
+  "Characters/Annie/CharacterRecords/Root": {
+    "mCharacterName": "Annie",
+    "baseHP": 560.0,
+    "hpPerLevel": 96.0,
+    "baseStaticHPRegen": 1.1,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 418.0,
+      "arPerLevel": 25.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 50.0,
+    "damagePerLevel": 2.65,
+    "baseArmor": 23.0,
+    "armorPerLevel": 4.0,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 625.0,
+    "attackSpeed": 0.61,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.36,
+    "acquisitionRange": 625.0,
+    "searchTags": "mage",
+    "searchTagsSecondary": "support",
+    "roles": "MAGE"
+  },
+  "Characters/Annie/Spells/AnnieRAbility/AnnieR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "InitialDamage",
+        "mValues": [
+          25.0,
+          150.0,
+          275.0,
+          400.0,
+          525.0,
+          650.0,
+          775.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AuraDamage",
+        "mValues": [
+          4.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0,
+          24.0,
+          28.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersAttackDamage",
+        "mValues": [
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersAttackSpeedDecay",
+        "mValues": [
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersAttackAPRatio",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovespeedBurst",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnrageDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AvengerEnrageDuration",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersLifetime",
+        "mValues": [
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersBonusMS",
+        "mValues": [
+          -25.0,
+          0.0,
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TibbersModeSpecificHPMod",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RPercentPenBuff",
+        "mValues": [
+          0.05000000074505806,
+          0.10000000149011612,
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialBurstDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "InitialDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.75,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TibbersAuraDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "AuraDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.03999999910593033,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TibbersAADamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "TibbersAttackDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "TibbersAttackAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TibbersTotalHP": {
+        "mFormulaParts": [
+          {
+            "mPart1": {
+              "mLevel1Value": 1150.0,
+              "mBreakpoints": [
+                {
+                  "mLevel": 7,
+                  "mBonusPerLevelAtAndAfter": 50.0,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 11,
+                  "mBonusPerLevelAtAndAfter": 250.0,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 16,
+                  "mBonusPerLevelAtAndAfter": 300.0,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "mPart2": {
+              "mDataValue": "TibbersModeSpecificHPMod",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            "__type": "ProductOfSubPartsCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TibbersTotalResists": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 30.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mBonusPerLevelAtAndAfter": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      130.0,
+      130.0,
+      115.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Annie/Spells/AnniePassiveAbility/AnniePassive": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "MaxStacks",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunBaseDuration",
+        "mValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDurationPerTier",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "StunDuration": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 1.25,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 0.25,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 0.25,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mPrecision": 2,
+        "__type": "GameCalculation"
+      }
+    },
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Annie/Spells/AnnieQAbility/AnnieQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          40.0,
+          80.0,
+          120.0,
+          160.0,
+          200.0,
+          240.0,
+          280.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.800000011920929,
+    "cooldownTime": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "castRange": [
+      625.0,
+      625.0,
+      625.0,
+      625.0,
+      625.0,
+      625.0,
+      625.0
+    ]
+  },
+  "Characters/Annie/Spells/AnnieEAbility/AnnieE": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageReduction",
+        "mValues": [
+          9.0,
+          13.0,
+          17.0,
+          21.0,
+          25.0,
+          29.0,
+          33.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageReflection",
+        "mValues": [
+          15.0,
+          25.0,
+          35.0,
+          45.0,
+          55.0,
+          65.0,
+          75.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovementSpeed",
+        "mValues": [
+          0.10000000149011612,
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovementSpeedDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldAmount",
+        "mValues": [
+          25.0,
+          60.0,
+          95.0,
+          130.0,
+          165.0,
+          200.0,
+          235.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CastRangeGenerosity",
+        "mValues": [
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageReturn": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "DamageReflection",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MoveSpeedCalc": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 0.20000000298023224,
+            "mEndValue": 0.5,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "ShieldBlockTotal": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "ShieldAmount",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.20000000298023224,
+    "cooldownTime": [
+      13.0,
+      12.0,
+      11.5,
+      11.0,
+      10.5,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  },
+  "Characters/Annie/Spells/AnnieWAbility/AnnieW": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8500000238418579,
+    "cooldownTime": [
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Cone"
+    }
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "name": "Zac",
+  "health": 685,
+  "healthPerLevel": 109,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 33,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 3.4,
+  "attackSpeed": 0.736,
+  "attackSpeedPerLevel": 1.6,
+  "attackRange": 175,
+  "roles": [
+    "FIGHTER",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Cell Division",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Stretching Strikes",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  55,
+                  70,
+                  85,
+                  100
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  110,
+                  140,
+                  170,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ],
+                "units": [
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health",
+                  "% of Zac's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Unstable Matter",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "units": [
+                  "% (+ 3% per 100 AP) of target's maximum health",
+                  "% (+ 3% per 100 AP) of target's maximum health",
+                  "% (+ 3% per 100 AP) of target's maximum health",
+                  "% (+ 3% per 100 AP) of target's maximum health",
+                  "% (+ 3% per 100 AP) of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Capped Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  240,
+                  250,
+                  260,
+                  270,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Elastic Slingshot",
+      "effects": [
+        [
+          {
+            "attribute": "Maximum Range Channel Duration",
+            "modifiers": [
+              {
+                "values": [
+                  0.9,
+                  1,
+                  1.1,
+                  1.2,
+                  1.3
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  105,
+                  150,
+                  195,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Let's Bounce!",
+      "effects": [
+        [
+          {
+            "attribute": "Primary Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  210,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  350,
+                  525,
+                  700
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "name": "Taric",
+  "health": 645,
+  "healthPerLevel": 99,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.5,
+  "armor": 40,
+  "armorPerLevel": 4.3,
+  "magicResistance": 28,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 55,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 150,
+  "roles": [
+    "ENCHANTER",
+    "SUPPORT",
+    "TANK",
+    "WARDEN"
+  ],
+  "P": [
+    {
+      "name": "Bravado",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Starlight's Touch",
+      "effects": [
+        [
+          {
+            "attribute": "Maximum Charges",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Bastion",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "units": [
+                  "% of Taric's armor",
+                  "% of Taric's armor",
+                  "% of Taric's armor",
+                  "% of Taric's armor",
+                  "% of Taric's armor"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Dazzle",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  130,
+                  170,
+                  210,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Cosmic Radiance",
+      "effects": [],
+      "affects": "Allies"
+    }
+  ]
+}

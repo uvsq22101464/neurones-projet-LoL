@@ -1,0 +1,279 @@
+{
+  "name": "Riven",
+  "health": 630,
+  "healthPerLevel": 100,
+  "healthRegen": 8.5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 33,
+  "armorPerLevel": 4.4,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 64,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Runic Blade",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Broken Wings",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  75,
+                  105,
+                  135,
+                  165
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  70,
+                  75,
+                  80,
+                  85
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  135,
+                  225,
+                  315,
+                  405,
+                  495
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  195,
+                  210,
+                  225,
+                  240,
+                  255
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Ki Burst",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  95,
+                  125,
+                  155,
+                  185
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Valor",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  95,
+                  120,
+                  145,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  110,
+                  110,
+                  110,
+                  110,
+                  110
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Blade of the Exile",
+      "effects": [],
+      "affects": "Self"
+    },
+    {
+      "name": "Wind Slash",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  300,
+                  450,
+                  600
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  180,
+                  180,
+                  180
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "name": "Brand",
+  "health": 570,
+  "healthPerLevel": 105,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 27,
+  "armorPerLevel": 4.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 57,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.681,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 550,
+  "roles": [
+    "BURST",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Blaze",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Sear",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  100,
+                  130,
+                  160,
+                  190
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  65,
+                  65,
+                  65,
+                  65
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Pillar of Flame",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  120,
+                  165,
+                  210,
+                  255
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  93.75,
+                  150,
+                  206.25,
+                  262.5,
+                  318.75
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  87.5,
+                  87.5,
+                  87.5,
+                  87.5,
+                  87.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Conflagration",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  80,
+                  105,
+                  130,
+                  155
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Pyroclasm",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  175,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Single-Target Damage",
+            "modifiers": [
+              {
+                "values": [
+                  300,
+                  525,
+                  750
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

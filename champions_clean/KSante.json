@@ -1,0 +1,426 @@
+{
+  "name": "K'Sante",
+  "health": 625,
+  "healthPerLevel": 120,
+  "healthRegen": 9.5,
+  "healthRegenPerLevel": 1.0,
+  "armor": 36,
+  "armorPerLevel": 5.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 2.1,
+  "attackDamage": 64,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.688,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 150,
+  "roles": [
+    "FIGHTER",
+    "SKIRMISHER",
+    "TANK",
+    "WARDEN"
+  ],
+  "P": [
+    {
+      "name": "Dauntless Instinct",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Ntofo Strikes",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  100,
+                  130,
+                  160,
+                  190
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor"
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Path Maker",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  75,
+                  105,
+                  135,
+                  165
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 2% per 100 bonus armor) (+ 2% per 100 bonus magic resistance) of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Monster Damage Cap",
+            "modifiers": [
+              {
+                "values": [
+                  180,
+                  260,
+                  340,
+                  420,
+                  500
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Bonus True Damage",
+            "modifiers": [
+              {
+                "values": [
+                  4.5,
+                  7.5,
+                  10.5,
+                  13.5,
+                  16.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  0.8,
+                  0.8,
+                  0.8,
+                  0.8,
+                  0.8
+                ],
+                "units": [
+                  "% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 0.2% per 100 bonus armor) (+ 0.2% per 100 bonus magic resistance) of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Bonus True Damage",
+            "modifiers": [
+              {
+                "values": [
+                  36,
+                  60,
+                  84,
+                  108,
+                  132
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.4,
+                  6.4,
+                  6.4,
+                  6.4,
+                  6.4
+                ],
+                "units": [
+                  "% (+ 1.6% per 100 bonus armor) (+ 1.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 1.6% per 100 bonus armor) (+ 1.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 1.6% per 100 bonus armor) (+ 1.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 1.6% per 100 bonus armor) (+ 1.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 1.6% per 100 bonus armor) (+ 1.6% per 100 bonus magic resistance) of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Maximum Mixed Damage",
+            "modifiers": [
+              {
+                "values": [
+                  81,
+                  135,
+                  189,
+                  243,
+                  297
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  14.4,
+                  14.4,
+                  14.4,
+                  14.4,
+                  14.4
+                ],
+                "units": [
+                  "% (+ 3.6% per 100 bonus armor) (+ 3.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 3.6% per 100 bonus armor) (+ 3.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 3.6% per 100 bonus armor) (+ 3.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 3.6% per 100 bonus armor) (+ 3.6% per 100 bonus magic resistance) of target's maximum health",
+                  "% (+ 3.6% per 100 bonus armor) (+ 3.6% per 100 bonus magic resistance) of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Footwork",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "All Out",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  115,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Strike Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  115,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% of his bonus health",
+                  "% of his bonus health",
+                  "% of his bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  160,
+                  230,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% of his bonus health",
+                  "% of his bonus health",
+                  "% of his bonus health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  60,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

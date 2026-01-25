@@ -1,0 +1,310 @@
+{
+  "name": "Viego",
+  "health": 630,
+  "healthPerLevel": 109,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.7,
+  "armor": 34,
+  "armorPerLevel": 4.6,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 57,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.25,
+  "attackRange": 200,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Sovereign's Domination",
+      "effects": [],
+      "affects": null
+    }
+  ],
+  "Q": [
+    {
+      "name": "Blade of the Ruined King",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "units": [
+                  "% of target's current health",
+                  "% of target's current health",
+                  "% of target's current health",
+                  "% of target's current health",
+                  "% of target's current health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Bonus Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  40,
+                  55,
+                  70,
+                  85
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  43.75,
+                  70,
+                  96.25,
+                  122.5,
+                  148.75
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Spectral Maw",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  135,
+                  190,
+                  245,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Harrowed Path",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  27.5,
+                  30,
+                  32.5,
+                  35
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Heartbreaker",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  12,
+                  16,
+                  20
+                ],
+                "units": [
+                  "%  of target's missing health",
+                  "%  of target's missing health",
+                  "%  of target's missing health"
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

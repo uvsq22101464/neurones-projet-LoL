@@ -1,0 +1,442 @@
+{
+  "name": "Kai'Sa",
+  "health": 640,
+  "healthPerLevel": 102,
+  "healthRegen": 4,
+  "healthRegenPerLevel": 0.55,
+  "armor": 25,
+  "armorPerLevel": 4.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 59,
+  "attackDamagePerLevel": 2.6,
+  "attackSpeed": 0.644,
+  "attackSpeedPerLevel": 1.8,
+  "attackRange": 525,
+  "roles": [
+    "MAGE",
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Second Skin",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Icathian Rain",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage Per Missile",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  55,
+                  70,
+                  85,
+                  100
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Reduced Damage Per Missile",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  13.75,
+                  17.5,
+                  21.25,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  13.75,
+                  13.75,
+                  13.75,
+                  13.75,
+                  13.75
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Single-Target Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  123.75,
+                  157.5,
+                  191.25,
+                  225
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  123.75,
+                  123.75,
+                  123.75,
+                  123.75,
+                  123.75
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Total Evolved Single-Target Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  206.25,
+                  262.5,
+                  318.75,
+                  375
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  206.25,
+                  206.25,
+                  206.25,
+                  206.25,
+                  206.25
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Void Seeker",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  55,
+                  80,
+                  105,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  130,
+                  130,
+                  130,
+                  130,
+                  130
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Supercharge",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  60,
+                  65,
+                  70,
+                  75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  110,
+                  120,
+                  130,
+                  140,
+                  150
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Killer Instinct",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  90,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  135,
+                  180
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

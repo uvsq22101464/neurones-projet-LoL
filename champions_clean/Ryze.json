@@ -1,0 +1,267 @@
+{
+  "name": "Ryze",
+  "health": 645,
+  "healthPerLevel": 124,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.8,
+  "armor": 22,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.11,
+  "attackRange": 550,
+  "roles": [
+    "BATTLEMAGE",
+    "FIGHTER",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Arcane Mastery",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Overload",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  95,
+                  115,
+                  135,
+                  155
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  28,
+                  32,
+                  36,
+                  40,
+                  44
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Rune Prison",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Spell Flux",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana",
+                  "% bonus mana"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Realm Warp",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Overload Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ]
+}

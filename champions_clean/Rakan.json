@@ -1,0 +1,224 @@
+{
+  "name": "Rakan",
+  "health": 610,
+  "healthPerLevel": 99,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 30,
+  "armorPerLevel": 4.9,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.635,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 300,
+  "roles": [
+    "CATCHER",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Fey Feathers",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Gleaming Quill",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  115,
+                  160,
+                  205,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Allies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Grand Entrance",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  120,
+                  170,
+                  220,
+                  270
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Battle Dance",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "The Quickness",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  200,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Disable Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.25,
+                  1.5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

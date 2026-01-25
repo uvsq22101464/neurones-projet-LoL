@@ -1,0 +1,446 @@
+{
+  "name": "Kassadin",
+  "health": 646,
+  "healthPerLevel": 119,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.5,
+  "armor": 21,
+  "armorPerLevel": 4,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 59,
+  "attackDamagePerLevel": 3.9,
+  "attackSpeed": 0.64,
+  "attackSpeedPerLevel": 3.7,
+  "attackRange": 150,
+  "roles": [
+    "ASSASSIN",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Void Stone",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Null Sphere",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  95,
+                  125,
+                  155,
+                  185
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  110,
+                  140,
+                  170,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Nether Blade",
+      "effects": [
+        [
+          {
+            "attribute": "Increased Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Mana Restored",
+            "modifiers": [
+              {
+                "values": [
+                  4,
+                  4.5,
+                  5,
+                  5.5,
+                  6
+                ],
+                "units": [
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Mana Restored Against Champions",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  22.5,
+                  25,
+                  27.5,
+                  30
+                ],
+                "units": [
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana",
+                  "% of missing mana"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Force Pulse",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  100,
+                  130,
+                  160,
+                  190
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Riftwalk",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  90,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  "% maximum mana",
+                  "% maximum mana",
+                  "% maximum mana"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Damage Per Stack",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  45,
+                  55
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  7,
+                  7,
+                  7
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  "% maximum mana",
+                  "% maximum mana",
+                  "% maximum mana"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Bonus Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  180,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  28,
+                  28,
+                  28
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% maximum mana",
+                  "% maximum mana",
+                  "% maximum mana"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  210,
+                  270,
+                  330
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  78,
+                  78,
+                  78
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  6,
+                  6,
+                  6
+                ],
+                "units": [
+                  "% maximum mana",
+                  "% maximum mana",
+                  "% maximum mana"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

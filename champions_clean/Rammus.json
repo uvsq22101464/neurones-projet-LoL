@@ -1,0 +1,304 @@
+{
+  "name": "Rammus",
+  "health": 675,
+  "healthPerLevel": 100,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.55,
+  "armor": 35,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 65,
+  "attackDamagePerLevel": 2.75,
+  "attackSpeed": 0.7,
+  "attackSpeedPerLevel": 2.215,
+  "attackRange": 125,
+  "roles": [
+    "FIGHTER",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Spiked Shell",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Powerball",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Defensive Ball Curl",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  27,
+                  32,
+                  37,
+                  42,
+                  47
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  37.5,
+                  45,
+                  52.5,
+                  60
+                ],
+                "units": [
+                  "% total armor",
+                  "% total armor",
+                  "% total armor",
+                  "% total armor",
+                  "% total armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Magic Resistance",
+            "modifiers": [
+              {
+                "values": [
+                  27,
+                  32,
+                  37,
+                  42,
+                  47
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  37.5,
+                  45,
+                  52.5,
+                  60
+                ],
+                "units": [
+                  "% total magic resistance",
+                  "% total magic resistance",
+                  "% total magic resistance",
+                  "% total magic resistance",
+                  "% total magic resistance"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Frenzying Taunt",
+      "effects": [
+        [
+          {
+            "attribute": "Taunt Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.2,
+                  1.4,
+                  1.6,
+                  1.8,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Monster Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  100,
+                  120,
+                  140,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Soaring Slam",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "name": "Jayce",
+  "health": 590,
+  "healthPerLevel": 109,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.6,
+  "armor": 22,
+  "armorPerLevel": 5,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 59,
+  "attackDamagePerLevel": 4.25,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 125,
+  "roles": [
+    "ARTILLERY",
+    "FIGHTER",
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Hextech Capacitor",
+      "effects": [],
+      "affects": "Self"
+    },
+    {
+      "name": "Hextech Capacitor 2",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "To the Skies!",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  105,
+                  150,
+                  195,
+                  240,
+                  285
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Shock Blast",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  126,
+                  172,
+                  218,
+                  264,
+                  310
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  140,
+                  140,
+                  140,
+                  140,
+                  140,
+                  140
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  112,
+                  176.4,
+                  240.8,
+                  305.2,
+                  369.6,
+                  434
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  196,
+                  196,
+                  196,
+                  196,
+                  196,
+                  196
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Lightning Field",
+      "effects": [
+        [
+          {
+            "attribute": "Mana Restored",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  17,
+                  19,
+                  21,
+                  23,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  50,
+                  65,
+                  80,
+                  95,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  200,
+                  260,
+                  320,
+                  380,
+                  440
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    },
+    {
+      "name": "Hyper Charge",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  78,
+                  86,
+                  94,
+                  102,
+                  110
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  210,
+                  234,
+                  258,
+                  282,
+                  306,
+                  330
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Thundering Blow",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  8,
+                  10.8,
+                  13.6,
+                  16.4,
+                  19.2,
+                  22
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Capped Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400,
+                  500,
+                  600,
+                  700
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Acceleration Gate",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Transform Mercury Cannon",
+      "effects": [],
+      "affects": "Self"
+    },
+    {
+      "name": "Transform Mercury Hammer",
+      "effects": [],
+      "affects": "Self"
+    }
+  ]
+}

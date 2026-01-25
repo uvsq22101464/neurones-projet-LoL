@@ -1,0 +1,831 @@
+{
+  "Characters/Jayce/CharacterRecords/Root": {
+    "mCharacterName": "Jayce",
+    "baseHP": 590.0,
+    "hpPerLevel": 109.0,
+    "baseStaticHPRegen": 1.2,
+    "hpRegenPerLevel": 0.12,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 375.0,
+      "arPerLevel": 45.0,
+      "arBaseStaticRegen": 1.2000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 59.0,
+    "damagePerLevel": 4.25,
+    "baseArmor": 22.0,
+    "armorPerLevel": 5.0,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.658,
+    "attackSpeedRatio": 0.658,
+    "attackSpeedPerLevel": 3.0,
+    "acquisitionRange": 200.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "marksman",
+    "roles": "ATTACKER"
+  },
+  "Characters/Jayce/Spells/JayceStaticFieldAbility/JayceStaticField": {
+    "DataValues": [
+      {
+        "mName": "ManaGain",
+        "mValues": [
+          13.0,
+          15.0,
+          17.0,
+          19.0,
+          21.0,
+          23.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          80.0,
+          140.0,
+          200.0,
+          260.0,
+          320.0,
+          380.0,
+          440.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "castRange": [
+      285.0,
+      285.0,
+      285.0,
+      285.0,
+      285.0,
+      285.0,
+      285.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Jayce/Spells/JaycePassiveAbility/JaycePassive": {
+    "DataValues": [
+      {
+        "mName": "FlatMovementSpeed",
+        "mValues": [
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0,
+          40.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovementSpeedDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Jayce/Spells/JayceShockBlastAbility/JayceShockBlast": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          34.0,
+          80.0,
+          126.0,
+          172.0,
+          218.0,
+          264.0,
+          310.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpowerMultiplier",
+        "mValues": [
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterBonusDamage",
+        "mValues": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpoweredDamage": {
+        "mMultiplier": {
+          "mDataValue": "EmpowerMultiplier",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "Damage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 1.2000000476837158,
+    "cooldownTime": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Jayce/Spells/JayceThunderingBlowAbility/JayceThunderingBlow": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "MonsterCap",
+        "mValues": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercHPDamage",
+        "mValues": [
+          0.052000001072883606,
+          0.07999999821186066,
+          0.1080000028014183,
+          0.13600000739097595,
+          0.164000004529953,
+          0.19200000166893005,
+          0.2199999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockbackDistance",
+        "mValues": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockbackDuration",
+        "mValues": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "FlatDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      20.0,
+      20.0,
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0
+    ],
+    "castRange": [
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0,
+      240.0
+    ]
+  },
+  "Characters/Jayce/Spells/JayceHyperChargeAbility/JayceHyperCharge": {
+    "mSpellTags": [
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "DamagePerc",
+        "mValues": [
+          0.6200000047683716,
+          0.699999988079071,
+          0.7799999713897705,
+          0.8600000143051147,
+          0.9399999976158142,
+          1.0199999809265137,
+          1.100000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "NumAttacks",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentIncreasedAS",
+        "mValues": [
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684,
+          3.5999999046325684
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ActualDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "DamagePerc",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.20000000298023224,
+    "cooldownTime": [
+      14.600000381469727,
+      13.0,
+      11.399999618530273,
+      9.800000190734863,
+      8.199999809265137,
+      6.599999904632568,
+      5.0
+    ],
+    "castRange": [
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Jayce/Spells/JayceStanceHtGAbility/JayceStanceHtG": {
+    "mSpellTags": [
+      "Trait_Transformation",
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "RangedFormRangeIncrease",
+        "mValues": [
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShredDuration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "RangedFormShred": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 0.10000000149011612,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 0.05000000074505806,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 0.05000000074505806,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 0.05000000074505806,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 25.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 35.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 35.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 35.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Resists": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 5.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 10.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 10.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 10.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.07500000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Jayce/Spells/JayceAccelerationGateAbility/JayceAccelerationGate": {
+    "mSpellTags": [
+      "PositiveEffect_Boon",
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "MovementSpeed",
+        "mValues": [
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104,
+          0.5,
+          0.550000011920929,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShockBlastAmp",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HasteDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GateWidth",
+        "mValues": [
+          0.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GateVisionSegments",
+        "mValues": [
+          0.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      685.0,
+      685.0,
+      685.0,
+      685.0,
+      685.0,
+      685.0,
+      685.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Jayce/Spells/JayceToTheSkiesAbility/JayceToTheSkies": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          15.0,
+          60.0,
+          105.0,
+          150.0,
+          195.0,
+          240.0,
+          285.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Slow",
+        "mValues": [
+          -0.30000001192092896,
+          -0.3499999940395355,
+          -0.4000000059604645,
+          -0.44999998807907104,
+          -0.5,
+          -0.550000011920929,
+          -0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterBonusDamage",
+        "mValues": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.350000023841858,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.2000000476837158,
+    "cooldownTime": [
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0,
+      8.0,
+      6.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ]
+  }
+}

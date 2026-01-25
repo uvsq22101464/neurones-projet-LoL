@@ -1,0 +1,734 @@
+{
+  "Characters/MissFortune/CharacterRecords/Root": {
+    "mCharacterName": "MissFortune",
+    "baseHP": 625.0,
+    "hpPerLevel": 100.0,
+    "baseStaticHPRegen": 0.75,
+    "hpRegenPerLevel": 0.13,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 300.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 55.0,
+    "damagePerLevel": 2.4,
+    "baseArmor": 25.0,
+    "armorPerLevel": 4.0,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.656,
+    "attackSpeedRatio": 0.656,
+    "attackSpeedPerLevel": 3.0,
+    "acquisitionRange": 800.0,
+    "searchTags": "marksman",
+    "searchTagsSecondary": "mage",
+    "roles": "ATTACKER"
+  },
+  "Characters/MissFortune/Spells/MissFortuneScattershotAbility/MissFortuneScattershot": {
+    "DataValues": [
+      {
+        "mName": "BaseDamagePerSecond",
+        "mValues": [
+          20.0,
+          35.0,
+          50.0,
+          65.0,
+          80.0,
+          95.0,
+          110.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseSlowAmount",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatioPerSecond",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TicksPerSecond",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CastDelay",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPer100AP",
+        "mValues": [
+          0.0006000000284984708,
+          0.0006000000284984708,
+          0.0006000000284984708,
+          0.0006000000284984708,
+          0.0006000000284984708,
+          0.0006000000284984708,
+          0.0006000000284984708
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamagePerSecond": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamagePerSecond",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatioPerSecond",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalSlowAmount": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseSlowAmount",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "SlowPer100AP",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "TotalDamage": {
+        "mMultiplier": {
+          "mDataValue": "BaseDuration",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalDamagePerSecond",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      20.0,
+      18.0,
+      17.0,
+      16.0,
+      15.0,
+      14.0,
+      13.0
+    ],
+    "castRange": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "AreaClamped"
+    }
+  },
+  "Characters/MissFortune/Spells/MissFortuneRicochetShotAbility/MissFortuneRicochetShot": {
+    "mSpellTags": [
+      "Trait_MultiTargetAttack"
+    ],
+    "DataValues": [
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          0.0,
+          20.0,
+          45.0,
+          70.0,
+          95.0,
+          120.0,
+          120.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamageTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 2,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.3499999940395355,
+    "cooldownTime": [
+      8.0,
+      7.0,
+      6.0,
+      5.0,
+      4.0,
+      3.0,
+      3.0
+    ],
+    "castRange": [
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0
+    ],
+    "castRangeDisplayOverride": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ]
+  },
+  "Characters/MissFortune/Spells/MissFortunePassiveAbility/MissFortunePassive": {
+    "mSpellTags": [
+      "Trait_NonPrimaryAttack"
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mSubpart": {
+              "mLevel1Value": 0.5,
+              "mBreakpoints": [
+                {
+                  "mLevel": 4,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 7,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 9,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 11,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 13,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 20,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 25,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 30,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinionDamage": {
+        "mMultiplier": {
+          "mNumber": 0.5,
+          "__type": "NumberCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/MissFortune/Spells/MissFortuneViciousStrikesAbility/MissFortuneViciousStrikes": {
+    "DataValues": [
+      {
+        "mName": "PassiveBaseMS",
+        "mValues": [
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          55.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveMaxMS",
+        "mValues": [
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          110.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LoveTapBaseRefund",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ActiveAS",
+        "mValues": [
+          0.25,
+          0.4000000059604645,
+          0.550000011920929,
+          0.699999988079071,
+          0.8500000238418579,
+          1.0,
+          1.149999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ActiveDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveBaseMSOOC",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveMaxMSExtraOOC",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "LoveTapRefund": {
+        "mMultiplier": {
+          "__type": "CooldownMultiplierCalculationPart"
+        },
+        "mFormulaParts": [
+          {
+            "mDataValue": "LoveTapBaseRefund",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/MissFortune/Spells/MissFortuneBulletTimeAbility/MissFortuneBulletTime": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ChannelSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseWaves",
+        "mValues": [
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0,
+          22.0,
+          24.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseCritDamageMultiplier",
+        "mValues": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseChannelDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "tADRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusCritDamageScalar",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PhysicalDamagePerWave": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "tADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CritMultiplier": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseCritDamageMultiplier",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mPart1": {
+              "mDataValue": "BonusCritDamageScalar",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            "mPart2": {
+              "mStat": 9,
+              "mStatFormula": 2,
+              "mCoefficient": 1.0,
+              "__type": "StatByCoefficientCalculationPart"
+            },
+            "__type": "ProductOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalWaves": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseWaves",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalChannelDuration": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseChannelDuration",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      },
+      "PhysicalCritPerWave": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mStat": 2,
+              "mDataValue": "tADRatio",
+              "__type": "StatByNamedDataValueCalculationPart"
+            },
+            {
+              "mDataValue": "APRatio",
+              "__type": "StatByNamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "CritMultiplier",
+        "__type": "GameCalculationModified"
+      },
+      "TotalPhysicalDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mStat": 2,
+              "mDataValue": "tADRatio",
+              "__type": "StatByNamedDataValueCalculationPart"
+            },
+            {
+              "mDataValue": "APRatio",
+              "__type": "StatByNamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalWaves",
+        "__type": "GameCalculationModified"
+      },
+      "TotalPhysicalCritDamage": {
+        "mMultiplier": {
+          "mPart1": {
+            "mSubparts": [
+              {
+                "mStat": 2,
+                "mDataValue": "tADRatio",
+                "__type": "StatByNamedDataValueCalculationPart"
+              },
+              {
+                "mDataValue": "APRatio",
+                "__type": "StatByNamedDataValueCalculationPart"
+              }
+            ],
+            "__type": "SumOfSubPartsCalculationPart"
+          },
+          "mPart2": {
+            "mSubparts": [
+              {
+                "mDataValue": "BaseCritDamageMultiplier",
+                "__type": "NamedDataValueCalculationPart"
+              },
+              {
+                "mPart1": {
+                  "mDataValue": "BonusCritDamageScalar",
+                  "__type": "NamedDataValueCalculationPart"
+                },
+                "mPart2": {
+                  "mStat": 9,
+                  "mStatFormula": 2,
+                  "mCoefficient": 1.0,
+                  "__type": "StatByCoefficientCalculationPart"
+                },
+                "__type": "ProductOfSubPartsCalculationPart"
+              }
+            ],
+            "__type": "SumOfSubPartsCalculationPart"
+          },
+          "__type": "ProductOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalWaves",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      130.0,
+      120.0,
+      110.0,
+      100.0,
+      90.0,
+      80.0,
+      70.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Cone"
+    }
+  }
+}

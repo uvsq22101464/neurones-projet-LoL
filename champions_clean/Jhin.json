@@ -1,0 +1,550 @@
+{
+  "name": "Jhin",
+  "health": 655,
+  "healthPerLevel": 107,
+  "healthRegen": 3.75,
+  "healthRegenPerLevel": 0.55,
+  "armor": 24,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 61,
+  "attackDamagePerLevel": 4.4,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 550,
+  "roles": [
+    "CATCHER",
+    "MAGE",
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Whisper",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Dancing Grenade",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  44,
+                  69,
+                  94,
+                  119,
+                  144
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  44,
+                  51.5,
+                  59,
+                  66.5,
+                  74
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Damage per Target Death",
+            "modifiers": [
+              {
+                "values": [
+                  15.4,
+                  24.15,
+                  32.9,
+                  41.65,
+                  50.4
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15.4,
+                  18.025,
+                  20.65,
+                  23.275,
+                  25.9
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  21,
+                  21,
+                  21,
+                  21,
+                  21
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Final Bounce Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90.2,
+                  141.45,
+                  192.7,
+                  243.95,
+                  295.2
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90.2,
+                  105.575,
+                  120.95,
+                  136.325,
+                  151.7
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  123,
+                  123,
+                  123,
+                  123,
+                  123
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Deadly Flourish",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140,
+                  175,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  52.5,
+                  78.75,
+                  105,
+                  131.25,
+                  157.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  37.5,
+                  37.5,
+                  37.5,
+                  37.5,
+                  37.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.25,
+                  1.5,
+                  1.75,
+                  2,
+                  2.25
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Captive Audience",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  80,
+                  140,
+                  200,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Damage",
+            "modifiers": [
+              {
+                "values": [
+                  13,
+                  52,
+                  91,
+                  130,
+                  169
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  78,
+                  78,
+                  78,
+                  78,
+                  78
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  65,
+                  65,
+                  65,
+                  65
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Curtain Call",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Physical Damage per Bullet",
+            "modifiers": [
+              {
+                "values": [
+                  64,
+                  128,
+                  192
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage per Bullet",
+            "modifiers": [
+              {
+                "values": [
+                  256,
+                  512,
+                  768
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Fourth Shot Damage",
+            "modifiers": [
+              {
+                "values": [
+                  128,
+                  256,
+                  384
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Fourth Shot Damage",
+            "modifiers": [
+              {
+                "values": [
+                  512,
+                  1024,
+                  1536
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  200,
+                  200,
+                  200
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "name": "Swain",
+  "health": 595,
+  "healthPerLevel": 99,
+  "healthRegen": 3,
+  "healthRegenPerLevel": 0.5,
+  "armor": 25,
+  "armorPerLevel": 4.7,
+  "magicResistance": 31,
+  "magicResistancePerLevel": 1.55,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 2.7,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.11,
+  "attackRange": 525,
+  "roles": [
+    "BATTLEMAGE",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Ravenous Flock",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Death's Hand",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Damage Per Bolt",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  22.5,
+                  30,
+                  37.5,
+                  45
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  11.25,
+                  11.25,
+                  11.25,
+                  11.25,
+                  11.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Damage",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  180,
+                  240,
+                  300,
+                  360
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Vision of Empire",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140,
+                  175,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  52.5,
+                  70,
+                  87.5,
+                  105
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  55,
+                  60,
+                  65,
+                  70
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Nevermove",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  130,
+                  170,
+                  210,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Demonic Ascension",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  7.5,
+                  12.5,
+                  17.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2.5,
+                  2.5,
+                  2.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Heal per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  7.5,
+                  15,
+                  22.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2.5,
+                  2.5,
+                  2.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.75,
+                  0.75,
+                  0.75
+                ],
+                "units": [
+                  "% of his bonus health",
+                  "% of his bonus health",
+                  "% of his bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Heal per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  0.75,
+                  1.5,
+                  2.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  0.25,
+                  0.25,
+                  0.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.075,
+                  0.075,
+                  0.075
+                ],
+                "units": [
+                  "% of his bonus health",
+                  "% of his bonus health",
+                  "% of his bonus health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    },
+    {
+      "name": "Demonflare",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

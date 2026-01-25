@@ -1,0 +1,679 @@
+{
+  "Characters/Hwei/CharacterRecords/Root": {
+    "mCharacterName": "Hwei",
+    "baseHP": 580.0,
+    "hpPerLevel": 109.0,
+    "baseStaticHPRegen": 1.1,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 480.0,
+      "arPerLevel": 30.0,
+      "arBaseStaticRegen": 1.5,
+      "arRegenPerLevel": 0.15000000596046448,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 54.0,
+    "damagePerLevel": 3.3,
+    "baseArmor": 21.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 330.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.69,
+    "attackSpeedRatio": 0.658,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "mage",
+    "searchTagsSecondary": "support",
+    "roles": "MAGE"
+  },
+  "Characters/Hwei/Spells/HweiRAbility/HweiR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "RBaseDamage",
+        "mValues": [
+          75.0,
+          200.0,
+          325.0,
+          450.0,
+          575.0,
+          700.0,
+          825.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamageOverTime",
+        "mValues": [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPercentPerStack",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDamageHelper",
+        "mValues": [
+          100.0,
+          230.0,
+          360.0,
+          490.0,
+          620.0,
+          750.0,
+          880.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.800000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DamageOverTime": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamageOverTime",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.05000000074505806,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalMaxDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mSubparts": [
+              {
+                "mDataValue": "RBaseDamage",
+                "__type": "NamedDataValueCalculationPart"
+              },
+              {
+                "mPart1": {
+                  "mDataValue": "BaseDamageOverTime",
+                  "__type": "NamedDataValueCalculationPart"
+                },
+                "mPart2": {
+                  "mDataValue": "Duration",
+                  "__type": "NamedDataValueCalculationPart"
+                },
+                "__type": "ProductOfSubPartsCalculationPart"
+              }
+            ],
+            "__type": "SumOfSubPartsCalculationPart"
+          },
+          {
+            "mCoefficient": 0.949999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      140.0,
+      140.0,
+      115.0,
+      80.0,
+      80.0,
+      80.0,
+      80.0
+    ],
+    "castRange": [
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0
+    ],
+    "castRangeDisplayOverride": [
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0,
+      1300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Hwei/Spells/HweiEAbility/HweiE": {
+    "DataValues": [
+      {
+        "mName": "Tooltip_EQBaseDamage",
+        "mValues": [
+          30.0,
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_EWBaseDamage",
+        "mValues": [
+          30.0,
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_EWRootDuration",
+        "mValues": [
+          1.0,
+          1.2000000476837158,
+          1.399999976158142,
+          1.600000023841858,
+          1.7999999523162842,
+          2.0,
+          2.200000047683716
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_EEBaseDamage",
+        "mValues": [
+          30.0,
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_EESlowAmount",
+        "mValues": [
+          32.5,
+          40.0,
+          47.5,
+          55.0,
+          62.5,
+          70.0,
+          77.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_EQFleeDuration",
+        "mValues": [
+          0.875,
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Tooltip_EQDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_EQBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6499999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_EWDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_EWBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6499999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_EEDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_EEBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6499999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      13.0,
+      13.0,
+      12.5,
+      12.0,
+      11.5,
+      11.0,
+      11.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Hwei/Spells/HweiWAbility/HweiW": {
+    "DataValues": [
+      {
+        "mName": "Tooltip_WQBaseMoveSpeed",
+        "mValues": [
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.0,
+          42.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_WQAreaDuration",
+        "mValues": [
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          5.5,
+          6.0,
+          6.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_WWShieldAmountBase",
+        "mValues": [
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.0,
+          200.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_WEBaseOnHitDamage",
+        "mValues": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_WEOnHitManaRestore",
+        "mValues": [
+          40.0,
+          45.0,
+          50.0,
+          55.0,
+          60.0,
+          65.0,
+          70.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Tooltip_WQMoveSpeed": {
+        "mMultiplier": {
+          "mNumber": 0.009999999776482582,
+          "__type": "NumberCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_WQBaseMoveSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.029999999329447746,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "Tooltip_WWShieldAmount": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_WWShieldAmountBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_WWStartShieldAmount": {
+        "mMultiplier": {
+          "mNumber": 0.5,
+          "__type": "NumberCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_WWShieldAmountBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_WEOnHitDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_WEBaseOnHitDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.15000000596046448,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      18.0,
+      18.0,
+      17.5,
+      17.0,
+      16.5,
+      16.0,
+      16.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Hwei/Spells/HweiQAbility/HweiQ": {
+    "DataValues": [
+      {
+        "mName": "Tooltip_QQBaseDamage",
+        "mValues": [
+          20.0,
+          50.0,
+          80.0,
+          110.0,
+          140.0,
+          170.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_QQBonusDamage",
+        "mValues": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_QWBaseDamage",
+        "mValues": [
+          35.0,
+          60.0,
+          85.0,
+          110.0,
+          135.0,
+          160.0,
+          185.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_QWBonusDamageMult",
+        "mValues": [
+          1.625,
+          2.0,
+          2.375,
+          2.75,
+          3.125,
+          3.5,
+          3.875
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_QEBaseDamage",
+        "mValues": [
+          5.0,
+          20.0,
+          35.0,
+          50.0,
+          65.0,
+          80.0,
+          95.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Tooltip_QEBaseDPS",
+        "mValues": [
+          5.0,
+          20.0,
+          35.0,
+          50.0,
+          65.0,
+          80.0,
+          95.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Tooltip_QQDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_QQBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_QWDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_QWBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_QWBonusDamage": {
+        "mMultiplier": {
+          "mDataValue": "Tooltip_QWBonusDamageMult",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "Tooltip_QWDamage",
+        "__type": "GameCalculationModified"
+      },
+      "Tooltip_QEDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_QEBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "Tooltip_QEDamagePerSecond": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Tooltip_QEBaseDPS",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.23999999463558197,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

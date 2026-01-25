@@ -1,0 +1,388 @@
+{
+  "name": "Kayn",
+  "health": 655,
+  "healthPerLevel": 103,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.75,
+  "armor": 38,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 68,
+  "attackDamagePerLevel": 3.3,
+  "attackSpeed": 0.669,
+  "attackSpeedPerLevel": 2.7,
+  "attackRange": 175,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "The Darkin Scythe",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Reaping Slash",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  100,
+                  125,
+                  150,
+                  175
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  85,
+                  85,
+                  85,
+                  85,
+                  85
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  200,
+                  250,
+                  300,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  170,
+                  170,
+                  170,
+                  170,
+                  170
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  115,
+                  140,
+                  165,
+                  190,
+                  215
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  85,
+                  85,
+                  85,
+                  85,
+                  85
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  230,
+                  280,
+                  330,
+                  380,
+                  430
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  170,
+                  170,
+                  170,
+                  170,
+                  170
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Capped Monster Damage per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  250,
+                  300,
+                  350,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Capped Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  400,
+                  500,
+                  600,
+                  700,
+                  800
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Blade's Reach",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  85,
+                  130,
+                  175,
+                  220,
+                  265
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  110,
+                  110,
+                  110,
+                  110,
+                  110
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Shadow Step",
+      "effects": [
+        [
+          {
+            "attribute": "Duration",
+            "modifiers": [
+              {
+                "values": [
+                  7,
+                  7.5,
+                  8,
+                  8.5,
+                  9
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  100,
+                  110,
+                  120,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Umbral Trespass",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ]
+}

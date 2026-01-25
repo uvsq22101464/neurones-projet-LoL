@@ -1,0 +1,270 @@
+{
+  "name": "Kha'Zix",
+  "health": 643,
+  "healthPerLevel": 99,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.75,
+  "armor": 32,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 3.1,
+  "attackSpeed": 0.668,
+  "attackSpeedPerLevel": 2.7,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN"
+  ],
+  "P": [
+    {
+      "name": "Unseen Threat",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Taste Their Fear",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  105,
+                  130,
+                  155,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  110,
+                  110,
+                  110,
+                  110,
+                  110
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  168,
+                  220.5,
+                  273,
+                  325.5,
+                  378
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  231,
+                  231,
+                  231,
+                  231,
+                  231
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Evolved Reaper Claws",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Void Spike",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  105,
+                  135,
+                  165,
+                  195
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  75,
+                  95,
+                  115,
+                  135
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    },
+    {
+      "name": "Evolved Spike Racks",
+      "effects": [],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Leap",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  100,
+                  135,
+                  170,
+                  205
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Evolved Wings",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Void Assault",
+      "effects": [],
+      "affects": "Self"
+    },
+    {
+      "name": "Evolved Adaptive Cloaking",
+      "effects": [],
+      "affects": "Self"
+    }
+  ]
+}

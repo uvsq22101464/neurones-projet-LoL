@@ -1,0 +1,957 @@
+{
+  "id": 24,
+  "key": "Jax",
+  "name": "Jax",
+  "title": "Grandmaster at Arms",
+  "fullName": "Saijax Cail-Rynx Kohari Icath’un",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Jax.png",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 650,
+      "percent": 0.0,
+      "perLevel": 103,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 8.5,
+      "percent": 0.0,
+      "perLevel": 0.55,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 339,
+      "percent": 0.0,
+      "perLevel": 52,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 8.2,
+      "percent": 0.0,
+      "perLevel": 0.7,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 36,
+      "percent": 0.0,
+      "perLevel": 4.2,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32,
+      "percent": 0.0,
+      "perLevel": 2.05,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 68,
+      "percent": 0.0,
+      "perLevel": 4.25,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 350,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 120,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.638,
+      "percent": 0.0,
+      "perLevel": 3.4,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": {
+      "flat": 0.638000011444091,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0918904393911361,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackRange": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": {
+      "flat": 0.97,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.05,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramTenacity": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAbilityHaste": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAttackSpeed": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramEnergyRegen": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.15,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
+  },
+  "positions": [
+    "JUNGLE",
+    "TOP"
+  ],
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 10,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Relentless Assault",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Jax/ability-icon/p",
+        "effects": [
+          {
+            "description": "Innate: Jax's basic attacks generate a stack of Relentless Assault on-attack for 2.5 seconds, refreshing on subsequent attacks and stacking up to 8 times. Stacks expire one by one every 0.25 seconds when the duration ends.",
+            "leveling": []
+          },
+          {
+            "description": "Relentless Assault: For each stack, Jax gains 5% : 12.5% (based on level) bonus attack speed, up to a maximum of 40% : 100% (based on level).",
+            "leveling": []
+          },
+          {
+            "description": "Grandmaster at Angling: While out-of-combat with champions and idle in the river for 10 seconds, Jax will occasionally catch a fish, granting him 1 and 1 ability power for 5 seconds. He catches a fish at an average rate of one every 15 seconds. He also has a 5% chance to catch a rare fish that grants 10 and 10 ability power for 5 seconds.",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies, Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Jax will start fishing while idle in the river if he is in-combat with only monsters (e.g. any of the three Epic monsters).(bug)\nJax catching a fish is a random event and will play a special animation.\nThe total number of fish caught during the game is displayed when fishing as  Grandmaster at Angling passive.",
+        "blurb": "Innate:  Jax's  basic attacks generate  stacks, up to a cap. Stacks expire one at a time.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Leap Strike",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Jax/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: Jax dashes to the target unit's location.",
+            "leveling": []
+          },
+          {
+            "description": "If the target is an enemy and they are in range upon arrival, Jax deals physical damage to them.",
+            "leveling": [
+              {
+                "attribute": "Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      65,
+                      105,
+                      145,
+                      185,
+                      225
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Jax can cast any of his abilities during the dash.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                65,
+                65,
+                65,
+                65,
+                65
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8,
+                7.5,
+                7,
+                6.5,
+                6
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Unit",
+        "affects": "Enemies",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "single",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Leap Strike cannot be cast on  structures.\nIf the target is an enemy champion, Jax will be ordered to  basic attack them after the dash ends.\n Spell shield will block the damage, including when  empowered.",
+        "blurb": "Active:  Jax  dashes to the target unit. If they are an enemy, he deals physical damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "false",
+        "effectRadius": null,
+        "targetRange": "700"
+      }
+    ],
+    "W": [
+      {
+        "name": "Empower",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Jax/ability-icon/w",
+        "effects": [
+          {
+            "description": "Active: Jax empowers his next basic attack or Leap Strike against an enemy within 10 seconds to deal additional magic damage, reduced to 50% against structures. If Empower is used on a basic attack, it will gain 50 bonus range and have an uncancellable windup.",
+            "leveling": [
+              {
+                "attribute": "Additional Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      85,
+                      120,
+                      155,
+                      190
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Empower resets Jax's basic attack timer.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                30,
+                30,
+                30,
+                30,
+                30
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                7,
+                6,
+                5,
+                4,
+                3
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "true",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Empower is applied in a separate damage instance from Jax's basic attacks.\nThis causes effects like  Bone Plating to be applied twice.(note)",
+        "blurb": "Active:  Jax empowers his next basic attack or  Leap Strike against an enemy to deal additional magic damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Counter Strike",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Jax/ability-icon/e",
+        "effects": [
+          {
+            "description": "Active: Jax enters Evasion for 2 seconds: a defensive stance that causes him to dodge all incoming non- turret basic attacks and take 25% reduced damage from all area of effect abilities sourced from champions. Counter Strike can be recast after 1 second, and does so automatically after the duration.",
+            "leveling": []
+          },
+          {
+            "description": "Recast: Jax deals magic damage to nearby enemies, with the total damage increased by 20% for each attack dodged, up to a 100% increase, and stuns them for 1 second.",
+            "leveling": [
+              {
+                "attribute": "Minimum Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      40,
+                      70,
+                      100,
+                      130,
+                      160
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      70,
+                      70,
+                      70,
+                      70,
+                      70
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3.5,
+                      3.5,
+                      3.5,
+                      3.5,
+                      3.5
+                    ],
+                    "units": [
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      80,
+                      140,
+                      200,
+                      260,
+                      320
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      140,
+                      140,
+                      140,
+                      140,
+                      140
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  },
+                  {
+                    "values": [
+                      7,
+                      7,
+                      7,
+                      7,
+                      7
+                    ],
+                    "units": [
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health",
+                      "% of target's maximum health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                17,
+                15,
+                13,
+                11,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "aoe",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The initial cast and the manual recast count as ability activations for the purposes of on-cast effects such as  Spellblade and triggering  Force Pulse's passive.\nCounter Strike will also dodge abilities that can trigger  on-hit effects ( Parrrley,  Mystic Shot) which will count towards Counter Strike's increased damage. There are exceptions of abilities that Counter Strike will not dodge but will dodge the damage from  on-hit effects that they trigger ( Alpha Strike,  Piercing Darkness).\nThe damage based on the target's maximum health is capped at 9000 against  monsters. This is a placeholder value and impossible to reach because it requires a monster to have over 128571 health.",
+        "blurb": "Active:  Jax enters Evasion for a short time: a defensive stance that causes him to  dodge all incoming non- turret basic attacks and take reduced damage from all  area of effect abilities from  champions.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "None",
+        "effectRadius": "375",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Grandmaster-at-Arms",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Jax/ability-icon/r",
+        "effects": [
+          {
+            "description": "Passive: Jax's basic attacks generate a stack of Grandmaster-at-Arms on-hit for 2.5 seconds, refreshing on subsequent hits and stacking up to 2 times. At 2 stacks, his next basic attack on-hit is empowered to have an uncancellable windup and consume all stacks to deal additional magic damage, reduced to 50% against structures. While Grandmaster-at-Arms is active, the empowered attack triggers at 1 stack instead.",
+            "leveling": [
+              {
+                "attribute": "Additional Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      75,
+                      130,
+                      185
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      60,
+                      60,
+                      60
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Active: Jax swings his lantern around, dealing magic damage to nearby enemies. If this hits a champion, he gains bonus armor, increased for each champion hit beyond the first, and bonus magic resistance equal to 60% of that amount as well as 10% increased size for 8 seconds.",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      100,
+                      175,
+                      250
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Armor",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      60,
+                      75
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40,
+                      40,
+                      40
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Magic Resistance",
+                "modifiers": [
+                  {
+                    "values": [
+                      27,
+                      36,
+                      45
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      24,
+                      24,
+                      24
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Armor per Champion Hit",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      25,
+                      30
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      10,
+                      10,
+                      10
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Magic Resistance per Champion Hit",
+                "modifiers": [
+                  {
+                    "values": [
+                      12,
+                      15,
+                      18
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      6,
+                      6,
+                      6
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Jax can move during Grandmaster-at-Arms' cast time.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                110,
+                100,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Enemies, Self",
+        "spellshieldable": "special",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "special",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The on-hit deals  proc damage. The swing deals  area damage.\nThe bonus resistances are represented by a glowing aura around Jax that grows with each enemy champion hit beyond the first.\nThe additional magic damage can be  dodged and  blocked but it cannot  miss.\n Spell shield will only block the additional damage from the third attack if it is  empowered.\nThe empowered attack will trigger but not be consumed nor apply its effects against  wards.\nStacks will still be generated when attacking them.\nThe empowered attack is applied in a separate damage instance from Jax's basic attacks.\nThis causes effects like  Bone Plating to be applied twice.(note)\n\nThis ability will cast from wherever the caster is at the end of the cast time.",
+        "blurb": "Passive:  Jax's  basic attacks generate  stacks. At max stacks, he consumes them to deal additional magic damage.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "375",
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2009-02-21",
+  "releasePatch": "Alpha Week 2",
+  "patchLastChanged": "25.22",
+  "price": {
+    "blueEssence": 675,
+    "rp": 585,
+    "saleRp": 0
+  }
+}

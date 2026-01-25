@@ -1,0 +1,416 @@
+{
+  "name": "Gragas",
+  "health": 640,
+  "healthPerLevel": 115,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 38,
+  "armorPerLevel": 5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 64,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.675,
+  "attackSpeedPerLevel": 2.05,
+  "attackRange": 125,
+  "roles": [
+    "FIGHTER",
+    "MAGE",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Happy Hour",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Barrel Roll",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  180,
+                  240,
+                  300,
+                  360
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  56,
+                  84,
+                  112,
+                  140,
+                  168
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  56,
+                  56,
+                  56,
+                  56,
+                  56
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  84,
+                  126,
+                  168,
+                  210,
+                  252
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  84,
+                  84,
+                  84,
+                  84,
+                  84
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Slow",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  67.5,
+                  75,
+                  82.5,
+                  90
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Drunken Rage",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12,
+                  14,
+                  16,
+                  18
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  50,
+                  80,
+                  110,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  7,
+                  7,
+                  7,
+                  7,
+                  7
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Body Slam",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  125,
+                  170,
+                  215,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Explosive Cask",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

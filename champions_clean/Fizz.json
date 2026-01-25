@@ -1,0 +1,450 @@
+{
+  "name": "Fizz",
+  "health": 640,
+  "healthPerLevel": 106,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.7,
+  "armor": 26,
+  "armorPerLevel": 4.6,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 3.1,
+  "attackRange": 175,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER"
+  ],
+  "P": [
+    {
+      "name": "Nimble Fighter",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Urchin Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  25,
+                  40,
+                  55,
+                  70
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Seastone Trident",
+      "effects": [
+        [
+          {
+            "attribute": "Total Passive Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60,
+                  75,
+                  90
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Passive Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  7.5,
+                  10,
+                  12.5,
+                  15
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  4.17,
+                  4.17,
+                  4.17,
+                  4.17,
+                  4.17
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Active Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Active On-Hit Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Playful",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  130,
+                  180,
+                  230,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  95,
+                  95,
+                  95,
+                  95,
+                  95
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Trickster",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  130,
+                  180,
+                  230,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  95,
+                  95,
+                  95,
+                  95,
+                  95
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Chum the Waters",
+      "effects": [
+        [
+          {
+            "attribute": "Guppy Damage",
+            "modifiers": [
+              {
+                "values": [
+                  180,
+                  300,
+                  420
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Chomper Damage",
+            "modifiers": [
+              {
+                "values": [
+                  225,
+                  375,
+                  525
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Gigalodon Damage",
+            "modifiers": [
+              {
+                "values": [
+                  270,
+                  450,
+                  630
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

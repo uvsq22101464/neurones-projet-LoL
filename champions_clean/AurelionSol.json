@@ -1,0 +1,516 @@
+{
+  "name": "Aurelion Sol",
+  "health": 600,
+  "healthPerLevel": 90,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 22,
+  "armorPerLevel": 4,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 1.5,
+  "attackRange": 550,
+  "roles": [
+    "BATTLEMAGE",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Cosmic Creator",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Breath of Light",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  5.625,
+                  7.5,
+                  9.375,
+                  11.25,
+                  13.125
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.875,
+                  6.875,
+                  6.875,
+                  6.875,
+                  6.875
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  60,
+                  75,
+                  90,
+                  105
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  146.25,
+                  195,
+                  243.75,
+                  292.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  178.75,
+                  178.75,
+                  178.75,
+                  178.75,
+                  178.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Secondary Target Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  2.8125,
+                  3.75,
+                  4.6875,
+                  5.625,
+                  6.5625
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3.4375,
+                  3.4375,
+                  3.4375,
+                  3.4375,
+                  3.4375
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Secondary Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  22.5,
+                  30,
+                  37.5,
+                  45,
+                  52.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  27.5,
+                  27.5,
+                  27.5,
+                  27.5,
+                  27.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Secondary Target Total Maximum Damage",
+            "modifiers": [
+              {
+                "values": [
+                  73.125,
+                  97.5,
+                  121.875,
+                  146.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  89.375,
+                  89.375,
+                  89.375,
+                  89.375,
+                  89.375
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "units": [
+                  "  (+ (3.1% Stardust)% of target's maximum health",
+                  "  (+ (3.1% Stardust)% of target's maximum health",
+                  "  (+ (3.1% Stardust)% of target's maximum health",
+                  "  (+ (3.1% Stardust)% of target's maximum health",
+                  "  (+ (3.1% Stardust)% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Astral Flight",
+      "effects": [
+        [
+          {
+            "attribute": "Breath of Light Flat Damage Modifier",
+            "modifiers": [
+              {
+                "values": [
+                  108,
+                  109,
+                  110,
+                  111,
+                  112
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Singularity",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  2.5,
+                  3.75,
+                  5,
+                  6.25,
+                  7.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Falling Star",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "The Skies Descend",
+      "effects": [
+        [
+          {
+            "attribute": "Empowered Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  187.5,
+                  312.5,
+                  437.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  93.75,
+                  93.75,
+                  93.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  135,
+                  225,
+                  315
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  67.5,
+                  67.5,
+                  67.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

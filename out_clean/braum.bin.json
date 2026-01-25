@@ -1,0 +1,612 @@
+{
+  "Characters/Braum/CharacterRecords/Root": {
+    "mCharacterName": "Braum",
+    "baseHP": 630.0,
+    "hpPerLevel": 112.0,
+    "baseStaticHPRegen": 1.7,
+    "hpRegenPerLevel": 0.2,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 311.0,
+      "arPerLevel": 45.0,
+      "arBaseStaticRegen": 1.399999976158142,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 55.0,
+    "damagePerLevel": 3.2,
+    "baseArmor": 35.0,
+    "armorPerLevel": 5.0,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.644,
+    "attackSpeedRatio": 0.644,
+    "attackSpeedPerLevel": 3.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "TANK"
+  },
+  "Characters/Braum/Spells/BraumWAbility/BraumW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "RangedDamageThreshold",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AllyArmorPercent",
+        "mValues": [
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099,
+          0.11999999731779099
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BraumArmorPercent",
+        "mValues": [
+          0.36000001430511475,
+          0.36000001430511475,
+          0.36000001430511475,
+          0.36000001430511475,
+          0.36000001430511475,
+          0.36000001430511475,
+          0.36000001430511475
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseResists",
+        "mValues": [
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "GrantedAllyArmor": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseResists",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 1,
+            "mStatFormula": 2,
+            "mDataValue": "AllyArmorPercent",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "GrantedAllyMR": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseResists",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 6,
+            "mStatFormula": 2,
+            "mDataValue": "AllyArmorPercent",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "GrantedBraumArmor": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseResists",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 1,
+            "mStatFormula": 2,
+            "mDataValue": "BraumArmorPercent",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "GrantedBraumMR": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseResists",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 6,
+            "mStatFormula": 2,
+            "mDataValue": "BraumArmorPercent",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.20000000298023224,
+    "cooldownTime": [
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ]
+  },
+  "Characters/Braum/Spells/BraumEAbility/BraumE": {
+    "DataValues": [
+      {
+        "mName": "RangedReflect",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mCoefficient": 0.6000000238418579,
+    "cooldownTime": [
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Braum/Spells/BraumQAbility/BraumQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          225.0,
+          275.0,
+          325.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxHPDamageValue",
+        "mValues": [
+          0.02500000037252903,
+          0.02500000037252903,
+          0.02500000037252903,
+          0.02500000037252903,
+          0.02500000037252903,
+          0.02500000037252903,
+          0.02500000037252903
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mDataValue": "{9f758bbd}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.02500000037252903,
+    "cooldownTime": [
+      8.5,
+      8.0,
+      7.5,
+      7.0,
+      6.5,
+      6.0,
+      5.5
+    ],
+    "castRange": [
+      200000.0,
+      200000.0,
+      200000.0,
+      200000.0,
+      200000.0,
+      200000.0,
+      200000.0
+    ],
+    "castRangeDisplayOverride": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Braum/Spells/BraumRWrapperAbility/BraumRWrapper": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          0.0,
+          150.0,
+          300.0,
+          450.0,
+          600.0,
+          750.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockupDuration",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FirstKnockupDuration",
+        "mValues": [
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedMod",
+        "mValues": [
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowZoneDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDebuffDuration",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinKnockup",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxKnockup",
+        "mValues": [
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxKnockupRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.6000000238418579,
+    "cooldownTime": [
+      9.0,
+      120.0,
+      100.0,
+      80.0,
+      9.0,
+      9.0,
+      9.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      1250.0,
+      1250.0,
+      1250.0,
+      1250.0,
+      1250.0,
+      1250.0,
+      1250.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Braum/Spells/BraumPassiveAbility/BraumPassive": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "StackDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StackCap",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AlreadyStunnedDamageAmp",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mValues": [
+              16.0,
+              26.0,
+              36.0,
+              46.0,
+              56.0,
+              66.0,
+              76.0,
+              86.0,
+              96.0,
+              106.0,
+              116.0,
+              126.0,
+              136.0,
+              146.0,
+              156.0,
+              166.0,
+              176.0,
+              186.0,
+              196.0,
+              206.0,
+              216.0,
+              226.0,
+              236.0,
+              246.0,
+              256.0,
+              266.0,
+              276.0,
+              286.0,
+              296.0,
+              306.0,
+              316.0
+            ],
+            "__type": "ByCharLevelFormulaCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "OnHitDamage": {
+        "mMultiplier": {
+          "mDataValue": "{9e75385b}",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mModifiedGameCalculation": "TotalDamage",
+        "__type": "GameCalculationModified"
+      },
+      "StunCD": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 8.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": -2.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": -2.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "StunDuration": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 1.25,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mAdditionalBonusAtThisLevel": 0.25,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 13,
+                "mAdditionalBonusAtThisLevel": 0.25,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mPrecision": 2,
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

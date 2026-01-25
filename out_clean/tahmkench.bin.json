@@ -1,0 +1,840 @@
+{
+  "Characters/TahmKench/CharacterRecords/Root": {
+    "mCharacterName": "TahmKench",
+    "baseHP": 640.0,
+    "hpPerLevel": 103.0,
+    "baseStaticHPRegen": 1.3,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 325.0,
+      "arPerLevel": 50.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.20000000298023224,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 56.0,
+    "damagePerLevel": 3.2,
+    "baseArmor": 39.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.658,
+    "attackSpeedRatio": 0.658,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "TANK"
+  },
+  "Characters/TahmKench/Spells/TahmKenchQAbility/TahmKenchQ": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          75.0,
+          120.0,
+          165.0,
+          210.0,
+          255.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHealthHealing",
+        "mValues": [
+          0.04500000178813934,
+          0.05000000074505806,
+          0.054999999701976776,
+          0.05999999865889549,
+          0.06499999761581421,
+          0.07000000029802322,
+          0.07500000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseHeal",
+        "mValues": [
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      7.5,
+      7.0,
+      6.5,
+      6.0,
+      5.5,
+      5.0,
+      4.5
+    ],
+    "castRange": [
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0
+    ],
+    "castRangeDisplayOverride": [
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0,
+      900.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/TahmKench/Spells/TahmKenchWAbility/TahmKenchW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          65.0,
+          100.0,
+          135.0,
+          170.0,
+          205.0,
+          240.0,
+          275.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockUpDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AoEDelayFromChannelStart",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TotalTime",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChannelTime",
+        "mValues": [
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnemyWarningDelayFromChannelStart",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChampRefund",
+        "mValues": [
+          0.375,
+          0.4000000059604645,
+          0.42500001192092896,
+          0.44999998807907104,
+          0.4749999940395355,
+          0.5,
+          0.5249999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      22.0,
+      21.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0
+    ],
+    "castRange": [
+      900.0,
+      1000.0,
+      1050.0,
+      1100.0,
+      1150.0,
+      1200.0,
+      1250.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/TahmKench/Spells/TahmKenchPassiveAbility/TahmKenchPassive": {
+    "DataValues": [
+      {
+        "mName": "Duration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxStacks",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PerStackDecayTimer",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatioPer100BonusHP",
+        "mValues": [
+          0.014999999664723873,
+          0.014999999664723873,
+          0.014999999664723873,
+          0.014999999664723873,
+          0.014999999664723873,
+          0.014999999664723873,
+          0.014999999664723873
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 6.0,
+            "mInitialBonusPerLevel": 4.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 6.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mCoefficient": 0.04500000178813934,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mSubpart": {
+              "mPart1": {
+                "mStat": 12,
+                "mStatFormula": 2,
+                "mDataValue": "APRatioPer100BonusHP",
+                "__type": "StatByNamedDataValueCalculationPart"
+              },
+              "mPart2": {
+                "mNumber": 0.009999999776482582,
+                "__type": "NumberCalculationPart"
+              },
+              "__type": "ProductOfSubPartsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{6c966659}": {
+        "mMultiplier": {
+          "mCoefficient": 0.009999999776482582,
+          "__type": "StatByCoefficientCalculationPart"
+        },
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mDataValue": "APRatioPer100BonusHP",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{301fe730}": {
+        "mSimpleTooltipCalculationDisplay": 1,
+        "mExpandedTooltipCalculationDisplay": 1,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 8.0,
+            "mInitialBonusPerLevel": 4.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 11,
+                "mBonusPerLevelAtAndAfter": 2.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mCoefficient": 0.029999999329447746,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/TahmKench/Spells/TahmKenchRWrapperAbility/TahmKenchRWrapper": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "EnemyDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -50.0,
+          100.0,
+          250.0,
+          400.0,
+          550.0,
+          700.0,
+          850.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AllyDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseShield",
+        "mValues": [
+          500.0,
+          650.0,
+          800.0,
+          950.0,
+          1100.0,
+          1250.0,
+          1400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BasePercentHPDamage",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DataCooldown",
+        "mValues": [
+          140.0,
+          120.0,
+          100.0,
+          80.0,
+          60.0,
+          40.0,
+          20.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DataManaCost",
+        "mValues": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SpitOutRangeAlly",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SpitOutRangeEnemy",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CastTime",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumAllyDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AllySpeedAmount",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldDecayPerSecond",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PercentHPDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BasePercentHPDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.000699999975040555,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "TotalShield": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseShield",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CDCalc": {
+        "mSimpleTooltipCalculationDisplay": 5,
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mPart1": {
+              "mDataValue": "DataCooldown",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            "mPart2": {
+              "__type": "CooldownMultiplierCalculationPart"
+            },
+            "__type": "ProductOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  },
+  "Characters/TahmKench/Spells/TahmKenchEAbility/TahmKenchE": {
+    "DataValues": [
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OOCTimer",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GreyHealthRatio",
+        "mValues": [
+          0.07000000029802322,
+          0.15000000596046448,
+          0.23000000417232513,
+          0.3100000023841858,
+          0.38999998569488525,
+          0.4699999988079071,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxHPHealRatio",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GreyHealthRatioEnhanced",
+        "mValues": [
+          0.4000000059604645,
+          0.41999998688697815,
+          0.4399999976158142,
+          0.46000000834465027,
+          0.47999998927116394,
+          0.5,
+          0.5199999809265137
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnhancedThreshold",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ThresholdRadius",
+        "mValues": [
+          2400.0,
+          2400.0,
+          2400.0,
+          2400.0,
+          2400.0,
+          2400.0,
+          2400.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "GreyHealthHealingRatio": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 0.44999998807907104,
+            "mEndValue": 1.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "GreyHealthMaximum": {
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mCoefficient": 3.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "castRange": [
+      2400.0,
+      2400.0,
+      2400.0,
+      2400.0,
+      2400.0,
+      2400.0,
+      2400.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

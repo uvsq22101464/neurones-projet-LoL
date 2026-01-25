@@ -1,0 +1,253 @@
+{
+  "name": "Rengar",
+  "health": 590,
+  "healthPerLevel": 104,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.5,
+  "armor": 34,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 68,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.667,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "P": [
+    {
+      "name": "Unseen Predator",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Savagery",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  60,
+                  90,
+                  120,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  3.75,
+                  7.5,
+                  11.25,
+                  15
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Battle Roar",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  80,
+                  110,
+                  140,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self / Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Bola Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  100,
+                  145,
+                  190,
+                  235
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60,
+                  75,
+                  90
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Thrill of the Hunt",
+      "effects": [
+        [
+          {
+            "attribute": "Effect Duration",
+            "modifiers": [
+              {
+                "values": [
+                  12,
+                  16,
+                  20
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Armor Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

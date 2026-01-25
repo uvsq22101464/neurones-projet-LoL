@@ -1,0 +1,804 @@
+{
+  "name": "Udyr",
+  "health": 664,
+  "healthPerLevel": 92,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.75,
+  "armor": 31,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 4,
+  "attackSpeed": 0.65,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 125,
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Bridge Between",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Wilding Claw",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  8,
+                  10,
+                  12,
+                  14,
+                  16
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD",
+                  "% per 100 bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  32,
+                  44,
+                  56,
+                  68,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Physical Damage On-Hit",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  11,
+                  17,
+                  23,
+                  29,
+                  35
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Iron Mantle",
+      "effects": [
+        [
+          {
+            "attribute": "Life Steal",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  60,
+                  75,
+                  90,
+                  105,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2.3,
+                  2.6,
+                  2.9,
+                  3.2,
+                  3.5
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  20.0,
+                  27.647058823529413,
+                  35.294117647058826,
+                  42.94117647058823,
+                  50.58823529411765,
+                  58.23529411764706,
+                  65.88235294117646,
+                  73.52941176470588,
+                  81.1764705882353,
+                  88.82352941176471,
+                  96.47058823529412,
+                  104.11764705882354,
+                  111.76470588235294,
+                  119.41176470588236,
+                  127.05882352941177,
+                  134.7058823529412,
+                  142.3529411764706,
+                  150.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  60,
+                  75,
+                  90,
+                  105,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Healing",
+            "modifiers": [
+              {
+                "values": [
+                  10.0,
+                  13.823529411764707,
+                  17.647058823529413,
+                  21.470588235294116,
+                  25.294117647058826,
+                  29.11764705882353,
+                  32.94117647058823,
+                  36.76470588235294,
+                  40.58823529411765,
+                  44.411764705882355,
+                  48.23529411764706,
+                  52.05882352941177,
+                  55.88235294117647,
+                  59.70588235294118,
+                  63.529411764705884,
+                  67.3529411764706,
+                  71.1764705882353,
+                  75.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  22.5,
+                  30,
+                  37.5,
+                  45,
+                  52.5,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  32.5,
+                  32.5,
+                  32.5,
+                  32.5,
+                  32.5,
+                  32.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Heal per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  0.63,
+                  0.8688235294117648,
+                  1.1076470588235294,
+                  1.3464705882352943,
+                  1.585294117647059,
+                  1.8241176470588236,
+                  2.0629411764705883,
+                  2.3017647058823534,
+                  2.540588235294118,
+                  2.7794117647058827,
+                  3.0182352941176473,
+                  3.257058823529412,
+                  3.4958823529411767,
+                  3.7347058823529413,
+                  3.9735294117647064,
+                  4.212352941176471,
+                  4.451176470588236,
+                  4.69
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  1.41,
+                  1.88,
+                  2.34,
+                  2.81,
+                  3.28,
+                  3.75
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2.03,
+                  2.03,
+                  2.03,
+                  2.03,
+                  2.03,
+                  2.03
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25
+                ],
+                "units": [
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health",
+                  "% maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Life Steal",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  32,
+                  34,
+                  36,
+                  38,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Blazing Stampede",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  31,
+                  37,
+                  43,
+                  49,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Decayed Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  7.5,
+                  9.3,
+                  11.1,
+                  12.9,
+                  14.7,
+                  16.5
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Wingborne Storm",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  18,
+                  26,
+                  34,
+                  42,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  144,
+                  208,
+                  272,
+                  336,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  140,
+                  140,
+                  140,
+                  140,
+                  140,
+                  140
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  18,
+                  21,
+                  24,
+                  27,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Slow",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  23,
+                  26,
+                  29,
+                  32,
+                  35
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

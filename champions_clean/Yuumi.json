@@ -1,0 +1,601 @@
+{
+  "name": "Yuumi",
+  "health": 500,
+  "healthPerLevel": 69,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 25,
+  "armorPerLevel": 4.2,
+  "magicResistance": 25,
+  "magicResistancePerLevel": 1.1,
+  "attackDamage": 49,
+  "attackDamagePerLevel": 3.1,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 1,
+  "attackRange": 425,
+  "roles": [
+    "ENCHANTER",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Feline Friendship",
+      "effects": [],
+      "affects": "Self, Allies, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Prowling Projectile",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  95,
+                  130,
+                  165,
+                  200,
+                  235
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  135,
+                  190,
+                  245,
+                  300,
+                  355
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced Slow",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  53,
+                  56,
+                  59,
+                  62,
+                  65
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Magic Damage On-Hit",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12,
+                  14,
+                  16,
+                  18,
+                  20
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "You and Me!",
+      "effects": [
+        [
+          {
+            "attribute": "Heal and Shield Power",
+            "modifiers": [
+              {
+                "values": [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Healing On-Hit",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Zoomies",
+      "effects": [
+        [
+          {
+            "attribute": "Shield",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  90,
+                  115,
+                  140,
+                  165
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  27.5,
+                  30,
+                  32.5,
+                  35
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Mana Restored",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  24,
+                  28,
+                  32,
+                  36
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Mana Restored",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  48,
+                  56,
+                  64,
+                  72
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self / Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Final Chapter",
+      "effects": [
+        [
+          {
+            "attribute": "Heal per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Heal",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  200,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  125,
+                  175
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Damage per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  18.75,
+                  31.25,
+                  43.75
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.25,
+                  6.25,
+                  6.25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Best Friend Heal per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  39,
+                  52,
+                  65
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  13,
+                  13,
+                  13
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Best Friend Total Heal",
+            "modifiers": [
+              {
+                "values": [
+                  195,
+                  260,
+                  325
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  65,
+                  65
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies, Enemies"
+    }
+  ]
+}

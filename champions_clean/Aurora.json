@@ -1,0 +1,418 @@
+{
+  "name": "Aurora",
+  "health": 607,
+  "healthPerLevel": 110,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.55,
+  "armor": 23,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 53,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.668,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 550,
+  "roles": [
+    "ASSASSIN",
+    "BURST",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Spirit Abjuration",
+      "effects": [],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Twofold Hex",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  70,
+                  95,
+                  120,
+                  145
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  70,
+                  95,
+                  120,
+                  145
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  67.5,
+                  105,
+                  142.5,
+                  180,
+                  217.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Subsequent Bolt Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  9,
+                  14,
+                  19,
+                  24,
+                  29
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Subsequent Bolt Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  13.5,
+                  21,
+                  28.5,
+                  36,
+                  43.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  12,
+                  12,
+                  12,
+                  12
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Across the Veil",
+      "effects": [
+        [
+          {
+            "attribute": "Invisibility Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.15,
+                  1.3,
+                  1.45,
+                  1.6
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "The Weirding",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  110,
+                  150,
+                  190,
+                  230
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Between Worlds",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  275,
+                  375
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Realm Hopper Duration",
+            "modifiers": [
+              {
+                "values": [
+                  3.5,
+                  4.25,
+                  5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Rift Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.75,
+                  2.5,
+                  3.25
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.5,
+                  1.75,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

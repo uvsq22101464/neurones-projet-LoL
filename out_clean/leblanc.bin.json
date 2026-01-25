@@ -1,0 +1,691 @@
+{
+  "Characters/Leblanc/CharacterRecords/Root": {
+    "mCharacterName": "Leblanc",
+    "baseHP": 598.0,
+    "hpPerLevel": 108.0,
+    "baseStaticHPRegen": 1.5,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 400.0,
+      "arPerLevel": 25.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 55.0,
+    "damagePerLevel": 2.2,
+    "baseArmor": 22.0,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 340.0,
+    "attackRange": 525.0,
+    "attackSpeed": 0.658,
+    "attackSpeedRatio": 0.4,
+    "attackSpeedPerLevel": 2.35,
+    "acquisitionRange": 525.0,
+    "searchTags": "assassin",
+    "searchTagsSecondary": "mage",
+    "roles": "MAGE"
+  },
+  "Characters/Leblanc/Spells/LeblancEAbility/LeblancE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseInitialDamage",
+        "mValues": [
+          30.0,
+          50.0,
+          70.0,
+          90.0,
+          110.0,
+          130.0,
+          150.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDelayedDamage",
+        "mValues": [
+          40.0,
+          80.0,
+          120.0,
+          160.0,
+          200.0,
+          240.0,
+          280.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "InitialAPRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DelayedAPRatio",
+        "mValues": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseInitialDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "{4db10781}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DelayedDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDelayedDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "{16e82c6b}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      14.0,
+      14.0,
+      13.25,
+      12.5,
+      11.75,
+      11.0,
+      11.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Leblanc/Spells/LeblancREAbility/LeblancRE": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "cooldownTime": [
+      45.0,
+      45.0,
+      35.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Leblanc/Spells/LeblancQAbility/LeblancQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          40.0,
+          65.0,
+          90.0,
+          115.0,
+          140.0,
+          165.0,
+          190.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseMarkDamage",
+        "mValues": [
+          40.0,
+          65.0,
+          90.0,
+          115.0,
+          140.0,
+          165.0,
+          190.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CooldownRefund",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ManaRefund",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MarkDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseMarkDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "BonusMinionDamage": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 10.0,
+            "mInitialBonusPerLevel": 8.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 19,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.44999998807907104,
+    "cooldownTime": [
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0
+    ]
+  },
+  "Characters/Leblanc/Spells/LeblancRWAbility/LeblancRW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_Ultimate",
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "cooldownTime": [
+      45.0,
+      45.0,
+      35.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Leblanc/Spells/LeblancPAbility/LeblancP": {
+    "DataValues": [
+      {
+        "mName": "TooltipCooldown",
+        "mValues": [
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "cooldownTime": [
+      60.0,
+      60.0,
+      60.0,
+      60.0,
+      60.0,
+      60.0,
+      60.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Leblanc/Spells/LeblancWAbility/LeblancW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "WAPRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          35.0,
+          75.0,
+          115.0,
+          155.0,
+          195.0,
+          235.0,
+          275.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "WAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      15.0,
+      15.0,
+      13.75,
+      12.5,
+      11.25,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Leblanc/Spells/LeblancRQAbility/LeblancRQ": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "cooldownTime": [
+      45.0,
+      45.0,
+      35.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "castRange": [
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0
+    ]
+  },
+  "Characters/Leblanc/Spells/LeblancRAbility/LeblancR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "RQ1Base",
+        "mValues": [
+          0.0,
+          70.0,
+          140.0,
+          210.0,
+          280.0,
+          350.0,
+          420.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RQ2Base",
+        "mValues": [
+          0.0,
+          140.0,
+          280.0,
+          420.0,
+          560.0,
+          700.0,
+          840.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RWBase",
+        "mValues": [
+          0.0,
+          150.0,
+          300.0,
+          450.0,
+          600.0,
+          750.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RE1Base",
+        "mValues": [
+          0.0,
+          70.0,
+          140.0,
+          210.0,
+          280.0,
+          350.0,
+          420.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RE2Base",
+        "mValues": [
+          0.0,
+          140.0,
+          280.0,
+          420.0,
+          560.0,
+          700.0,
+          840.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RQMarkDuration",
+        "mValues": [
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RQ1RE1BaseAPRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "RQ1Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RQ1Base",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "RQ1RE1BaseAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RQ2Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RQ2Base",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.800000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RWDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RWBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.800000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RE1Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RE1Base",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "RQ1RE1BaseAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RE2Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RE2Base",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.8500000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      45.0,
+      45.0,
+      35.0,
+      25.0,
+      25.0,
+      25.0,
+      25.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

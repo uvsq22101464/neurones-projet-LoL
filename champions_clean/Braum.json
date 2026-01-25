@@ -1,0 +1,364 @@
+{
+  "name": "Braum",
+  "health": 630,
+  "healthPerLevel": 112,
+  "healthRegen": 8.5,
+  "healthRegenPerLevel": 1,
+  "armor": 35,
+  "armorPerLevel": 5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 55,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.644,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 125,
+  "roles": [
+    "SUPPORT",
+    "TANK",
+    "WARDEN"
+  ],
+  "P": [
+    {
+      "name": "Concussive Blows",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Winter's Bite",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  125,
+                  175,
+                  225,
+                  275
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5,
+                  2.5
+                ],
+                "units": [
+                  "% of Braum's maximum health",
+                  "% of Braum's maximum health",
+                  "% of Braum's maximum health",
+                  "% of Braum's maximum health",
+                  "% of Braum's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Stand Behind Me",
+      "effects": [
+        [
+          {
+            "attribute": "Ally Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  12,
+                  12,
+                  12,
+                  12
+                ],
+                "units": [
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Ally Bonus Magic Resistance",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  12,
+                  12,
+                  12,
+                  12
+                ],
+                "units": [
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Self Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  36,
+                  36,
+                  36,
+                  36,
+                  36
+                ],
+                "units": [
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Self Bonus Magic Resistance",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  36,
+                  36,
+                  36,
+                  36,
+                  36
+                ],
+                "units": [
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Unbreakable",
+      "effects": [
+        [
+          {
+            "attribute": "Damage reduction",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Barrier Duration",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  3.25,
+                  3.5,
+                  3.75,
+                  4
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Glacial Fissure",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  300,
+                  450
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Knockup Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.5,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

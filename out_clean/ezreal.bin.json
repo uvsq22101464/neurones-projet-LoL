@@ -1,0 +1,527 @@
+{
+  "Characters/Ezreal/CharacterRecords/Root": {
+    "mCharacterName": "Ezreal",
+    "baseHP": 600.0,
+    "hpPerLevel": 102.0,
+    "baseStaticHPRegen": 0.8,
+    "hpRegenPerLevel": 0.13,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 375.0,
+      "arPerLevel": 70.0,
+      "arBaseStaticRegen": 1.7000000476837158,
+      "arRegenPerLevel": 0.20000000298023224,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 60.0,
+    "damagePerLevel": 3.25,
+    "baseArmor": 24.0,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 550.0,
+    "searchTags": "marksman",
+    "searchTagsSecondary": "mage",
+    "roles": "ATTACKER"
+  },
+  "Characters/Ezreal/Spells/EzrealEAbility/EzrealE": {
+    "mSpellTags": [
+      "PositiveEffect_Teleport"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          80.0,
+          130.0,
+          180.0,
+          230.0,
+          280.0,
+          330.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileRange",
+        "mValues": [
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CherryBonusHaste",
+        "mValues": [
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EAPRatio",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mDataValue": "EAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.75,
+    "cooldownTime": [
+      26.0,
+      26.0,
+      23.0,
+      20.0,
+      17.0,
+      14.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      475.0,
+      475.0,
+      475.0,
+      475.0,
+      475.0,
+      475.0,
+      475.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Ezreal/Spells/EzrealQAbility/EzrealQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -5.0,
+          20.0,
+          45.0,
+          70.0,
+          95.0,
+          120.0,
+          145.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CDRefund",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamageADRatio",
+        "mValues": [
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamageAPRatio",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mDataValue": "BaseDamageADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "BaseDamageAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      5.75,
+      5.5,
+      5.25,
+      5.0,
+      4.75,
+      4.5,
+      3.5
+    ],
+    "castRange": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "castRangeDisplayOverride": [
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Ezreal/Spells/EzrealPassiveAbility/EzrealPassive": {
+    "DataValues": [
+      {
+        "mName": "AttackSpeedPerStack",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StackDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxStacks",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Ezreal/Spells/EzrealWAbility/EzrealW": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          25.0,
+          80.0,
+          135.0,
+          190.0,
+          245.0,
+          300.0,
+          355.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ManaReturn",
+        "mValues": [
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DetonationTimeout",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.6499999761581421,
+          0.699999988079071,
+          0.75,
+          0.800000011920929,
+          0.8500000238418579,
+          0.8999999761581421,
+          0.949999988079071
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "castRangeDisplayOverride": [
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0,
+      1150.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Ezreal/Spells/EzrealRAbility/EzrealR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          150.0,
+          350.0,
+          550.0,
+          750.0,
+          950.0,
+          1150.0,
+          1350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageReductionPerHit",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumDamagePercent",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageReductionWaveclear",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RAPRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mDataValue": "RAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8999999761581421,
+    "cooldownTime": [
+      10.0,
+      120.0,
+      105.0,
+      90.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

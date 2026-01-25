@@ -1,0 +1,995 @@
+{
+  "id": 83,
+  "key": "Yorick",
+  "name": "Yorick",
+  "title": "Shepherd of Souls",
+  "fullName": "Yorick Mori",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Yorick.png",
+  "resource": "MANA",
+  "attackType": "MELEE",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 650,
+      "percent": 0.0,
+      "perLevel": 114,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 8,
+      "percent": 0.0,
+      "perLevel": 0.8,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 300,
+      "percent": 0.0,
+      "perLevel": 60,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 7.5,
+      "percent": 0.0,
+      "perLevel": 0.75,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 36,
+      "percent": 0.0,
+      "perLevel": 4.5,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 32,
+      "percent": 0.0,
+      "perLevel": 2.05,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 62,
+      "percent": 0.0,
+      "perLevel": 5,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 340,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": {
+      "flat": 400,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 125,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 50,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 80,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 2,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": {
+      "flat": 0.625,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.330000013113021,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.60000002384185,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": 0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackRange": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramTenacity": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAbilityHaste": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAttackSpeed": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramEnergyRegen": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
+  },
+  "positions": [
+    "TOP"
+  ],
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 2,
+    "control": 2,
+    "mobility": 1,
+    "utility": 2,
+    "abilityReliance": 55,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Shepherd of Souls",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/p",
+        "effects": [
+          {
+            "description": "Innate - Final Service: Whenever Yorick uses Last Rites to score the killing blow on any enemy or damage an enemy champion or large monster, he raises a grave at their location. Additionally, a grave is passively raised for every 8th : 2nd (based on level) enemy that dies otherwise near him. Up to 4 graves can exist at once, lasting until Yorick exits the general area or dies, with the furthest one always being replaced by the newest upon raising one over the limit.",
+            "leveling": []
+          },
+          {
+            "description": "Yorick can use Awakening and Mourning Mist's mark to raise 1 Mist Walker from each grave after a 1-second delay, consuming the graves in the process.",
+            "leveling": []
+          },
+          {
+            "description": "Innate - The Cursed Horde: Up to 4 Mist Walkers can be active at once near Yorick or near The Maiden, with the nearest one always being replaced by the newest upon raising one over the limit.",
+            "leveling": []
+          },
+          {
+            "description": "See Pets for more details about Mist Walkers.",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Damaging a large monster or champion with  Last Rites will only spawn 1 grave, even if it kills them.",
+        "blurb": "Innate- Final Service: Enemies that die near  Yorick will leave a grave, as well as those he kills or damages with  Last Rites. Yorick can use  Awakening and  Mourning Mist to turn all graves into Mist Walkers that assist him in combat.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": "1000 / 2500",
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Last Rites",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: Yorick empowers his next basic attack within 5 seconds to have an uncancellable windup, gain 50 bonus range, deal bonus physical damage, and heal him. The heal is reduced by 50% against non-champions.",
+            "leveling": [
+              {
+                "attribute": "Bonus Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      50,
+                      70,
+                      90,
+                      110
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD",
+                      "% AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      10.0,
+                      13.411764705882353,
+                      16.823529411764707,
+                      20.235294117647058,
+                      23.647058823529413,
+                      27.058823529411764,
+                      30.470588235294116,
+                      33.88235294117647,
+                      37.294117647058826,
+                      40.705882352941174,
+                      44.11764705882353,
+                      47.529411764705884,
+                      50.94117647058823,
+                      54.35294117647059,
+                      57.76470588235294,
+                      61.17647058823529,
+                      64.58823529411765,
+                      68.0
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      6,
+                      7,
+                      8,
+                      9,
+                      10
+                    ],
+                    "units": [
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Non-Champion Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      5.0,
+                      6.705882352941177,
+                      8.411764705882353,
+                      10.117647058823529,
+                      11.823529411764707,
+                      13.529411764705882,
+                      15.235294117647058,
+                      16.941176470588236,
+                      18.647058823529413,
+                      20.352941176470587,
+                      22.058823529411764,
+                      23.764705882352942,
+                      25.470588235294116,
+                      27.176470588235293,
+                      28.88235294117647,
+                      30.588235294117645,
+                      32.294117647058826,
+                      34.0
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3.5,
+                      4,
+                      4.5,
+                      5
+                    ],
+                    "units": [
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health",
+                      "% of his missing health"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "While there are at least 3 graves nearby and Last Rites is active or on cooldown, Yorick can cast Awakening.",
+            "leveling": []
+          },
+          {
+            "description": "Last Rites resets Yorick's basic attack timer.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                6,
+                5.5,
+                5,
+                4.5,
+                4
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self, Enemies",
+        "spellshieldable": "False",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "spell",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "No additional notes.",
+        "blurb": "Active:  Yorick's next basic attack within a few seconds will gain  bonus range, deal bonus physical damage, and  heal him based on his missing health.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": null
+      },
+      {
+        "name": "Awakening",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: Yorick exhumes a Mist Walker under his command from each nearby grave.",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Proximity",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": null,
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Awakening counts as an ability activation for the purposes of on-cast effects such as  Spellblade and triggering  Force Pulse's passive.\nMist Walkers update their statistics correspondingly to Yorick's  during the periodic stat update, with the exception of their maximum health.\nAwakening cannot be cast without enough graves in range.",
+        "blurb": "Active:  Yorick summons Mist Walkers from the graves around him.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Dark Procession",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/w",
+        "effects": [
+          {
+            "description": "Active: Yorick summons a ring of spirits around the target location that arises after a 0.75-second delay, knocking aside enemies hit by the walls over 0.25 seconds, though not through terrain. Within 210-units, they are pulled inside; otherwise they are pushed away. The ring remains for 4 seconds as impassible terrain against enemies, granting sight inside the ring.",
+            "leveling": []
+          },
+          {
+            "description": "Dark Procession can only be targeted by enemy champion basic attacks and turrets. The wall takes 1 damage per attack from champions and is destroyed instantly from turret attacks.",
+            "leveling": [
+              {
+                "attribute": "Wall Health",
+                "modifiers": [
+                  {
+                    "values": [
+                      2,
+                      2,
+                      3,
+                      3,
+                      4
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                20,
+                18,
+                16,
+                14,
+                12
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Location",
+        "affects": "Enemies",
+        "spellshieldable": "false",
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Dark Procession has a  turret prioritization value of 6, equal to that of  super minions.\nYorick's other  pets each have a lower prioritization value, allowing him to delay the turret from targeting the  The Maiden or a Mist Walker for one attack.\nDark Procession deals 0  proc  true damage to enemies it knocks aside, which triggers in-combat effects such as drawing turret and monster aggression,  Sudden Impact or applying  Elixir of Sorcery.\nThe perimeter is made up of 18 units with 100  pathing radius and 20  gameplay radius each.\nYorick marks any enemy champion within repeatedly while the cage persists in order to gain assist credit, lasting for the standard credit timer.",
+        "blurb": "Active:  Yorick summons a destructible ring of spirits at the target location that  knocks aside enemies hit. It remains as terrain against enemies for a few seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": "225 / 200",
+        "targetRange": "600"
+      }
+    ],
+    "E": [
+      {
+        "name": "Mourning Mist",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/e",
+        "effects": [
+          {
+            "description": "Active: Yorick hurls a globule of Black Mist that splashes across an area at the target location, dealing magic damage to enemies hit, down to a minimum threshold against minions, and capped against monsters. Enemy champions and monsters hit are slowed by 30% for 1.5 seconds and marked as Cursed for 4 seconds.",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      6,
+                      6.5,
+                      7,
+                      7.5,
+                      8
+                    ],
+                    "units": [
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health",
+                      "%  of target's maximum health"
+                    ]
+                  },
+                  {
+                    "values": [
+                      3,
+                      3,
+                      3,
+                      3,
+                      3
+                    ],
+                    "units": [
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minimum Minion Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      70,
+                      105,
+                      140,
+                      175,
+                      210
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Capped Monster Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      75,
+                      100,
+                      125,
+                      150
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      100,
+                      100,
+                      100,
+                      100,
+                      100
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Cursed: The target is revealed and inflicted with armor reduction, and continually raises a Mist Walker from each nearby grave, up to a maximum of 4.\nYorick, Mist Walkers and the The Maiden gain bonus movement speed while facing nearby Cursed enemies. Mist Walkers will leap to nearby Cursed enemy champions and large monsters, attacking them upon arrival.",
+            "leveling": [
+              {
+                "attribute": "Armor Reduction",
+                "modifiers": [
+                  {
+                    "values": [
+                      13,
+                      16,
+                      19,
+                      22,
+                      25
+                    ],
+                    "units": [
+                      "% of target's armor",
+                      "% of target's armor",
+                      "% of target's armor",
+                      "% of target's armor",
+                      "% of target's armor"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      18,
+                      21,
+                      24,
+                      27,
+                      30
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Location",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Yorick will snap his facing direction towards the target location at the start of the cast time.\nThe speed boost toward marked targetes does not require  sight of them.\nThe Mist Walkers do not  leap if they are  immobilized or  grounded, or if the marked target is  untargetable.",
+        "blurb": "Active:  Yorick hurls a globule of Black Mist that splashes at the target location dealing magic damage to enemies. Enemy  champions and  monsters hit are also shortly  slowed, and marked Cursed for a few seconds.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "1500",
+        "targetRange": "700"
+      }
+    ],
+    "R": [
+      {
+        "name": "Eulogy of the Isles",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Yorick/ability-icon/r",
+        "effects": [
+          {
+            "description": "Active: Yorick summons the Maiden of the Mist over 1.5 seconds, along with a number of Mist Walkers surrounding her at the target location, which remain on the battlefield until she or Yorick dies. Eulogy of the Isles can be recast once while the Maiden is alive after 10 seconds of the activation.",
+            "leveling": [
+              {
+                "attribute": "Mist Walkers",
+                "modifiers": [
+                  {
+                    "values": [
+                      2,
+                      3,
+                      4
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Recast: Yorick sets the Maiden free, allowing her to push the nearest lane until she dies.",
+            "leveling": []
+          },
+          {
+            "description": "See Pets for more details about The Maiden of the Mist.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                160,
+                130,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Location",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "See the Pets section below for more details about The Maiden of the Mist and Mist Walkers.\nThe extra Mist Walkers spawn 250 units from the Maiden summon location.\nThe Maiden updates her stats when Yorick's stats change, and as Eulogy of the Isles is ranked up.\nWhen Yorick dies, The Maiden rapidly loses portions of her maximum health over 3 seconds until she dies.\nThe loss of maximum health occurs in 0.6-second intervals, in which she loses 20% on the first, 25% on the second, 33.3% on the third, 50% on the fourth, and 100% on the fifth.\nYorick will snap his facing direction towards the target location at the start of the cast time.",
+        "blurb": "Active:  Yorick summons the  Maiden of the Mist and a few Mist Walkers at the target location. The Maiden will automatically raise Mist Walkers from dead enemies, and mark her attack target with Touch of the Maiden.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.5",
+        "effectRadius": null,
+        "targetRange": "600"
+      }
+    ]
+  },
+  "releaseDate": "2011-06-22",
+  "releasePatch": "1.0.0.120",
+  "patchLastChanged": "25.19",
+  "price": {
+    "blueEssence": 1575,
+    "rp": 790,
+    "saleRp": 0
+  }
+}

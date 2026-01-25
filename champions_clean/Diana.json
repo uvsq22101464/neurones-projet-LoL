@@ -1,0 +1,430 @@
+{
+  "name": "Diana",
+  "health": 640,
+  "healthPerLevel": 109,
+  "healthRegen": 6.5,
+  "healthRegenPerLevel": 0.85,
+  "armor": 31,
+  "armorPerLevel": 4.3,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 57,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 150,
+  "roles": [
+    "ASSASSIN",
+    "DIVER",
+    "FIGHTER"
+  ],
+  "P": [
+    {
+      "name": "Moonsilver Blade",
+      "effects": [],
+      "affects": "Self / Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Crescent Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140,
+                  175,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Pale Cascade",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  60,
+                  75,
+                  90,
+                  105
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  9,
+                  9,
+                  9,
+                  9,
+                  9
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Orb",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  32,
+                  44,
+                  56,
+                  68
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  18,
+                  18,
+                  18,
+                  18,
+                  18
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  96,
+                  132,
+                  168,
+                  204
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  54,
+                  54,
+                  54,
+                  54,
+                  54
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  120,
+                  150,
+                  180,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  18,
+                  18,
+                  18,
+                  18,
+                  18
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Lunar Rush",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  70,
+                  90,
+                  110,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Moonfall",
+      "effects": [
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Damage Per Champion",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  60,
+                  85
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Damage Vs. 5 Champions",
+            "modifiers": [
+              {
+                "values": [
+                  340,
+                  540,
+                  740
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

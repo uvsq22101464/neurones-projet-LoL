@@ -1,0 +1,649 @@
+{
+  "Characters/Hecarim/CharacterRecords/Root": {
+    "mCharacterName": "Hecarim",
+    "baseHP": 625.0,
+    "hpPerLevel": 106.0,
+    "baseStaticHPRegen": 1.4,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 280.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.399999976158142,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 66.0,
+    "damagePerLevel": 3.7,
+    "baseArmor": 32.0,
+    "armorPerLevel": 5.45,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.67,
+    "attackSpeedRatio": 0.67,
+    "attackSpeedPerLevel": 2.5,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "tank",
+    "roles": "BRAWLER"
+  },
+  "Characters/Hecarim/Spells/HecarimRampAbility/HecarimRamp": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "MinMoveSpeed",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxMoveSpeed",
+        "mValues": [
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinBaseDamage",
+        "mValues": [
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxBaseDamage",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "MinDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "MinBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MaxDamage": {
+        "mMultiplier": {
+          "mNumber": 2.0,
+          "__type": "NumberCalculationPart"
+        },
+        "mModifiedGameCalculation": "MinDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 0.5,
+    "cooldownTime": [
+      20.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0,
+      15.0
+    ],
+    "castRange": [
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Hecarim/Spells/HecarimRapidSlashAbility/HecarimRapidSlash": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          35.0,
+          60.0,
+          85.0,
+          110.0,
+          135.0,
+          160.0,
+          185.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionDamageRatio",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RampageBonusRatio",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RampageDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RampageCooldownReduction",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamageBonusAD",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BaseDamageBonusAD",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinionDamage": {
+        "mMultiplier": {
+          "mDataValue": "MinionDamageRatio",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "Damage",
+        "__type": "GameCalculationModified"
+      },
+      "RampageBonusDamagePerc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "RampageBonusRatio",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.03999999910593033,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8999999761581421,
+    "cooldownTime": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "castRange": [
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0
+    ],
+    "castRangeDisplayOverride": [
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Hecarim/Spells/HecarimUltAbility/HecarimUlt": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_MoveBlock",
+      "Trait_ChannelSpell",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          50.0,
+          150.0,
+          250.0,
+          350.0,
+          450.0,
+          550.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FearDurationMin",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FearDurationMax",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageDone": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      0.0,
+      140.0,
+      120.0,
+      100.0,
+      100.0,
+      100.0,
+      0.0
+    ],
+    "castRange": [
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0,
+      50000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Hecarim/Spells/HecarimWAbility/HecarimW": {
+    "DataValues": [
+      {
+        "mName": "NonSelfLeechRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageLeechPerc",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Damage",
+        "mValues": [
+          40.0,
+          80.0,
+          120.0,
+          160.0,
+          200.0,
+          240.0,
+          280.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TickTime",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionHealCap",
+        "mValues": [
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0,
+          240.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ResistAmount",
+        "mValues": [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealBonusADRatio",
+        "mValues": [
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "LeechAmount": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "DamageLeechPerc",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "AllyTooltipLeachValue": {
+        "mMultiplier": {
+          "mDataValue": "NonSelfLeechRatio",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "LeechAmount",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 0.800000011920929,
+    "cooldownTime": [
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0
+    ],
+    "castRange": [
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0
+    ],
+    "castRangeDisplayOverride": [
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Hecarim/Spells/HecarimPassiveAbility/HecarimPassive": {
+    "mSpellCalculations": {
+      "BonusAD": {
+        "mFormulaParts": [
+          {
+            "mStat": 7,
+            "mStatFormula": 2,
+            "mSubpart": {
+              "mLevel1Value": 0.11999999731779099,
+              "mBreakpoints": [
+                {
+                  "mLevel": 3,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 6,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 9,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 12,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 15,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 18,
+                  "mAdditionalBonusAtThisLevel": 0.019999999552965164,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "name": "Hecarim",
+  "health": 625,
+  "healthPerLevel": 106,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.75,
+  "armor": 32,
+  "armorPerLevel": 5.45,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 66,
+  "attackDamagePerLevel": 3.7,
+  "attackSpeed": 0.67,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 175,
+  "roles": [
+    "DIVER",
+    "FIGHTER",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Warpath",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Rampage",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  85,
+                  110,
+                  135,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion damage",
+            "modifiers": [
+              {
+                "values": [
+                  36,
+                  51,
+                  66,
+                  81,
+                  96
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  54,
+                  54,
+                  54,
+                  54,
+                  54
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Spirit of Dread",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Resistances",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Capped Healing",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  150,
+                  180,
+                  210,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Devastating Charge",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60,
+                  75,
+                  90
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Onslaught of Shadows",
+      "effects": [
+        [
+          {
+            "attribute": "Magic damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": null
+    }
+  ]
+}

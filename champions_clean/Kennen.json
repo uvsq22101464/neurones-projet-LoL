@@ -1,0 +1,373 @@
+{
+  "name": "Kennen",
+  "health": 580,
+  "healthPerLevel": 98,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.65,
+  "armor": 29,
+  "armorPerLevel": 4.95,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 48,
+  "attackDamagePerLevel": 3.75,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3.4,
+  "attackRange": 550,
+  "roles": [
+    "MAGE",
+    "MARKSMAN",
+    "SPECIALIST"
+  ],
+  "P": [
+    {
+      "name": "Mark of the Storm",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Thundering Shuriken",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  125,
+                  175,
+                  225,
+                  275
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Electrical Surge",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  45,
+                  55,
+                  65,
+                  75
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  90,
+                  100,
+                  110,
+                  120
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  35,
+                  35,
+                  35,
+                  35,
+                  35
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  95,
+                  120,
+                  145,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Lightning Rush",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  52,
+                  78,
+                  104,
+                  130,
+                  156
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  52,
+                  52,
+                  52,
+                  52,
+                  52
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Slicing Maelstrom",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Resistances",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  40,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage Per Bolt",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  75,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  22.5,
+                  22.5,
+                  22.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Total Single-Target Damage",
+            "modifiers": [
+              {
+                "values": [
+                  300,
+                  562.5,
+                  825
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  168.75,
+                  168.75,
+                  168.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

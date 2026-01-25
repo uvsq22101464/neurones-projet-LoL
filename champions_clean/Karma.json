@@ -1,0 +1,549 @@
+{
+  "name": "Karma",
+  "health": 630,
+  "healthPerLevel": 109,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 28,
+  "armorPerLevel": 5,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 51,
+  "attackDamagePerLevel": 3.3,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.3,
+  "attackRange": 525,
+  "roles": [
+    "BURST",
+    "ENCHANTER",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Gathering Fire",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Inner Flame",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  110,
+                  160,
+                  210,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Soulflare",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  100,
+                  160,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  110,
+                  160,
+                  210,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  100,
+                  160,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  130,
+                  220,
+                  310
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Bonus Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  230,
+                  380,
+                  530
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  110,
+                  160,
+                  210,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  230,
+                  380,
+                  530
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Focused Resolve",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  65,
+                  90,
+                  115,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  130,
+                  180,
+                  230,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.6,
+                  1.7,
+                  1.8,
+                  1.9,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Self"
+    },
+    {
+      "name": "Renewal",
+      "effects": [
+        [
+          {
+            "attribute": "Root Duration Increase",
+            "modifiers": [
+              {
+                "values": [
+                  0.5,
+                  0.75,
+                  1,
+                  1.25
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.6,
+                  1.7,
+                  1.8,
+                  1.9,
+                  2
+                ],
+                "units": [
+                  "  seconds",
+                  "  seconds",
+                  "  seconds",
+                  "  seconds",
+                  "  seconds"
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.75,
+                  1,
+                  1.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Inspire",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  130,
+                  180,
+                  230,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    },
+    {
+      "name": "Defiance",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Primary Target Shield",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  100,
+                  150,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Primary Target Shield",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  130,
+                  180,
+                  230,
+                  280
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  100,
+                  150,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  105
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Secondary Target Shield",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  100,
+                  150,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Mantra",
+      "effects": [],
+      "affects": "Self"
+    }
+  ]
+}

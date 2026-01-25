@@ -1,0 +1,946 @@
+{
+  "Characters/Shyvana/CharacterRecords/Root": {
+    "mCharacterName": "Shyvana",
+    "baseHP": 665.0,
+    "hpPerLevel": 104.0,
+    "baseStaticHPRegen": 1.7,
+    "hpRegenPerLevel": 0.16,
+    "primaryAbilityResource": {
+      "arType": 5,
+      "arBaseStaticRegen": 0.0,
+      "arIncrements": 100.0,
+      "arHasRegenText": false,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 66.0,
+    "damagePerLevel": 3.0,
+    "baseArmor": 38.0,
+    "armorPerLevel": 4.55,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 1.5,
+    "baseMoveSpeed": 350.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.658,
+    "attackSpeedRatio": 0.658,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "mage",
+    "roles": "TANK"
+  },
+  "Characters/Shyvana/Spells/ShyvanaFireballAbility/ShyvanaFireball": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          45.0,
+          85.0,
+          125.0,
+          165.0,
+          205.0,
+          245.0,
+          285.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDamageVsMonsters",
+        "mValues": [
+          150.0,
+          150.0,
+          150.0,
+          150.0,
+          150.0,
+          150.0,
+          150.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHPDamage",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DragonFireballDamage",
+        "mValues": [
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GroundMarkDuration",
+        "mValues": [
+          4.5,
+          4.5,
+          4.5,
+          4.5,
+          4.5,
+          4.5,
+          4.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GroundMarkRadius",
+        "mValues": [
+          345.0,
+          345.0,
+          345.0,
+          345.0,
+          345.0,
+          345.0,
+          345.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SecondsPerTick",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADPercent",
+        "mValues": [
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GroundDurationForTooltipCalc",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DragonExplosionADRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DragonExplosionCalc": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 75.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mBonusPerLevelAtAndAfter": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "DragonExplosionADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DragonDamagePerSecondCalc": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 40.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mBonusPerLevelAtAndAfter": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DragonDamagePerTickCalc": {
+        "mMultiplier": {
+          "mDataValue": "SecondsPerTick",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "DragonDamagePerSecondCalc",
+        "__type": "GameCalculationModified"
+      },
+      "DragonDamageTotalCalc": {
+        "mMultiplier": {
+          "mDataValue": "GroundDurationForTooltipCalc",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "DragonDamagePerSecondCalc",
+        "__type": "GameCalculationModified"
+      },
+      "PercentHPDamageOnHit": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "PercentHPDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADPercent",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Shyvana/Spells/ShyvanaImmolationAuraAbility/ShyvanaImmolationAura": {
+    "DataValues": [
+      {
+        "mName": "DamagePerTick",
+        "mValues": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSPercent",
+        "mValues": [
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104,
+          0.5,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSDecayPercent",
+        "mValues": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitDamage",
+        "mValues": [
+          3.0,
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0,
+          15.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AuraRadius",
+        "mValues": [
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusDurationOnHit",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxBuffDuration",
+        "mValues": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DragonAuraRadius",
+        "mValues": [
+          335.0,
+          350.0,
+          365.0,
+          380.0,
+          395.0,
+          410.0,
+          425.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamagePerTickADRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitADRatio",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSAPRatio",
+        "mValues": [
+          0.0010000000474974513,
+          0.0010000000474974513,
+          0.0010000000474974513,
+          0.0010000000474974513,
+          0.0010000000474974513,
+          0.0010000000474974513,
+          0.0010000000474974513
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamagePerTickCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "DamagePerTick",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "DamagePerTickADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DamageOnHitCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "OnHitDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "OnHitADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "FinalMSPerc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "MSPercent",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "MSAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Shyvana/Spells/ShyvanaPassiveAbility/ShyvanaPassive": {
+    "DataValues": [
+      {
+        "mName": "BonusPercentDamageToDragons",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusResistsBase",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusResistsPerDragon",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusDragonFuryRegen",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Shyvana/Spells/ShyvanaTransformCastAbility/ShyvanaTransformCast": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_MoveBlock",
+      "Trait_Transformation",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "Damage",
+        "mValues": [
+          50.0,
+          150.0,
+          250.0,
+          350.0,
+          450.0,
+          550.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryGainOnHit",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryGainPerTick",
+        "mValues": [
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryDrainPerSecond",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LeapSpeed",
+        "mValues": [
+          1100.0,
+          1100.0,
+          1100.0,
+          1100.0,
+          1100.0,
+          1100.0,
+          1100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxKnockbackDistance",
+        "mValues": [
+          275.0,
+          275.0,
+          275.0,
+          275.0,
+          275.0,
+          275.0,
+          275.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryToActivate",
+        "mValues": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TransformLeapWidth",
+        "mValues": [
+          170.0,
+          200.0,
+          230.0,
+          260.0,
+          290.0,
+          320.0,
+          350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SizeModifier",
+        "mValues": [
+          0.0,
+          0.0,
+          0.08500000089406967,
+          0.1599999964237213,
+          0.1599999964237213,
+          0.1599999964237213,
+          0.1599999964237213
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusHP",
+        "mValues": [
+          50.0,
+          150.0,
+          250.0,
+          350.0,
+          450.0,
+          550.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryDrainPerSecondPercent",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryGainOnHitPercent",
+        "mValues": [
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryGainPerTickPercent",
+        "mValues": [
+          0.004999999888241291,
+          0.009999999776482582,
+          0.014999999664723873,
+          0.019999999552965164,
+          0.02500000037252903,
+          0.029999999329447746,
+          0.03500000014901161
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/Shyvana/Spells/ShyvanaDoubleAttackAbility/ShyvanaDoubleAttack": {
+    "mSpellTags": [
+      "PositiveEffect_EmpowerAttack",
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "SecondHitDamage",
+        "mValues": [
+          0.0,
+          0.20000000298023224,
+          0.4000000059604645,
+          0.6000000238418579,
+          0.800000011920929,
+          1.0,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CleaveRadius",
+        "mValues": [
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CDReductionOnHit",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RangeBonus",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusAS",
+        "mValues": [
+          45.0,
+          50.0,
+          55.0,
+          60.0,
+          65.0,
+          70.0,
+          75.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "FirstHitDamageCalc": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "SecondHitDamageCalc": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "SecondHitDamage",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      8.0,
+      8.0,
+      7.5,
+      7.0,
+      6.5,
+      6.0,
+      5.5
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

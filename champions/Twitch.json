@@ -1,0 +1,863 @@
+{
+  "id": 29,
+  "key": "Twitch",
+  "name": "Twitch",
+  "title": "The Plague Rat",
+  "fullName": "",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Twitch.png",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "PHYSICAL_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 630,
+      "percent": 0.0,
+      "perLevel": 104,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 3.75,
+      "percent": 0.0,
+      "perLevel": 0.6,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 300,
+      "percent": 0.0,
+      "perLevel": 40,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 7.25,
+      "percent": 0.0,
+      "perLevel": 0.7,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 27,
+      "percent": 0.0,
+      "perLevel": 4.2,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 1.3,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 59,
+      "percent": 0.0,
+      "perLevel": 3.1,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 330,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": {
+      "flat": 575,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 135,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.679,
+      "percent": 0.0,
+      "perLevel": 3.38,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": {
+      "flat": 0.67900002002716,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.0980840176343917,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackRange": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": {
+      "flat": 0.95,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramTenacity": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAbilityHaste": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAttackSpeed": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramEnergyRegen": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1.1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.85,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
+  },
+  "positions": [
+    "BOTTOM",
+    "SUPPORT"
+  ],
+  "roles": [
+    "ASSASSIN",
+    "MARKSMAN"
+  ],
+  "attributeRatings": {
+    "damage": 3,
+    "toughness": 1,
+    "control": 1,
+    "mobility": 2,
+    "utility": 1,
+    "abilityReliance": 0,
+    "difficulty": 2
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Deadly Venom",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Twitch/ability-icon/p",
+        "effects": [
+          {
+            "description": "Innate: Twitch's basic attacks apply a stack of Deadly Venom for 6 seconds upon landing, refreshing on subsequent applications and stacking up to 6 times.",
+            "leveling": []
+          },
+          {
+            "description": "Deadly Venom: For each stack, the target is dealt[ 1 / 2 / 3 / 4 / 5 (based on level) (+ 3% AP) true damage per second over the duration, ][ 6 / 12 / 18 / 24 / 30 (based on level) (+ 18% AP) total true damage over the duration, ]for a maximum of[ 6 / 12 / 18 / 24 / 30 (based on level) (+ 18% AP) true damage with each tick. ][ 36 / 72 / 108 / 144 / 180 (based on level) (+ 108% AP) total true damage over the duration. ]This effect is considered a poison.",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Enemies",
+        "spellshieldable": "False",
+        "resource": null,
+        "damageType": "TRUE_DAMAGE",
+        "spellEffects": "default",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The first 5 stacks on a target are indicated each by a small mark around them, while a target affected by the maximum stacks of 6 is indicated by a single large mark above them instead.\nDeadly Venom does not affect  structures.\n Runaan's Hurricane's Wind's Fury bolts are special-cased to generate one Deadly Venom stack per enemy hit.",
+        "blurb": "Innate:  Twitch's  basic attacks apply  stacks of Deadly Venom for a few seconds, which stacks up to a cap.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Ambush",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Twitch/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: After a 1-second delay, Twitch becomes camouflaged for a duration. Attacking or casting Venom Cask or Contaminate ends Ambush immediately.",
+            "leveling": [
+              {
+                "attribute": "Stealth Duration",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      11,
+                      12,
+                      13,
+                      14
+                    ],
+                    "units": [
+                      " seconds",
+                      " seconds",
+                      " seconds",
+                      " seconds",
+                      " seconds"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "During this time, Twitch gains 10% bonus movement speed, increased to 30% while facing enemy champions within a 1000-unit radius who cannot see him.",
+            "leveling": []
+          },
+          {
+            "description": "Upon breaking stealth, Twitch gains bonus attack speed for 6 seconds.",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      45,
+                      50,
+                      55,
+                      60,
+                      65
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "When an enemy champion dies while afflicted with Deadly Venom, Ambush's cooldown is reset.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                40,
+                40,
+                40,
+                40,
+                40
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                16,
+                16,
+                16,
+                16,
+                16
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Entering stealth cancels Twitch's current basic attack.\nAmbush follows the same rules as stealth but he can still perform actions normally before entering  camouflage. Activating  Recall during the 1-second delay allows him to  channel it while stealthed.\nIf Twitch enters  stasis during the delay, he will gain the  camouflage after the stasis ends.\nUsing a basic attack  breaks the stealth at the start of the attack windup.",
+        "blurb": "Active:  Twitch becomes  camouflaged for some time, gaining  bonus movement speed, increased while facing enemy  champions that cannot see him.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Venom Cask",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Twitch/ability-icon/w",
+        "effects": [
+          {
+            "description": "Active: Twitch hurls a cask of venom that explodes at the target location, applying Deadly Venom to enemies hit and granting sight of the area.",
+            "leveling": []
+          },
+          {
+            "description": "The area then becomes contaminated for 3 seconds, applying a Deadly Venom stack each second to enemies within and slowing them.",
+            "leveling": [
+              {
+                "attribute": "Slow",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      35,
+                      40,
+                      45,
+                      50
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  },
+                  {
+                    "values": [
+                      6,
+                      6,
+                      6,
+                      6,
+                      6
+                    ],
+                    "units": [
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP",
+                      "% per 100 AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                70,
+                70,
+                70,
+                70,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                13,
+                12,
+                11,
+                10,
+                9
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Location",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Venom Cask can apply a maximum of 4  Deadly Venom stacks per enemy per cast.\nVenom Cask's missile will fail to fire if Twitch is  suppressed during the cast time.(note)",
+        "blurb": "Active:  Twitch tosses a cask that explodes at the target location, inflicting  Deadly Venom to enemies hit.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1400",
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "300",
+        "targetRange": "950"
+      }
+    ],
+    "E": [
+      {
+        "name": "Contaminate",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Twitch/ability-icon/e",
+        "effects": [
+          {
+            "description": "Active: Twitch sends out a lethal toxin to each nearby enemy afflicted by Deadly Venom, dealing them physical damage.",
+            "leveling": [
+              {
+                "attribute": "Base Physical Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      20,
+                      30,
+                      40,
+                      50,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Contaminate deals additional physical damage and 35% AP magic damage for each stack of Deadly Venom on the target.",
+            "leveling": [
+              {
+                "attribute": "Physical Damage Per Stack",
+                "modifiers": [
+                  {
+                    "values": [
+                      15,
+                      20,
+                      25,
+                      30,
+                      35
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Minimum Mixed Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      35,
+                      50,
+                      65,
+                      80,
+                      95
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      35,
+                      35,
+                      35,
+                      35,
+                      35
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              },
+              {
+                "attribute": "Maximum Mixed Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      110,
+                      150,
+                      190,
+                      230,
+                      270
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      210,
+                      210,
+                      210,
+                      210,
+                      210
+                    ],
+                    "units": [
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD",
+                      "% bonus AD"
+                    ]
+                  },
+                  {
+                    "values": [
+                      210,
+                      210,
+                      210,
+                      210,
+                      210
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "A nearby enemy with Deadly Venom is required to cast this ability. The target does not have to be visible to be targeted by this ability.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                60,
+                70,
+                80,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                12,
+                11,
+                10,
+                9,
+                8
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Proximity",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "Aoe",
+        "projectile": "FALSE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Contaminate will deal the additional damage to targets based on the number of  Deadly Venom stacks they had at the start of the cast time.\nTwitch is given a range indicator for Contaminate's radius upon infecting an enemy champion with  Deadly Venom (actual range is slightly larger than shown by the indicator).\nContaminate will not deal damage to enemies that are not within range of the ability before the cast time completes.\nIf the target moves out of range after the cast time, they are still dealt the damage.",
+        "blurb": "Active:  Twitch spreads a toxin to nearby enemies afflicted with  Deadly Venom, dealing physical damage. This deals additional physical and magic damage based on stacks of  Deadly Venom.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": "1200",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Spray and Pray",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Twitch/ability-icon/r",
+        "effects": [
+          {
+            "description": "Active: Twitch gains bonus attack damage and 300 bonus attack range for 6 seconds, during which his basic attacks are replaced by bolts that travel slightly further than his attack range in a straight line, dealing damage to every enemy unit hit.",
+            "leveling": [
+              {
+                "attribute": "Bonus Attack Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      45,
+                      60
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "The bolts deal 100% : 60% (based on enemies hit) of the triggering attack's damage, apply on-hit effects, and can critically strike for (175% + 40%) damage.",
+            "leveling": []
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                90,
+                90,
+                90
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": "PHYSICAL_DAMAGE",
+        "spellEffects": "basic",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The extra distance that the bolts travel scales with bonus attack range.\nSpray and Pray allows Twitch to outrange  turrets by 50 units, allowing him to hit them without them returning fire.\nTwitch targets his line attack at his target's location at the start of his attack windup.\nThe bolts reach targets at a delay, composed of Twitch's windup time and distance the bolt has to travel at finite speed. Even the primary target can dodge the attack if they are moving quickly enough.\nThe bolt projectiles will naturally pass through terrain and enemy structures (the latter will be damaged by bolts even if they are not directly targeted).\nIf Twitch is  blinded before winding up the attack, the hits will miss against all targets.\n Runaan's Hurricane's Wind's Fury interacts with Spray and Pray's  bonus attack range but not with the modified missile effect (the secondary bolts will not have pass-through effects).\nWhenever the bolts penetrate a target, a small elongated cloud appears at the location, which's VFX and SFX can be seen and heard inside the Fog of War.\nThe bolts' travel distance scales with the full value of Twitch's  attack range increases such as  Rapid Firecannon, but not with size increases (which only increase his effective attack range, thereby the target range).\n(Outdated as of V10.13, now can hit everything with edge range, except for turrets) The  center of a unit must be within the maximum travel distance of the bolt missile, and in front of the spawn location (Twitch's  center) for the bolt to be able to hit them.\nOther than this condition, the bolt missile has to only touch (pass within its half width of 60 units) the  edge of the unit's radius.\nThis is standard behaviour for linear skillshots.\n Malignance's Hatefog is special cased to work with Spray and Pray.\n Axiom Arcanist amplifies bolt damage as  area of effect.",
+        "blurb": "Active:  Twitch gains  bonus attack damage and  bonus attack range for a few seconds, during which his basic attacks are replaced with bolts that deal the attack's damage to all enemies in a line.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "5000",
+        "width": "120",
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": null,
+        "targetRange": "Twitch's  attack range"
+      }
+    ]
+  },
+  "releaseDate": "2009-05-01",
+  "releasePatch": "May 1, 2009 Patch",
+  "patchLastChanged": "25.13",
+  "price": {
+    "blueEssence": 1575,
+    "rp": 790,
+    "saleRp": 0
+  }
+}

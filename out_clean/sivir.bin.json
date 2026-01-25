@@ -1,0 +1,665 @@
+{
+  "Characters/Sivir/CharacterRecords/Root": {
+    "mCharacterName": "Sivir",
+    "baseHP": 600.0,
+    "hpPerLevel": 104.0,
+    "baseStaticHPRegen": 0.65,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 340.0,
+      "arPerLevel": 45.0,
+      "arBaseStaticRegen": 1.2000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 60.0,
+    "damagePerLevel": 2.5,
+    "baseArmor": 30.0,
+    "armorPerLevel": 4.45,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 500.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.0,
+    "acquisitionRange": 500.0,
+    "searchTags": "marksman",
+    "roles": "ATTACKER"
+  },
+  "Characters/Sivir/Spells/SivirQAbility/SivirQ": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          35.0,
+          60.0,
+          85.0,
+          110.0,
+          135.0,
+          160.0,
+          185.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FallOffRatio",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FallOffMinimum",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "QAttackSpeedCastReductionPercent",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "QBaseCastTime",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "QAttackSpeedCastReductionMax",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CritRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.0,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mStat": 8,
+              "mDataValue": "CritRatio",
+              "__type": "StatByNamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PreCritDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CritScaling": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 8,
+            "mDataValue": "CritRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.5,
+      9.0,
+      8.5,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Sivir/Spells/SivirRAbility/SivirR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "HuntAttackSpeed",
+        "mValues": [
+          0.03999999910593033,
+          0.05000000074505806,
+          0.05999999865889549,
+          0.07000000029802322,
+          0.07999999821186066,
+          0.09000000357627869,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxMS",
+        "mValues": [
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinMS",
+        "mValues": [
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104,
+          0.5,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxMSDuration",
+        "mValues": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "UltDuration",
+        "mValues": [
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AuraRange",
+        "mValues": [
+          1000.0,
+          1000.0,
+          1000.0,
+          1000.0,
+          1000.0,
+          1000.0,
+          1000.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffExtension",
+        "mValues": [
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamagedMarkerDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "MaxDuration": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 4,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mEffectIndex": 6,
+            "__type": "EffectValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      10.0,
+      120.0,
+      100.0,
+      80.0,
+      90.0,
+      90.0,
+      10.0
+    ],
+    "castRange": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Sivir/Spells/SivirPassiveAbility/SivirPassive": {
+    "DataValues": [
+      {
+        "mName": "HasteDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "FlatMS": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 55.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 18,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 24,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 30,
+                "mAdditionalBonusAtThisLevel": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Sivir/Spells/SivirWAbility/SivirW": {
+    "mSpellTags": [
+      "Trait_AttackReset"
+    ],
+    "DataValues": [
+      {
+        "mName": "BounceADRatio",
+        "mValues": [
+          0.375,
+          0.4000000059604645,
+          0.42500001192092896,
+          0.44999998807907104,
+          0.4749999940395355,
+          0.5,
+          0.5249999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BounceAttacks",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxBounces",
+        "mValues": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RicochetAttackSpeed",
+        "mValues": [
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionDamageMod",
+        "mValues": [
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BounceDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "BounceADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "FirstTargetDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalMaxDamage": {
+        "mFormulaParts": [
+          {
+            "mSubparts": [
+              {
+                "mStat": 2,
+                "mCoefficient": 1.0,
+                "__type": "StatByCoefficientCalculationPart"
+              },
+              {
+                "mPart1": {
+                  "mDataValue": "MaxBounces",
+                  "__type": "NamedDataValueCalculationPart"
+                },
+                "mPart2": {
+                  "mStat": 2,
+                  "mDataValue": "BounceADRatio",
+                  "__type": "StatByNamedDataValueCalculationPart"
+                },
+                "__type": "ProductOfSubPartsCalculationPart"
+              }
+            ],
+            "__type": "SumOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Sivir/Spells/SivirEAbility/SivirE": {
+    "DataValues": [
+      {
+        "mName": "HealRatio",
+        "mValues": [
+          0.550000011920929,
+          0.6000000238418579,
+          0.6499999761581421,
+          0.699999988079071,
+          0.75,
+          0.800000011920929,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalHeal": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "HealRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      25.0,
+      24.0,
+      22.5,
+      21.0,
+      19.5,
+      18.0,
+      10.0
+    ],
+    "castRange": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

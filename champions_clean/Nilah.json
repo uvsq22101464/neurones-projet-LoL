@@ -1,0 +1,316 @@
+{
+  "name": "Nilah",
+  "health": 570,
+  "healthPerLevel": 101,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.9,
+  "armor": 27,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 2,
+  "attackSpeed": 0.697,
+  "attackSpeedPerLevel": 2.25,
+  "attackRange": 225,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Joy Unending",
+      "effects": [],
+      "affects": "Self, Allies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Formless Blade",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  95,
+                  100,
+                  105,
+                  110
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  180,
+                  190,
+                  200,
+                  210,
+                  220
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Jubilant Veil",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  17.5,
+                  20,
+                  22.5,
+                  25
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Slipstream",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  70,
+                  80,
+                  90,
+                  100
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Apotheosis",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  25,
+                  35
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  100,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Burst Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  125,
+                  225,
+                  325
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  185,
+                  325,
+                  465
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  140,
+                  140,
+                  140
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

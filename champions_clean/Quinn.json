@@ -1,0 +1,254 @@
+{
+  "name": "Quinn",
+  "health": 565,
+  "healthPerLevel": 107,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 28,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 59,
+  "attackDamagePerLevel": 2.7,
+  "attackSpeed": 0.668,
+  "attackSpeedPerLevel": 3.1,
+  "attackRange": 525,
+  "roles": [
+    "ASSASSIN",
+    "MARKSMAN",
+    "SPECIALIST"
+  ],
+  "P": [
+    {
+      "name": "Harrier",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Blinding Assault",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  100,
+                  135,
+                  170,
+                  205
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  85,
+                  90,
+                  95,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Heightened Senses",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  28,
+                  41,
+                  54,
+                  67,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Vault",
+      "effects": [
+        [
+          {
+            "attribute": "Physical damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  65,
+                  90,
+                  115,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Behind Enemy Lines",
+      "effects": [
+        [
+          {
+            "attribute": "Total Movement Speed Increase",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  100,
+                  130
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    },
+    {
+      "name": "Skystrike",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  35,
+                  35,
+                  35
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

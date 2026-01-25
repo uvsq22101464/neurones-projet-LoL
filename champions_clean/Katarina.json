@@ -1,0 +1,311 @@
+{
+  "name": "Katarina",
+  "health": 672,
+  "healthPerLevel": 108,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.7,
+  "armor": 32,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.74,
+  "attackRange": 125,
+  "roles": [
+    "ASSASSIN",
+    "MAGE"
+  ],
+  "P": [
+    {
+      "name": "Voracity",
+      "effects": [],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Bouncing Blade",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  115,
+                  150,
+                  185,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Preparation",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement speed",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Shunpo",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Death Lotus",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage Per Dagger",
+            "modifiers": [
+              {
+                "values": [
+                  16,
+                  16,
+                  16
+                ],
+                "units": [
+                  "%  bonus AD",
+                  "%  bonus AD",
+                  "%  bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% per 100% bonus attack speed",
+                  "% per 100% bonus attack speed",
+                  "% per 100% bonus attack speed"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  240,
+                  240,
+                  240
+                ],
+                "units": [
+                  "%  bonus AD",
+                  "%  bonus AD",
+                  "%  bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  750,
+                  750,
+                  750
+                ],
+                "units": [
+                  "% per 100% bonus attack speed",
+                  "% per 100% bonus attack speed",
+                  "% per 100% bonus attack speed"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage Per Dagger",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  37.5,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  19,
+                  19,
+                  19
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  375,
+                  562.5,
+                  750
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  285,
+                  285,
+                  285
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "On-Hit Damage Effectiveness",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  30,
+                  35
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

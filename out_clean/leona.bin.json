@@ -1,0 +1,496 @@
+{
+  "Characters/Leona/CharacterRecords/Root": {
+    "mCharacterName": "Leona",
+    "baseHP": 646.0,
+    "hpPerLevel": 101.0,
+    "baseStaticHPRegen": 1.7,
+    "hpRegenPerLevel": 0.17,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 302.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.2000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 60.0,
+    "damagePerLevel": 3.0,
+    "baseArmor": 43.0,
+    "armorPerLevel": 4.8,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.9,
+    "acquisitionRange": 400.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "SUPPORT"
+  },
+  "Characters/Leona/Spells/LeonaSunlightPassiveAbility/LeonaSunlightPassive": {
+    "DataValues": [
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mValues": [
+              25.0,
+              32.0,
+              39.0,
+              46.0,
+              53.0,
+              60.0,
+              67.0,
+              74.0,
+              81.0,
+              88.0,
+              95.0,
+              102.0,
+              109.0,
+              116.0,
+              123.0,
+              130.0,
+              137.0,
+              144.0,
+              151.0,
+              158.0,
+              165.0,
+              172.0,
+              179.0,
+              186.0,
+              193.0,
+              200.0,
+              207.0,
+              214.0,
+              221.0,
+              228.0,
+              235.0
+            ],
+            "__type": "ByCharLevelFormulaCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Leona/Spells/LeonaShieldOfDaybreakAbility/LeonaShieldOfDaybreak": {
+    "mSpellTags": [
+      "PositiveEffect_EmpowerAttack",
+      "Trait_AttackReset",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "TotalDamageTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 2,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.30000001192092896,
+    "cooldownTime": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0
+    ],
+    "castRange": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Leona/Spells/LeonaZenithBladeAbility/LeonaZenithBlade": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "TotalDamageTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      13.0,
+      12.0,
+      10.5,
+      9.0,
+      7.5,
+      6.0,
+      6.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Leona/Spells/LeonaSolarFlareAbility/LeonaSolarFlare": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "OnHitBaseDamage",
+        "mValues": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitStacks",
+        "mValues": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitDuration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AttackRangeIncrease",
+        "mValues": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitAPRatio",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ExplosionBaseDamage",
+        "mValues": [
+          75.0,
+          150.0,
+          225.0,
+          300.0,
+          375.0,
+          450.0,
+          525.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ExplosionAPRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPercent",
+        "mValues": [
+          80.0,
+          80.0,
+          80.0,
+          80.0,
+          80.0,
+          80.0,
+          80.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CCDuration",
+        "mValues": [
+          1.75,
+          1.75,
+          1.75,
+          1.75,
+          1.75,
+          1.75,
+          1.75
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "{f4c90e5c}": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "OnHitBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "OnHitAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ExplosionCalculatedDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "ExplosionBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "ExplosionAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      90.0,
+      90.0,
+      75.0,
+      60.0,
+      90.0,
+      90.0,
+      150.0
+    ],
+    "castRange": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Leona/Spells/LeonaSolarBarrierAbility/LeonaSolarBarrier": {
+    "DataValues": [
+      {
+        "mName": "FlatDamageReduction",
+        "mValues": [
+          4.0,
+          8.0,
+          12.0,
+          16.0,
+          20.0,
+          24.0,
+          28.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FlatDamageReductionMax",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BonusArmorTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 4,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mStat": 1,
+            "mStatFormula": 2,
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "BonusMRTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 4,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mStat": 6,
+            "mStatFormula": 2,
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalDamageTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      14.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  }
+}

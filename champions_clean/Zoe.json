@@ -1,0 +1,475 @@
+{
+  "name": "Zoe",
+  "health": 630,
+  "healthPerLevel": 106,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.6,
+  "armor": 21,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3.3,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 550,
+  "roles": [
+    "BURST",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "More Sparkles!",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Paddle Star!",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  2.0,
+                  4.8235294117647065,
+                  7.647058823529412,
+                  10.470588235294118,
+                  13.294117647058824,
+                  16.11764705882353,
+                  18.941176470588236,
+                  21.764705882352942,
+                  24.58823529411765,
+                  27.411764705882355,
+                  30.23529411764706,
+                  33.05882352941177,
+                  35.88235294117647,
+                  38.70588235294118,
+                  41.529411764705884,
+                  44.352941176470594,
+                  47.1764705882353,
+                  50.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  80,
+                  110,
+                  140,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5.0,
+                  12.058823529411764,
+                  19.11764705882353,
+                  26.176470588235293,
+                  33.23529411764706,
+                  40.294117647058826,
+                  47.35294117647059,
+                  54.41176470588235,
+                  61.470588235294116,
+                  68.52941176470588,
+                  75.58823529411765,
+                  82.6470588235294,
+                  89.70588235294117,
+                  96.76470588235294,
+                  103.8235294117647,
+                  110.88235294117646,
+                  117.94117647058823,
+                  125.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  125,
+                  200,
+                  275,
+                  350,
+                  425
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Spell Thief",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50,
+                  60,
+                  70
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed Duration",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  2.25,
+                  2.5,
+                  2.75,
+                  3
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage Per Bolt",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Sleepy Trouble Bubble",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  110,
+                  150,
+                  190,
+                  230
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Slow",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Damage Cap",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  110,
+                  150,
+                  190,
+                  230
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Mixed Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  220,
+                  300,
+                  380,
+                  460
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Portal Jump",
+      "effects": [],
+      "affects": "Self"
+    }
+  ]
+}

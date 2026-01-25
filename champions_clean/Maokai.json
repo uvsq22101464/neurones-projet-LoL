@@ -1,0 +1,568 @@
+{
+  "name": "Maokai",
+  "health": 665,
+  "healthPerLevel": 109,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.75,
+  "armor": 35,
+  "armorPerLevel": 5.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 64,
+  "attackDamagePerLevel": 3.3,
+  "attackSpeed": 0.8,
+  "attackSpeedPerLevel": 2.125,
+  "attackRange": 125,
+  "roles": [
+    "SUPPORT",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Sap Magic",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Bramble Smash",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  110,
+                  155,
+                  200,
+                  245
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2.5,
+                  3,
+                  3.5,
+                  4
+                ],
+                "units": [
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  130,
+                  140,
+                  150,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  185,
+                  240,
+                  295,
+                  350,
+                  405
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2.5,
+                  3,
+                  3.5,
+                  4
+                ],
+                "units": [
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health",
+                  "% of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Twisted Advance",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  85,
+                  110,
+                  135,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.1,
+                  1.2,
+                  1.3,
+                  1.4
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Sapling Toss",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage per Instance",
+            "modifiers": [
+              {
+                "values": [
+                  33.33,
+                  50,
+                  66.67,
+                  83.33,
+                  100
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3.33,
+                  3.33,
+                  3.33,
+                  3.33,
+                  3.33
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              },
+              {
+                "values": [
+                  16.67,
+                  16.67,
+                  16.67,
+                  16.67,
+                  16.67
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Attached Sapling Damage",
+            "modifiers": [
+              {
+                "values": [
+                  66.67,
+                  100,
+                  133.33,
+                  166.67,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.67,
+                  6.67,
+                  6.67,
+                  6.67,
+                  6.67
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              },
+              {
+                "values": [
+                  33.33,
+                  33.33,
+                  33.33,
+                  33.33,
+                  33.33
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Nature's Grasp",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  225,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

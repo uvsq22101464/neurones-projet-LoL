@@ -1,0 +1,233 @@
+{
+  "name": "Alistar",
+  "health": 685,
+  "healthPerLevel": 120,
+  "healthRegen": 8.5,
+  "healthRegenPerLevel": 0.85,
+  "armor": 40,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 3.75,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.125,
+  "attackRange": 125,
+  "roles": [
+    "SUPPORT",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Triumphant Roar",
+      "effects": [],
+      "affects": "Self, Allies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Pulverize",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  100,
+                  140,
+                  180,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Headbutt",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  110,
+                  165,
+                  220,
+                  275
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Trample",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  8,
+                  11,
+                  14,
+                  17,
+                  20
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  7,
+                  7,
+                  7,
+                  7,
+                  7
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  110,
+                  140,
+                  170,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Unbreakable Will",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  65,
+                  75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

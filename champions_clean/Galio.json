@@ -1,0 +1,445 @@
+{
+  "name": "Galio",
+  "health": 600,
+  "healthPerLevel": 126,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.8,
+  "armor": 24,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 59,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 1.5,
+  "attackRange": 150,
+  "roles": [
+    "MAGE",
+    "TANK",
+    "WARDEN"
+  ],
+  "P": [
+    {
+      "name": "Colossal Smash",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Winds of War",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140,
+                  175,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Shield of Durand",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  7.5,
+                  9,
+                  10.5,
+                  12,
+                  13.5
+                ],
+                "units": [
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health",
+                  "% of maximum health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Physical Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  12.5,
+                  15,
+                  17.5,
+                  20,
+                  22.5
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance"
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "units": [
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  30,
+                  35,
+                  40,
+                  45
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance",
+                  "% per 100 bonus magic resistance"
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health",
+                  "% per 100 bonus health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  90,
+                  120,
+                  150,
+                  180
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self / Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Justice Punch",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  90,
+                  130,
+                  170,
+                  210,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  72,
+                  104,
+                  136,
+                  168,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  72,
+                  72,
+                  72,
+                  72,
+                  72
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Hero's Entrance",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies, Enemies"
+    }
+  ]
+}

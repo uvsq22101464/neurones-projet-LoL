@@ -1,0 +1,762 @@
+{
+  "Characters/Corki/CharacterRecords/Root": {
+    "mCharacterName": "Corki",
+    "baseHP": 610.0,
+    "hpPerLevel": 100.0,
+    "baseStaticHPRegen": 1.1,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 350.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.4800000190734863,
+      "arRegenPerLevel": 0.14000000059604645,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 52.0,
+    "damagePerLevel": 2.0,
+    "baseArmor": 27.0,
+    "armorPerLevel": 4.5,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.644,
+    "attackSpeedRatio": 0.644,
+    "attackSpeedPerLevel": 2.8,
+    "acquisitionRange": 550.0,
+    "searchTags": "marksman",
+    "searchTagsSecondary": "mage",
+    "roles": "ATTACKER"
+  },
+  "Characters/Corki/Spells/MissileBarrageAbility/MissileBarrage": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          10.0,
+          90.0,
+          170.0,
+          250.0,
+          330.0,
+          410.0,
+          490.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RBaseMissileRadius",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RBigOneMissileRadius",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RBigOneMultiplier",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CDReductionOnHit",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxAmmoTOOLTIP",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AmmoWhenLearned",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "RSmallMissileDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "RBigMissileDamage": {
+        "mMultiplier": {
+          "mDataValue": "RBigOneMultiplier",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "RSmallMissileDamage",
+        "__type": "GameCalculationModified"
+      },
+      "AttackRefund": {
+        "mMultiplier": {
+          "mDataValue": "CDReductionOnHit",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mFormulaParts": [
+          {
+            "mNumber": 1.0,
+            "__type": "NumberCalculationPart"
+          },
+          {
+            "mStat": 8,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      1225.0,
+      1225.0,
+      1225.0,
+      1225.0,
+      1225.0,
+      1225.0,
+      1225.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Corki/Spells/PhosphorusBombAbility/PhosphorusBomb": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          15.0,
+          60.0,
+          105.0,
+          150.0,
+          195.0,
+          240.0,
+          285.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RevealDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      8.0,
+      9.0,
+      8.5,
+      8.0,
+      7.5,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Corki/Spells/GGunAbility/GGun": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          80.0,
+          130.0,
+          180.0,
+          230.0,
+          280.0,
+          330.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          2.4000000953674316,
+          2.4000000953674316,
+          2.4000000953674316,
+          2.4000000953674316,
+          2.4000000953674316,
+          2.4000000953674316,
+          2.4000000953674316
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SprayDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TicksPerSecond",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShredMax",
+        "mValues": [
+          -10.0,
+          -12.0,
+          -14.0,
+          -16.0,
+          -18.0,
+          -20.0,
+          -22.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShredCap",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShredDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Cone"
+    }
+  },
+  "Characters/Corki/Spells/CarpetBombAbility/CarpetBomb": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          125.0,
+          200.0,
+          275.0,
+          350.0,
+          425.0,
+          500.0,
+          575.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TrailDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TicksPerSecond",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaximumTicks",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageRadius",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeedBase",
+        "mValues": [
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeedRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumRange",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaximumRange",
+        "mValues": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "MaximumDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DashSpeed": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "DashSpeedBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 7,
+            "mDataValue": "DashSpeedRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      20.0,
+      20.0,
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Corki/Spells/RapidReloadAbility/RapidReload": {
+    "DataValues": [
+      {
+        "mName": "AttackConversion",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "InitialCD",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PackageDuration",
+        "mValues": [
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0,
+          45.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusMS",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SubsequentCD",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BasicAttackTOOLTIP": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "AttackConversion",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CriticalStrikeTOOLTIP": {
+        "mMultiplier": {
+          "mStat": 9,
+          "mCoefficient": 1.0,
+          "__type": "StatByCoefficientCalculationPart"
+        },
+        "mModifiedGameCalculation": "BasicAttackTOOLTIP",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

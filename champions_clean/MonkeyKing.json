@@ -1,0 +1,317 @@
+{
+  "name": "Wukong",
+  "health": 610,
+  "healthPerLevel": 99,
+  "healthRegen": 3.5,
+  "healthRegenPerLevel": 0.65,
+  "armor": 31,
+  "armorPerLevel": 4.7,
+  "magicResistance": 28,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 66,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.69,
+  "attackSpeedPerLevel": 3,
+  "attackRange": 175,
+  "roles": [
+    "DIVER",
+    "FIGHTER",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Stone Skin",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Crushing Blow",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Range",
+            "modifiers": [
+              {
+                "values": [
+                  135,
+                  145,
+                  155,
+                  165,
+                  175
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  45,
+                  70,
+                  95,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Armor Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Warrior Trickster",
+      "effects": [
+        [
+          {
+            "attribute": "Clone Outgoing Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Nimbus Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  40,
+                  45,
+                  50,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Cyclone",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.5,
+                  2
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  34.375,
+                  34.375,
+                  34.375
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  8,
+                  12,
+                  16
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  275,
+                  275,
+                  275
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  16,
+                  24,
+                  32
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  550,
+                  550,
+                  550
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ]
+}

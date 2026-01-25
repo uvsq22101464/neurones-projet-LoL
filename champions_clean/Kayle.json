@@ -1,0 +1,349 @@
+{
+  "name": "Kayle",
+  "health": 670,
+  "healthPerLevel": 92,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 26,
+  "armorPerLevel": 4.2,
+  "magicResistance": 22,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 50,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 1.5,
+  "attackRange": 175,
+  "roles": [
+    "MAGE",
+    "MARKSMAN",
+    "SPECIALIST"
+  ],
+  "P": [
+    {
+      "name": "Divine Ascent",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Radiant Blast",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  100,
+                  140,
+                  180,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  26,
+                  32,
+                  38,
+                  44,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Celestial Blessing",
+      "effects": [
+        [
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  80,
+                  105,
+                  130,
+                  155
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  24,
+                  28,
+                  32,
+                  36,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Starfire Spellblade",
+      "effects": [
+        [
+          {
+            "attribute": "Passive Damage",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  20,
+                  25,
+                  30,
+                  35
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  8,
+                  8.5,
+                  9,
+                  9.5,
+                  10
+                ],
+                "units": [
+                  "%  of target's missing health",
+                  "%  of target's missing health",
+                  "%  of target's missing health",
+                  "%  of target's missing health",
+                  "%  of target's missing health"
+                ]
+              },
+              {
+                "values": [
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Divine Judgment",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies, Self"
+    }
+  ]
+}

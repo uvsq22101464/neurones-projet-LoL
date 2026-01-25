@@ -1,0 +1,1049 @@
+{
+  "Characters/Qiyana/CharacterRecords/Root": {
+    "mCharacterName": "Qiyana",
+    "baseHP": 590.0,
+    "hpPerLevel": 121.0,
+    "baseStaticHPRegen": 1.6,
+    "hpRegenPerLevel": 0.18,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 375.0,
+      "arPerLevel": 60.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.14000000059604645,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 64.0,
+    "damagePerLevel": 3.1,
+    "baseArmor": 31.0,
+    "armorPerLevel": 4.5,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 150.0,
+    "attackSpeed": 0.688,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.1,
+    "searchTags": "assassin",
+    "roles": "MAGE"
+  },
+  "Characters/Qiyana/Spells/QiyanaWAbility/QiyanaW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          0.0,
+          8.0,
+          16.0,
+          24.0,
+          32.0,
+          40.0,
+          48.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StealthDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Range",
+        "mValues": [
+          425.0,
+          425.0,
+          425.0,
+          425.0,
+          425.0,
+          425.0,
+          425.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AttackSpeed",
+        "mValues": [
+          0.10000000149011612,
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TremorBonus",
+        "mValues": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveMS",
+        "mValues": [
+          0.009999999776482582,
+          0.029999999329447746,
+          0.05000000074505806,
+          0.07000000029802322,
+          0.09000000357627869,
+          0.10999999940395355,
+          0.12999999523162842
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TravelDistance",
+        "mValues": [
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TravelDistanceShort",
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          440.0,
+          440.0,
+          440.0,
+          440.0,
+          440.0,
+          440.0,
+          440.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitAPRatio",
+        "mValues": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitADRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "CleaveDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TremorDamage": {
+        "mMultiplier": {
+          "mDataValue": "TremorBonus",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "CleaveDamage",
+        "__type": "GameCalculationModified"
+      },
+      "OnHitDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "OnHitAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "OnHitADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0
+    ],
+    "mTargetingTypeData": {
+      "mBrushCursor": {
+        "mTextureName": "ASSETS/Characters/Qiyana/Cursors/Qiyana_Cursor_Brush.tga",
+        "__type": "CursorData"
+      },
+      "mRiverCursor": {
+        "mTextureName": "ASSETS/Characters/Qiyana/Cursors/Qiyana_Cursor_Water.tga",
+        "__type": "CursorData"
+      },
+      "mWallCursor": {
+        "mTextureName": "ASSETS/Characters/Qiyana/Cursors/Qiyana_Cursor_Wall.tga",
+        "__type": "CursorData"
+      },
+      "__type": "TerrainType"
+    }
+  },
+  "Characters/Qiyana/Spells/QiyanaRAbility/QiyanaR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Slow",
+        "mValues": [
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579,
+          0.699999988079071,
+          0.800000011920929,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusDamageBase",
+        "mValues": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RecastWindow",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterCapBase",
+        "mValues": [
+          250.0,
+          500.0,
+          750.0,
+          1000.0,
+          1250.0,
+          1500.0,
+          1750.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHPDamageBaseRock",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RootDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDurationMin",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MissingHealthDamageRock": {
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mDataValue": "PercentHPDamageBaseRock",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "MonsterCap": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "MonsterCapBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      120.0,
+      120.0,
+      120.0,
+      120.0,
+      120.0,
+      120.0,
+      120.0
+    ],
+    "castRange": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/Qiyana/Spells/QiyanaQAbility/QiyanaQ": {
+    "mSpellTags": [
+      "Trait_SwapsIntoImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "VanillaBase",
+        "mValues": [
+          40.0,
+          70.0,
+          100.0,
+          130.0,
+          160.0,
+          190.0,
+          220.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          40.0,
+          70.0,
+          100.0,
+          130.0,
+          160.0,
+          190.0,
+          220.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StealthDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TremorBonus",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Haste",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RockExplosionDelay",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RootDuration",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPotency",
+        "mValues": [
+          -0.20000000298023224,
+          -0.20000000298023224,
+          -0.20000000298023224,
+          -0.20000000298023224,
+          -0.20000000298023224,
+          -0.20000000298023224,
+          -0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CritThreshold",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FalloffMod",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "JungleDamageAmp",
+        "mValues": [
+          1.5499999523162842,
+          1.5499999523162842,
+          1.5499999523162842,
+          1.5499999523162842,
+          1.5499999523162842,
+          1.5499999523162842,
+          1.5499999523162842
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "EnchantedDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.8500000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "VanillaDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "VanillaBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.8500000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TremorDamage": {
+        "mMultiplier": {
+          "mLevel1Value": 0.6000000238418579,
+          "mBreakpoints": [
+            {
+              "mLevel": 6,
+              "__type": "Breakpoint"
+            },
+            {
+              "mLevel": 11,
+              "__type": "Breakpoint"
+            }
+          ],
+          "__type": "ByCharLevelBreakpointsCalculationPart"
+        },
+        "mModifiedGameCalculation": "EnchantedDamage",
+        "__type": "GameCalculationModified"
+      },
+      "{7dc40c72}": {
+        "mFormulaParts": [
+          {
+            "mNumber": 0.05999999865889549,
+            "__type": "NumberCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.0006000000284984708,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "FalloffDamage": {
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mDataValue": "FalloffMod",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "EnchantedFalloff": {
+        "mMultiplier": {
+          "mDataValue": "FalloffMod",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mModifiedGameCalculation": "EnchantedDamage",
+        "__type": "GameCalculationModified"
+      },
+      "VanillaFalloff": {
+        "mMultiplier": {
+          "mDataValue": "FalloffMod",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mModifiedGameCalculation": "VanillaDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Qiyana/Spells/QiyanaPassiveAbility/QiyanaPassive": {
+    "DataValues": [
+      {
+        "mName": "BurnDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HasteDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StoneExecuteBase",
+        "mValues": [
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealRadius",
+        "mValues": [
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0,
+          360.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DoubleHitBuffDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "FinalDamage": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 15.0,
+            "mInitialBonusPerLevel": 4.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mBonusPerLevelAtAndAfter": 4.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mBonusPerLevelAtAndAfter": 4.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ICD": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 14.0,
+            "mEndValue": 14.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{222614ec}": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 1.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Qiyana/Spells/QiyanaEAbility/QiyanaE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          10.0,
+          50.0,
+          90.0,
+          130.0,
+          170.0,
+          210.0,
+          250.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeedMax",
+        "mValues": [
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "Damage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      11.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ]
+  }
+}

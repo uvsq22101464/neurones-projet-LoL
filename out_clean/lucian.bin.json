@@ -1,0 +1,587 @@
+{
+  "Characters/Lucian/CharacterRecords/Root": {
+    "mCharacterName": "Lucian",
+    "baseHP": 641,
+    "hpPerLevel": 100,
+    "baseStaticHPRegen": 0.75,
+    "hpRegenPerLevel": 0.13,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 320,
+      "arPerLevel": 43,
+      "arBaseStaticRegen": 1.399999976158142,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 60,
+    "damagePerLevel": 2.9,
+    "baseArmor": 28,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 30,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 335,
+    "attackRange": 500,
+    "attackSpeed": 0.638,
+    "attackSpeedRatio": 0.638,
+    "attackSpeedPerLevel": 3.3,
+    "acquisitionRange": 800,
+    "searchTags": "marksman",
+    "searchTagsSecondary": "assassin",
+    "roles": "ATTACKER"
+  },
+  "Characters/Lucian/Spells/LucianRAbility/LucianR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "Duration",
+        "mValues": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "NumShots",
+        "mValues": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          22,
+          22
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RecastLockout",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RangeCheck",
+        "mValues": [
+          1050,
+          1050,
+          1050,
+          1050,
+          1050,
+          1050,
+          1050
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentDamageAmpToMinions",
+        "mValues": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          0,
+          15,
+          30,
+          45,
+          60,
+          75,
+          90
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageADRatio",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CritRatio",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamagePerBullet": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.15000000596046448,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mDataValue": "DamageADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mPart1": {
+                "mStat": 8,
+                "mDataValue": "CritRatio",
+                "__type": "StatByNamedDataValueCalculationPart"
+              },
+              "mPart2": {
+                "mNumber": 100,
+                "__type": "NumberCalculationPart"
+              },
+              "__type": "ProductOfSubPartsCalculationPart"
+            },
+            {
+              "mDataValue": "NumShots",
+              "__type": "NamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "DamagePerBullet",
+        "__type": "GameCalculationModified"
+      },
+      "TotalNumShots": {
+        "mFormulaParts": [
+          {
+            "mSubparts": [
+              {
+                "mPart1": {
+                  "mStat": 8,
+                  "mDataValue": "CritRatio",
+                  "__type": "StatByNamedDataValueCalculationPart"
+                },
+                "mPart2": {
+                  "mNumber": 100,
+                  "__type": "NumberCalculationPart"
+                },
+                "__type": "ProductOfSubPartsCalculationPart"
+              },
+              {
+                "mDataValue": "NumShots",
+                "__type": "NamedDataValueCalculationPart"
+              }
+            ],
+            "__type": "SumOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10,
+      110,
+      100,
+      90,
+      10,
+      10,
+      10
+    ],
+    "castRange": [
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000,
+      10000
+    ],
+    "castRangeDisplayOverride": [
+      1400,
+      1400,
+      1400,
+      1400,
+      1400,
+      1400,
+      1400
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Lucian/Spells/LucianWAbility/LucianW": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          40,
+          75,
+          110,
+          145,
+          180,
+          215,
+          250
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.8999999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8999999761581421,
+    "cooldownTime": [
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      10
+    ],
+    "castRange": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "castRangeDisplayOverride": [
+      900,
+      900,
+      900,
+      900,
+      900,
+      900,
+      900
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Lucian/Spells/LucianPassiveAbility/LucianPassive": {
+    "DataValues": [
+      {
+        "mName": "PassiveDuration",
+        "mValues": [
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveDamageBase",
+        "mValues": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnhitPassiveDuration",
+        "mValues": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "NumAuto",
+        "mValues": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxAutos",
+        "mValues": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CCRange",
+        "mValues": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mSubpart": {
+              "mLevel1Value": 0.5,
+              "mBreakpoints": [
+                {
+                  "mLevel": 7,
+                  "mAdditionalBonusAtThisLevel": 0.05000000074505806,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 13,
+                  "mAdditionalBonusAtThisLevel": 0.05000000074505806,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 19,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 25,
+                  "mAdditionalBonusAtThisLevel": 0.10000000149011612,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CritDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.75,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mStat": 9,
+              "mStatFormula": 2,
+              "mCoefficient": 1,
+              "__type": "StatByCoefficientCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalDamage",
+        "__type": "GameCalculationModified"
+      },
+      "MinionDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 1,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinionCritDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.75,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mStat": 9,
+              "mStatFormula": 2,
+              "mCoefficient": 1,
+              "__type": "StatByCoefficientCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "MinionDamage",
+        "__type": "GameCalculationModified"
+      },
+      "PassiveTotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "PassiveDamageBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "Characters/Lucian/Spells/LucianQAbility/LucianQ": {
+    "DataValues": [
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          0.44999998807907104,
+          0.6000000238418579,
+          0.75,
+          0.8999999761581421,
+          1.0499999523162842,
+          1.2000000476837158,
+          1.350000023841858
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      5
+    ],
+    "castRange": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "Characters/Lucian/Spells/LucianEAbility/LucianE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_AttackReset"
+    ],
+    "mCoefficient": 0.6000000238418579,
+    "cooldownTime": [
+      18,
+      18,
+      17,
+      16,
+      15,
+      14,
+      14
+    ],
+    "castRange": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "castRangeDisplayOverride": [
+      445,
+      445,
+      445,
+      445,
+      445,
+      445,
+      445
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

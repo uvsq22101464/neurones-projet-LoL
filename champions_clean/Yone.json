@@ -1,0 +1,324 @@
+{
+  "name": "Yone",
+  "health": 620,
+  "healthPerLevel": 105,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.75,
+  "armor": 33,
+  "armorPerLevel": 4.6,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 2,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 175,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Way of the Hunter",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Mortal Steel",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  50,
+                  75,
+                  100,
+                  125
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  105,
+                  105,
+                  105,
+                  105,
+                  105
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Spirit Cleave",
+      "effects": [
+        [
+          {
+            "attribute": "Total Mixed Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  9,
+                  10,
+                  11,
+                  12
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4.5,
+                  5,
+                  5.5,
+                  6
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4.5,
+                  5,
+                  5.5,
+                  6
+                ],
+                "units": [
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health",
+                  "% of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Soul Unbound",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Stored",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  27.5,
+                  30,
+                  32.5,
+                  35
+                ],
+                "units": [
+                  "% of damage dealt",
+                  "% of damage dealt",
+                  "% of damage dealt",
+                  "% of damage dealt",
+                  "% of damage dealt"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Fate Sealed",
+      "effects": [
+        [
+          {
+            "attribute": "Total Mixed Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  400,
+                  600
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  200,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  200,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

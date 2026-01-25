@@ -1,0 +1,381 @@
+{
+  "name": "Malphite",
+  "health": 665,
+  "healthPerLevel": 104,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.55,
+  "armor": 40,
+  "armorPerLevel": 4.95,
+  "magicResistance": 28,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 4,
+  "attackSpeed": 0.736,
+  "attackSpeedPerLevel": 3.4,
+  "attackRange": 125,
+  "roles": [
+    "MAGE",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Granite Shield",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Seismic Shard",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  120,
+                  170,
+                  220,
+                  270
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Thunderclap",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Bonus Armor",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60,
+                  75,
+                  90
+                ],
+                "units": [
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50,
+                  60,
+                  70
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  25,
+                  35,
+                  45,
+                  55
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Ground Slam",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  120,
+                  160,
+                  200,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor",
+                  "% armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Cripple Strength",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Unstoppable Force",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

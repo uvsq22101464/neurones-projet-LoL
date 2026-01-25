@@ -1,0 +1,608 @@
+{
+  "Characters/Blitzcrank/CharacterRecords/Root": {
+    "mCharacterName": "Blitzcrank",
+    "baseHP": 600.0,
+    "hpPerLevel": 109.0,
+    "baseStaticHPRegen": 1.5,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 267.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.7000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 62.0,
+    "damagePerLevel": 3.5,
+    "baseArmor": 37.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.13,
+    "acquisitionRange": 600.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "SUPPORT"
+  },
+  "Characters/Blitzcrank/Spells/PowerFistAbility/PowerFist": {
+    "mSpellTags": [
+      "PositiveEffect_EmpowerAttack",
+      "Trait_AttackReset",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "CCDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 2.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{a9d6b924}": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mCoefficient": 1.75,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 1.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.800000011920929,
+    "cooldownTime": [
+      7.0,
+      7.0,
+      6.5,
+      6.0,
+      5.5,
+      5.0,
+      5.0
+    ],
+    "castRange": [
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Blitzcrank/Spells/StaticFieldAbility/StaticField": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "PassiveBaseDamage",
+        "mValues": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ZapCountdown",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ActiveRange",
+        "mValues": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ActiveBaseDamage",
+        "mValues": [
+          150.0,
+          275.0,
+          400.0,
+          525.0,
+          650.0,
+          775.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SilenceDuration",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveAPRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579,
+          0.699999988079071,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ActiveAPRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveManaRatio",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ActiveDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "ActiveBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "ActiveAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PassiveDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "PassiveBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "PassiveAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.019999999552965164,
+            "__type": "AbilityResourceByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      60.0,
+      40.0,
+      20.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Blitzcrank/Spells/RocketGrabAbility/RocketGrab": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          60.0,
+          110.0,
+          160.0,
+          210.0,
+          260.0,
+          310.0,
+          360.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LolipopLength",
+        "mValues": [
+          70.0,
+          70.0,
+          70.0,
+          70.0,
+          70.0,
+          70.0,
+          70.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CherryBonusHaste",
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      21.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0,
+      16.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      1079.0,
+      1079.0,
+      1079.0,
+      1079.0,
+      1079.0,
+      1079.0,
+      1079.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Blitzcrank/Spells/OverdriveAbility/Overdrive": {
+    "DataValues": [
+      {
+        "mName": "MoveSpeedMod",
+        "mValues": [
+          0.550000011920929,
+          0.6000000238418579,
+          0.6499999761581421,
+          0.699999988079071,
+          0.75,
+          0.800000011920929,
+          0.8500000238418579
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AttackSpeedMod",
+        "mValues": [
+          0.20000000298023224,
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579,
+          0.699999988079071,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedModReduction",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedModMin",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedModMinTime",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHealthDamage",
+        "mValues": [
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582,
+          0.009999999776482582
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "{c01903c1}": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 60.0,
+            "mInitialBonusPerLevel": 20.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 7,
+                "mBonusPerLevelAtAndAfter": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "castRange": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Blitzcrank/Spells/ManaBarrierIconAbility/ManaBarrierIcon": {
+    "DataValues": [
+      {
+        "mName": "HealthThreshold",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ManaPercent",
+        "mValues": [
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Cooldown",
+        "mValues": [
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ManaRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ShieldAmount": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mCoefficient": 0.3499999940395355,
+            "__type": "AbilityResourceByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

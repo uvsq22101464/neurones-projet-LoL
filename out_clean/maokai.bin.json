@@ -1,0 +1,771 @@
+{
+  "Characters/Maokai/CharacterRecords/Root": {
+    "mCharacterName": "Maokai",
+    "baseHP": 665.0,
+    "hpPerLevel": 109.0,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 375.0,
+      "arPerLevel": 43.0,
+      "arBaseStaticRegen": 1.2000000476837158,
+      "arRegenPerLevel": 0.11999999731779099,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 64.0,
+    "damagePerLevel": 3.3,
+    "baseArmor": 35.0,
+    "armorPerLevel": 5.2,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.8,
+    "attackSpeedRatio": 0.695,
+    "attackSpeedPerLevel": 2.125,
+    "acquisitionRange": 600.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "TANK"
+  },
+  "Characters/Maokai/Spells/MaokaiPassiveAbility/MaokaiPassive": {
+    "DataValues": [
+      {
+        "mName": "PassiveCooldownReduction",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveHealthThreshold",
+        "mValues": [
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071,
+          0.949999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "JungPassCooldownReduction",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PassiveCooldown": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 30.0,
+            "mEndValue": 20.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PassiveHealingTotal": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mSubpart": {
+              "mLevel1Value": 0.03999999910593033,
+              "mInitialBonusPerLevel": 0.0020000000949949026,
+              "mBreakpoints": [
+                {
+                  "mLevel": 7,
+                  "mBonusPerLevelAtAndAfter": 0.006500000134110451,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Maokai/Spells/MaokaiRAbility/MaokaiR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "MinRootDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxRootDuration",
+        "mValues": [
+          2.25,
+          2.25,
+          2.25,
+          2.25,
+          2.25,
+          2.25,
+          2.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          75.0,
+          150.0,
+          225.0,
+          300.0,
+          375.0,
+          450.0,
+          525.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveHaste",
+        "mValues": [
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579,
+          0.699999988079071,
+          0.800000011920929,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HasteDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.75,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      130.0,
+      130.0,
+      110.0,
+      90.0,
+      90.0,
+      90.0,
+      90.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0,
+      3000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Maokai/Spells/MaokaiQAbility/MaokaiQ": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          20.0,
+          65.0,
+          110.0,
+          155.0,
+          200.0,
+          245.0,
+          290.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.9900000095367432,
+          0.9900000095367432,
+          0.9900000095367432,
+          0.9900000095367432,
+          0.9900000095367432,
+          0.9900000095367432,
+          0.9900000095367432
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LolipopRadius",
+        "mValues": [
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0,
+          325.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockbackSpeed",
+        "mValues": [
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockbackDistance",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BasePercentHealth",
+        "mValues": [
+          0.014999999664723873,
+          0.019999999552965164,
+          0.02500000037252903,
+          0.029999999329447746,
+          0.03500000014901161,
+          0.03999999910593033,
+          0.04500000178813934
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "NonChampMax",
+        "mValues": [
+          9999.0,
+          9999.0,
+          9999.0,
+          9999.0,
+          9999.0,
+          9999.0,
+          9999.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusMonsterDamage",
+        "mValues": [
+          110.0,
+          120.0,
+          130.0,
+          140.0,
+          150.0,
+          160.0,
+          170.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalPercentHealth": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BasePercentHealth",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      7.0,
+      7.0,
+      6.5,
+      6.0,
+      5.5,
+      5.0,
+      5.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Maokai/Spells/MaokaiWAbility/MaokaiW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          35.0,
+          60.0,
+          85.0,
+          110.0,
+          135.0,
+          160.0,
+          185.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      14.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0,
+      525.0
+    ]
+  },
+  "Characters/Maokai/Spells/MaokaiEAbility/MaokaiE": {
+    "mSpellTags": [
+      "Trait_Trap"
+    ],
+    "DataValues": [
+      {
+        "mName": "SaplingDuration",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GrowthDuration",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredDoTDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredBaseDamage",
+        "mValues": [
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SaplingDetectionRadius",
+        "mValues": [
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseEmpoweredSlowAmount",
+        "mValues": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxTraps",
+        "mValues": [
+          25000.0,
+          25000.0,
+          25000.0,
+          25000.0,
+          25000.0,
+          25000.0,
+          25000.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseAPRatio",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredAPRatio",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "EmpoweredSaplingDuration": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "SaplingDuration",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mCoefficient": 0.014999999664723873,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "{b109acb8}",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mCoefficient": 0.05000000074505806,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalEmpoweredDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "EmpoweredBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "EmpoweredAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mCoefficient": 0.10000000149011612,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpoweredSlowAmount": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseEmpoweredSlowAmount",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 9.999999747378752e-05,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mSubpart": {
+              "mPart1": {
+                "mNumber": 0.009999999776482582,
+                "__type": "NumberCalculationPart"
+              },
+              "mPart2": {
+                "mNumber": 0.009999999776482582,
+                "__type": "NumberCalculationPart"
+              },
+              "__type": "ProductOfSubPartsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "SaplingMoveSpeed": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 400.0,
+            "mInitialBonusPerLevel": 5.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 14,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      18.0,
+      18.0,
+      17.0,
+      16.0,
+      15.0,
+      14.0,
+      14.0
+    ],
+    "castRange": [
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

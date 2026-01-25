@@ -1,0 +1,479 @@
+{
+  "name": "Lucian",
+  "health": 641,
+  "healthPerLevel": 100,
+  "healthRegen": 3.75,
+  "healthRegenPerLevel": 0.65,
+  "armor": 28,
+  "armorPerLevel": 4.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 60,
+  "attackDamagePerLevel": 2.9,
+  "attackSpeed": 0.638,
+  "attackSpeedPerLevel": 3.3,
+  "attackRange": 500,
+  "roles": [
+    "ASSASSIN",
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Lightslinger",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Piercing Light",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  85,
+                  115,
+                  145,
+                  175,
+                  205
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  75,
+                  90,
+                  105,
+                  120
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Ardent Blaze",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  110,
+                  145,
+                  180,
+                  215
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  65,
+                  70,
+                  75,
+                  80
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Relentless Pursuit",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "The Culling",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage Per Shot",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  30,
+                  45
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Additional Damage per 20% Crit Chance",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  150,
+                  225
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  125,
+                  125,
+                  125
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  330,
+                  660,
+                  990
+                ],
+                "units": [
+                  "  ",
+                  "  ",
+                  "  "
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  30,
+                  45
+                ],
+                "units": [
+                  "   per 4% critical strike chance",
+                  "   per 4% critical strike chance",
+                  "   per 4% critical strike chance"
+                ]
+              },
+              {
+                "values": [
+                  550,
+                  550,
+                  550
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  330,
+                  330,
+                  330
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage Per Shot",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  60,
+                  90
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Additional Minion Damage per 20% Crit Chance",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  300,
+                  450
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  250,
+                  250,
+                  250
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  660,
+                  1320,
+                  1980
+                ],
+                "units": [
+                  "  ",
+                  "  ",
+                  "  "
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  60,
+                  90
+                ],
+                "units": [
+                  "   per 4% critical strike chance",
+                  "   per 4% critical strike chance",
+                  "   per 4% critical strike chance"
+                ]
+              },
+              {
+                "values": [
+                  1100,
+                  1100,
+                  1100
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  660,
+                  660,
+                  660
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

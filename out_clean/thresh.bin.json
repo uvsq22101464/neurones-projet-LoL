@@ -1,0 +1,535 @@
+{
+  "Characters/Thresh/CharacterRecords/Root": {
+    "mCharacterName": "Thresh",
+    "baseHP": 620.0,
+    "hpPerLevel": 120.0,
+    "baseStaticHPRegen": 1.4,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 274.0,
+      "arPerLevel": 44.0,
+      "arBaseStaticRegen": 1.2000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 56.0,
+    "damagePerLevel": 2.2,
+    "baseArmor": 33.0,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.55,
+    "baseMoveSpeed": 330.0,
+    "attackRange": 450.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 3.5,
+    "acquisitionRange": 475.0,
+    "searchTags": "support",
+    "searchTagsSecondary": "tank",
+    "roles": "SUPPORT"
+  },
+  "Characters/Thresh/Spells/ThreshQAbility/ThreshQ": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TauntLength",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPercent",
+        "mValues": [
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HitBonusCooldown",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      19.0,
+      19.0,
+      16.5,
+      14.0,
+      11.5,
+      9.0,
+      9.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      1075.0,
+      1075.0,
+      1075.0,
+      1075.0,
+      1075.0,
+      1075.0,
+      1075.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Thresh/Spells/ThreshWAbility/ThreshW": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "ShieldPerSoul",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LanternDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseShieldValue",
+        "mValues": [
+          30.0,
+          50.0,
+          70.0,
+          90.0,
+          110.0,
+          130.0,
+          150.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalShield": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseShieldValue",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mBuffName": "{5fbfbf13}",
+            "mIconKey": "%i:threshScalingIcon%",
+            "mDataValue": "ShieldPerSoul",
+            "__type": "BuffCounterByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      21.0,
+      21.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0
+    ],
+    "castRange": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ],
+    "castRangeDisplayOverride": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Thresh/Spells/ThreshEAbility/ThreshE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "PassiveADRatioTT",
+        "mValues": [
+          0.6000000238418579,
+          0.8999999761581421,
+          1.2000000476837158,
+          1.5,
+          1.7999999523162842,
+          2.0999999046325684,
+          2.4000000953674316
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveADRatio",
+        "mValues": [
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0,
+          240.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PAttackDamageMin": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mBuffName": "{5fbfbf13}",
+            "mIconKey": "%i:threshScalingIcon%",
+            "mCoefficient": 1.7000000476837158,
+            "__type": "BuffCounterByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PAttackDamageMax": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mBuffName": "{5fbfbf13}",
+            "mIconKey": "%i:threshScalingIcon%",
+            "mCoefficient": 1.7000000476837158,
+            "__type": "BuffCounterByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mDataValue": "PassiveADRatioTT",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.699999988079071,
+    "cooldownTime": [
+      13.0,
+      13.0,
+      12.25,
+      11.5,
+      10.75,
+      10.0,
+      9.25
+    ],
+    "castRange": [
+      20000.0,
+      20000.0,
+      20000.0,
+      20000.0,
+      20000.0,
+      20000.0,
+      20000.0
+    ],
+    "castRangeDisplayOverride": [
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Thresh/Spells/ThreshPassiveSoulsAbility/ThreshPassiveSouls": {
+    "DataValues": [
+      {
+        "mName": "StatValuePerSoul",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SoulsToGainOnPickUp",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "CurrentSoulBonus": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mBuffName": "{5fbfbf13}",
+            "mIconKey": "%i:threshScalingIcon%",
+            "mDataValue": "StatValuePerSoul",
+            "__type": "BuffCounterByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Thresh/Spells/ThreshRPentaAbility/ThreshRPenta": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "ThreshRCageRadius",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ThreshRWallThickness",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ThreshRWallLength",
+        "mValues": [
+          470.2279968261719,
+          470.2279968261719,
+          470.2279968261719,
+          470.2279968261719,
+          470.2279968261719,
+          470.2279968261719,
+          470.2279968261719
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      120.0,
+      120.0,
+      100.0,
+      80.0,
+      80.0,
+      80.0,
+      80.0
+    ],
+    "castRange": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "castRangeDisplayOverride": [
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "Characters/Mordekaiser/CharacterRecords/Root": {
+    "mCharacterName": "Mordekaiser",
+    "baseHP": 645.0,
+    "hpPerLevel": 104.0,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 3,
+      "arBaseStaticRegen": 0.0,
+      "arIncrements": 100.0,
+      "arMaxSegments": 30,
+      "arAllowMaxValueToBeOverridden": true,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 61.0,
+    "damagePerLevel": 4.0,
+    "baseArmor": 37.0,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.0,
+    "acquisitionRange": 400.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "mage",
+    "roles": "TANK"
+  },
+  "Characters/Mordekaiser/Spells/MordekaiserQAbility/MordekaiserQ": {
+    "DataValues": [
+      {
+        "mName": "QBaseDamage",
+        "mValues": [
+          45.0,
+          80.0,
+          115.0,
+          150.0,
+          185.0,
+          220.0,
+          255.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "IsolationScalar",
+        "mValues": [
+          1.25,
+          1.2999999523162842,
+          1.350000023841858,
+          1.399999976158142,
+          1.4500000476837158,
+          1.5,
+          1.5499999523162842
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "IsolationTooltip",
+        "mValues": [
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104,
+          0.5,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaceStartDistance",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaceLength",
+        "mValues": [
+          625.0,
+          625.0,
+          625.0,
+          625.0,
+          625.0,
+          625.0,
+          625.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RectangleWidth",
+        "mValues": [
+          160.0,
+          160.0,
+          160.0,
+          160.0,
+          160.0,
+          160.0,
+          160.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "QDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "QBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mBreakpoints": [
+              {
+                "mLevel": 10,
+                "mBonusPerLevelAtAndAfter": 5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpoweredDamageTooltip": {
+        "mMultiplier": {
+          "mDataValue": "IsolationScalar",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mModifiedGameCalculation": "QDamage",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      8.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0,
+      4.0,
+      4.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      675.0,
+      675.0,
+      675.0,
+      675.0,
+      675.0,
+      675.0,
+      675.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Mordekaiser/Spells/MordekaiserWAbility/MordekaiserW": {
+    "DataValues": [
+      {
+        "mName": "Duration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageConversion",
+        "mValues": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseShield",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealingPercent",
+        "mValues": [
+          0.32499998807907104,
+          0.3499999940395355,
+          0.375,
+          0.4000000059604645,
+          0.42500001192092896,
+          0.44999998807907104,
+          0.4749999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionPenalty",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageTakenConversion",
+        "mValues": [
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224,
+          0.07500000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxHealthCap",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TimeBeforeDecay",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DecayPerSecond",
+        "mValues": [
+          0.004999999888241291,
+          0.004999999888241291,
+          0.004999999888241291,
+          0.004999999888241291,
+          0.004999999888241291,
+          0.004999999888241291,
+          0.004999999888241291
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "HealthDecay": {
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mStatFormula": 1,
+            "mDataValue": "DecayPerSecond",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MaxHealthTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinHealthTooltip": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mCoefficient": 0.05000000074505806,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      12.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Mordekaiser/Spells/MordekaiserEAbility/MordekaiserE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "Damage",
+        "mValues": [
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DelayBeforeMovement",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDistance",
+        "mValues": [
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockTowardsDistance",
+        "mValues": [
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StandAsideRange",
+        "mValues": [
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MagicPen",
+        "mValues": [
+          0.02500000037252903,
+          0.05000000074505806,
+          0.07500000298023224,
+          0.10000000149011612,
+          0.125,
+          0.15000000596046448,
+          0.17499999701976776
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      18.0,
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Mordekaiser/Spells/MordekaiserRAbility/MordekaiserR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "SpiritRealmDuration",
+        "mValues": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StatStealPercentScalar",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ZoneRadius",
+        "mValues": [
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GhostAPRatio",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mCoefficient": 0.03999999910593033,
+    "cooldownTime": [
+      140.0,
+      140.0,
+      120.0,
+      100.0,
+      90.0,
+      80.0,
+      8.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ]
+  },
+  "Characters/Mordekaiser/Spells/MordekaiserPassiveAbility/MordekaiserPassive": {
+    "DataValues": [
+      {
+        "mName": "CombatTrackingDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaximumStacks",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentAPAddedToAutos",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryForQHit",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryForAutoHit",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryForEHit",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DoTRadius",
+        "mValues": [
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MovementSpeed",
+        "mValues": [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "AuraDamagePerStack": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mNumber": 5.0,
+            "__type": "NumberCalculationPart"
+          },
+          {
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PercentHealthForAura": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 1.0,
+            "mEndValue": 5.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MaxAuraMonsterDamage": {
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mStartValue": 40.0,
+            "mEndValue": 200.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "BonusAPAuto": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "PassiveMovementSpeed": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 0.029999999329447746,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 0.029999999329447746,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 0.029999999329447746,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 19,
+                "mAdditionalBonusAtThisLevel": 0.029999999329447746,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 24,
+                "mAdditionalBonusAtThisLevel": 0.029999999329447746,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 30,
+                "mAdditionalBonusAtThisLevel": 0.029999999329447746,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

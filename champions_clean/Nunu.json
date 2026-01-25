@@ -1,0 +1,753 @@
+{
+  "name": "Nunu & Willump",
+  "health": 610,
+  "healthPerLevel": 90,
+  "healthRegen": 5,
+  "healthRegenPerLevel": 0.8,
+  "armor": 29,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 61,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.25,
+  "attackRange": 125,
+  "roles": [
+    "MAGE",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Call of the Freljord",
+      "effects": [],
+      "affects": "Self, Allies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Consume",
+      "effects": [
+        [
+          {
+            "attribute": "Non-Champion True Damage",
+            "modifiers": [
+              {
+                "values": [
+                  400,
+                  600,
+                  800,
+                  1000,
+                  1200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Base Non-Champion Heal",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  95,
+                  125,
+                  155,
+                  185
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Empowered Non-Champion Heal",
+            "modifiers": [
+              {
+                "values": [
+                  97.5,
+                  142.5,
+                  187.5,
+                  232.5,
+                  277.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Champion Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  100,
+                  140,
+                  180,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  65,
+                  65,
+                  65,
+                  65,
+                  65
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Base Champion Heal",
+            "modifiers": [
+              {
+                "values": [
+                  39,
+                  57,
+                  75,
+                  93,
+                  111
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  54,
+                  54,
+                  54,
+                  54,
+                  54
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Empowered Champion Heal",
+            "modifiers": [
+              {
+                "values": [
+                  58.5,
+                  85.5,
+                  112.5,
+                  139.5,
+                  166.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  81,
+                  81,
+                  81,
+                  81,
+                  81
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  9,
+                  9,
+                  9,
+                  9,
+                  9
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Biggest Snowball Ever!",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  36,
+                  45,
+                  54,
+                  63,
+                  72
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  180,
+                  225,
+                  270,
+                  315,
+                  360
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Minion/Monster Roll Damage",
+            "modifiers": [
+              {
+                "values": [
+                  11.988,
+                  14.985,
+                  17.982,
+                  20.979,
+                  23.976
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  9.99,
+                  9.99,
+                  9.99,
+                  9.99,
+                  9.99
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Minion/Monster Roll Damage",
+            "modifiers": [
+              {
+                "values": [
+                  59.94,
+                  74.925,
+                  89.91,
+                  104.895,
+                  119.88
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  49.95,
+                  49.95,
+                  49.95,
+                  49.95,
+                  49.95
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Snowball Barrage",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage Per Hit",
+            "modifiers": [
+              {
+                "values": [
+                  16,
+                  24,
+                  32,
+                  40,
+                  48
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  48,
+                  72,
+                  96,
+                  120,
+                  144
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  144,
+                  216,
+                  288,
+                  360,
+                  432
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Absolute Zero",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  75,
+                  85
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  625,
+                  950,
+                  1275
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  300,
+                  300,
+                  300
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

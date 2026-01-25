@@ -1,0 +1,598 @@
+{
+  "Characters/Jinx/CharacterRecords/Root": {
+    "mCharacterName": "Jinx",
+    "baseHP": 630.0,
+    "hpPerLevel": 105.0,
+    "baseStaticHPRegen": 0.75,
+    "hpRegenPerLevel": 0.1,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 260.0,
+      "arPerLevel": 50.0,
+      "arBaseStaticRegen": 1.340000033378601,
+      "arRegenPerLevel": 0.20000000298023224,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 59.0,
+    "damagePerLevel": 3.25,
+    "baseArmor": 26.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 525.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.4,
+    "acquisitionRange": 550.0,
+    "searchTags": "marksman",
+    "roles": "ATTACKER"
+  },
+  "Characters/Jinx/Spells/JinxWAbility/JinxW": {
+    "DataValues": [
+      {
+        "mName": "JinxLowEndWCastTime",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "JinxWASpeedCastTimeScalarPerHundrethSecond",
+        "mValues": [
+          0.07999999821186066,
+          0.07999999821186066,
+          0.07999999821186066,
+          0.07999999821186066,
+          0.07999999821186066,
+          0.07999999821186066,
+          0.07999999821186066
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Damage",
+        "mValues": [
+          -40.0,
+          10.0,
+          60.0,
+          110.0,
+          160.0,
+          210.0,
+          260.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowPercent",
+        "mValues": [
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ADRatio",
+        "mValues": [
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mDataValue": "ADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0,
+      4.0,
+      3.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      1450.0,
+      1450.0,
+      1450.0,
+      1450.0,
+      1450.0,
+      1450.0,
+      1450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Jinx/Spells/JinxEAbility/JinxE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "Damage",
+        "mValues": [
+          40.0,
+          90.0,
+          140.0,
+          190.0,
+          240.0,
+          290.0,
+          340.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RootDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GrenadeDuration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GrenadeArmTime",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      27.5,
+      24.0,
+      20.5,
+      17.0,
+      13.5,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/Jinx/Spells/JinxQAbility/JinxQ": {
+    "DataValues": [
+      {
+        "mName": "RocketAoERadius",
+        "mValues": [
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0,
+          250.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RocketBonusRange",
+        "mValues": [
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.0,
+          200.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinigunAttackSpeedMax",
+        "mValues": [
+          5.0,
+          30.0,
+          55.0,
+          80.0,
+          105.0,
+          130.0,
+          155.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinigunAttackSpeedDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinigunAttackSpeedStacks",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RocketTAD",
+        "mValues": [
+          1.100000023841858,
+          1.100000023841858,
+          1.100000023841858,
+          1.100000023841858,
+          1.100000023841858,
+          1.100000023841858,
+          1.100000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RocketASPDPenalty",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "RocketDamage": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "RocketTAD",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421,
+      0.8999999761581421
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Jinx/Spells/JinxPassiveMarkerAbility/JinxPassiveMarker": {
+    "DataValues": [
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ASBuff",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSBuff",
+        "mValues": [
+          175.0,
+          175.0,
+          175.0,
+          175.0,
+          175.0,
+          175.0,
+          175.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSDecayRate",
+        "mValues": [
+          0.875,
+          0.875,
+          0.875,
+          0.875,
+          0.875,
+          0.875,
+          0.875
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AssistMarkerDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Jinx/Spells/JinxRAbility/JinxR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          10.0,
+          25.0,
+          40.0,
+          55.0,
+          70.0,
+          85.0,
+          100.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDamage",
+        "mValues": [
+          100.0,
+          250.0,
+          400.0,
+          550.0,
+          700.0,
+          850.0,
+          1000.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentDamage",
+        "mValues": [
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AoEDamageMult",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterExecuteMax",
+        "mValues": [
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0,
+          1200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AoERadius",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageFloor": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.12999999523162842,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DamageMax": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "MaxDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.2999999523162842,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      85.0,
+      85.0,
+      65.0,
+      45.0,
+      45.0,
+      45.0,
+      45.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

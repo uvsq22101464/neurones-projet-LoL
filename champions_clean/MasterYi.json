@@ -1,0 +1,574 @@
+{
+  "name": "Master Yi",
+  "health": 640,
+  "healthPerLevel": 105,
+  "healthRegen": 7.5,
+  "healthRegenPerLevel": 0.65,
+  "armor": 33,
+  "armorPerLevel": 4.2,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 65,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.679,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 175,
+  "roles": [
+    "ASSASSIN",
+    "FIGHTER",
+    "SKIRMISHER"
+  ],
+  "P": [
+    {
+      "name": "Double Strike",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Alpha Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Primary Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  40,
+                  60,
+                  80,
+                  100
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Damage per hit",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Single-Target Damage",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  70,
+                  105,
+                  140,
+                  175
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Primary Bonus Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  85,
+                  110,
+                  135,
+                  160
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Combined Primary Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  125,
+                  170,
+                  215,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Reduced Monster Damage per hit",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  31.25,
+                  42.5,
+                  53.75,
+                  65
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5,
+                  17.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Max Single-Target Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  140,
+                  218.75,
+                  297.5,
+                  376.25,
+                  455
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5,
+                  122.5
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Meditate",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Heal Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  25,
+                  35,
+                  45,
+                  55
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12.5,
+                  12.5,
+                  12.5,
+                  12.5,
+                  12.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Heal Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  50,
+                  70,
+                  90,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  25,
+                  25,
+                  25,
+                  25,
+                  25
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Total Heal",
+            "modifiers": [
+              {
+                "values": [
+                  120,
+                  200,
+                  280,
+                  360,
+                  440
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Total Heal",
+            "modifiers": [
+              {
+                "values": [
+                  240,
+                  400,
+                  560,
+                  720,
+                  880
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  200,
+                  200,
+                  200,
+                  200,
+                  200
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Modified Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  47.5,
+                  50,
+                  52.5,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Turret Modified Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  22.5,
+                  23.75,
+                  25,
+                  26.25,
+                  27.5
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Wuju Style",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus True Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  35,
+                  35,
+                  35,
+                  35,
+                  35
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Highlander",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  45,
+                  65
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  35,
+                  45,
+                  55
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

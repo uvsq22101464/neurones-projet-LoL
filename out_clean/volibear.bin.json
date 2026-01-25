@@ -1,0 +1,1020 @@
+{
+  "Characters/Volibear/CharacterRecords/Root": {
+    "mCharacterName": "Volibear",
+    "baseHP": 650.0,
+    "hpPerLevel": 104.0,
+    "baseStaticHPRegen": 1.8,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 350.0,
+      "arPerLevel": 70.0,
+      "arBaseStaticRegen": 1.25,
+      "arRegenPerLevel": 0.10000000149011612,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 65.0,
+    "damagePerLevel": 3.5,
+    "baseArmor": 35.0,
+    "armorPerLevel": 5.2,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 340.0,
+    "attackRange": 150.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.7,
+    "attackSpeedPerLevel": 2.0,
+    "acquisitionRange": 400.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "tank",
+    "roles": "TANK"
+  },
+  "Characters/Volibear/Spells/VolibearRAbility/VolibearR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "SweetSpotDamage",
+        "mValues": [
+          100.0,
+          300.0,
+          500.0,
+          700.0,
+          900.0,
+          1100.0,
+          1300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TransformDuration",
+        "mValues": [
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealthAmount",
+        "mValues": [
+          0.0,
+          175.0,
+          350.0,
+          525.0,
+          700.0,
+          875.0,
+          1050.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TowerDamage",
+        "mValues": [
+          0.0,
+          300.0,
+          500.0,
+          700.0,
+          900.0,
+          1100.0,
+          1300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusAttackRange",
+        "mValues": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TowerDisableDuration",
+        "mValues": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ADRatio": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{4402b0fa}": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "SweetSpotDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.5,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 1.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "APRatioTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TowerDamageTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "TowerDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "SweetSpotDamageTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "SweetSpotDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{d9a2963e}": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "HealthAmount",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      160.0,
+      160.0,
+      135.0,
+      110.0,
+      110.0,
+      110.0,
+      110.0
+    ],
+    "castRange": [
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0,
+      700.0
+    ],
+    "castRangeDisplayOverride": [
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "LocationClamped"
+    }
+  },
+  "Characters/Volibear/Spells/VolibearQAbility/VolibearQ": {
+    "mSpellTags": [
+      "Trait_AttackReset",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -10.0,
+          10.0,
+          30.0,
+          50.0,
+          70.0,
+          90.0,
+          110.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinSpeed",
+        "mValues": [
+          0.08500000089406967,
+          0.11999999731779099,
+          0.1550000011920929,
+          0.1899999976158142,
+          0.22499999403953552,
+          0.25999999046325684,
+          0.29499998688697815
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxSpeed",
+        "mValues": [
+          0.17000000178813934,
+          0.23999999463558197,
+          0.3100000023841858,
+          0.3799999952316284,
+          0.44999998807907104,
+          0.5199999809265137,
+          0.5899999737739563
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CDReset",
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusADRatio",
+        "mValues": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusRange",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "CalculatedDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ADRatioTooltip": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinSpeedCalc": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "MinSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "MaxSpeedCalc": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "MaxSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "{10404951}": {
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BonusADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      0.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Volibear/Spells/VolibearPAbility/VolibearP": {
+    "DataValues": [
+      {
+        "mName": "PDamageRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BounceCounterMax",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PAttackSpeed",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ChainLightningDamage": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 11.0,
+            "mInitialBonusPerLevel": 1.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 4,
+                "mBonusPerLevelAtAndAfter": 2.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 7,
+                "mBonusPerLevelAtAndAfter": 3.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 14,
+                "mBonusPerLevelAtAndAfter": 4.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "AttackSpeedCalc": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "PAttackSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.0003000000142492354,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      },
+      "{ebe98aa3}": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "PAttackSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.03999999910593033,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    }
+  },
+  "Characters/Volibear/Spells/VolibearWAbility/VolibearW": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -20.0,
+          5.0,
+          30.0,
+          55.0,
+          80.0,
+          105.0,
+          130.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealPercent",
+        "mValues": [
+          0.05000000074505806,
+          0.07999999821186066,
+          0.10999999940395355,
+          0.14000000059604645,
+          0.17000000178813934,
+          0.20000000298023224,
+          0.23000000417232513
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusHealthRatio",
+        "mValues": [
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549,
+          0.05999999865889549
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "W2DamageMultiplier",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseHeal",
+        "mValues": [
+          5.0,
+          20.0,
+          35.0,
+          50.0,
+          65.0,
+          80.0,
+          95.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionAndMonsterMod",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "W2BonusADDamageMultiplier",
+        "mValues": [
+          0.001500000013038516,
+          0.001500000013038516,
+          0.001500000013038516,
+          0.001500000013038516,
+          0.001500000013038516,
+          0.001500000013038516,
+          0.001500000013038516
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 1.100000023841858,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 12,
+            "mStatFormula": 2,
+            "mDataValue": "BonusHealthRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpoweredDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mDataValue": "W2DamageMultiplier",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            {
+              "mStat": 2,
+              "mStatFormula": 2,
+              "mDataValue": "W2BonusADDamageMultiplier",
+              "__type": "StatByNamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalDamage",
+        "__type": "GameCalculationModified"
+      },
+      "PercentMissingHealthHealingRatio": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "HealPercent",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "mDisplayAsPercent": true,
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0
+    ],
+    "castRange": [
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0
+    ]
+  },
+  "Characters/Volibear/Spells/VolibearEAbility/VolibearE": {
+    "DataValues": [
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          50.0,
+          80.0,
+          110.0,
+          140.0,
+          170.0,
+          200.0,
+          230.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentDamage",
+        "mValues": [
+          0.10000000149011612,
+          0.10999999940395355,
+          0.11999999731779099,
+          0.12999999523162842,
+          0.14000000059604645,
+          0.15000000596046448,
+          0.1599999964237213
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldAmount",
+        "mValues": [
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645,
+          0.14000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamageCapBase",
+        "mValues": [
+          75.0,
+          190.0,
+          305.0,
+          420.0,
+          535.0,
+          650.0,
+          765.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShieldAPRatio",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ShieldValue": {
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mSubpart": {
+              "mDataValue": "ShieldAmount",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          },
+          {
+            "mDataValue": "ShieldAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CalculatedDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "APRatioTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ShieldAPRatioTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "ShieldAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalDamageTooltip": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MonsterDamageCap": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "MonsterDamageCapBase",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0,
+      14.0
+    ],
+    "castRange": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "castRangeDisplayOverride": [
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

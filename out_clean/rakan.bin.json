@@ -1,0 +1,459 @@
+{
+  "Characters/Rakan/CharacterRecords/Root": {
+    "mCharacterName": "Rakan",
+    "baseHP": 610.0,
+    "hpPerLevel": 99.0,
+    "hpRegenPerLevel": 0.1,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 315.0,
+      "arPerLevel": 50.0,
+      "arBaseStaticRegen": 1.75,
+      "arRegenPerLevel": 0.10000000149011612,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 62.0,
+    "damagePerLevel": 3.5,
+    "baseArmor": 30.0,
+    "armorPerLevel": 4.9,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 300.0,
+    "attackSpeed": 0.635,
+    "attackSpeedRatio": 0.635,
+    "attackSpeedPerLevel": 3.0,
+    "acquisitionRange": 475.0,
+    "searchTags": "support",
+    "roles": "SUPPORT"
+  },
+  "Characters/Rakan/Spells/RakanWAbility/RakanW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BasicBootsSpeedBonus",
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CompletedBootsSpeedBonus",
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDashSpeed",
+        "mValues": [
+          1700.0,
+          1700.0,
+          1700.0,
+          1700.0,
+          1700.0,
+          1700.0,
+          1700.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          20.0,
+          70.0,
+          120.0,
+          170.0,
+          220.0,
+          270.0,
+          320.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockupDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.800000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.699999988079071,
+    "cooldownTime": [
+      14.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "castRangeDisplayOverride": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Rakan/Spells/RakanQAbility/RakanQ": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          25.0,
+          70.0,
+          115.0,
+          160.0,
+          205.0,
+          250.0,
+          295.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealDelay",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseCDActual",
+        "mValues": [
+          12.0,
+          11.0,
+          10.0,
+          9.0,
+          8.0,
+          7.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageAPRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealAPRatio",
+        "mValues": [
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "DamageAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalHeal": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 40.0,
+            "mEndValue": 210.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          },
+          {
+            "mDataValue": "HealAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{b88e1204}": {
+        "mFormulaParts": [
+          {
+            "mPart1": {
+              "mDataValue": "BaseCDActual",
+              "__type": "NamedDataValueCalculationPart"
+            },
+            "mPart2": {
+              "__type": "CooldownMultiplierCalculationPart"
+            },
+            "__type": "ProductOfSubPartsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      11.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Rakan/Spells/RakanEAbility/RakanE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseShield",
+        "mValues": [
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalShield": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseShield",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  },
+  "Characters/Rakan/Spells/RakanPassiveAbility/RakanPassive": {
+    "DataValues": [
+      {
+        "mName": "HitCooldown",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalShield": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 30.0,
+            "mEndValue": 225.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          },
+          {
+            "mCoefficient": 0.949999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ShieldCooldown": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 40.0,
+            "mInitialBonusPerLevel": -1.5,
+            "mBreakpoints": [
+              {
+                "mLevel": 19,
+                "mBonusPerLevelAtAndAfter": -0.875,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8999999761581421,
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Rakan/Spells/RakanRAbility/RakanR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "TotalDamageTooltip": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.5,
+    "cooldownTime": [
+      130.0,
+      130.0,
+      110.0,
+      90.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      150.0,
+      150.0,
+      150.0,
+      150.0,
+      150.0,
+      150.0,
+      150.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

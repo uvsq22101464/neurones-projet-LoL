@@ -1,0 +1,548 @@
+{
+  "Characters/XinZhao/CharacterRecords/Root": {
+    "mCharacterName": "XinZhao",
+    "baseHP": 620.0,
+    "hpPerLevel": 106.0,
+    "baseStaticHPRegen": 1.6,
+    "hpRegenPerLevel": 0.14,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 274.0,
+      "arPerLevel": 55.0,
+      "arBaseStaticRegen": 1.4500000476837158,
+      "arRegenPerLevel": 0.09000000357627869,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 63.0,
+    "damagePerLevel": 3.0,
+    "baseArmor": 35.0,
+    "armorPerLevel": 4.4,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.645,
+    "attackSpeedRatio": 0.645,
+    "attackSpeedPerLevel": 3.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "tank",
+    "roles": "BRAWLER"
+  },
+  "Characters/XinZhao/Spells/XinZhaoEAbility/XinZhaoE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseSlowAmount",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ChargeDamage": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.800000011920929,
+    "cooldownTime": [
+      11.0,
+      11.0,
+      11.0,
+      11.0,
+      11.0,
+      11.0,
+      11.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "castRangeDisplayOverride": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  },
+  "Characters/XinZhao/Spells/XinZhaoWAbility/XinZhaoW": {
+    "DataValues": [
+      {
+        "mName": "SlashBaseDamage",
+        "mValues": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ThrustBaseDamage",
+        "mValues": [
+          15.0,
+          50.0,
+          85.0,
+          120.0,
+          155.0,
+          190.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CritChanceAmp",
+        "mValues": [
+          0.3330000042915344,
+          0.3330000042915344,
+          0.3330000042915344,
+          0.3330000042915344,
+          0.3330000042915344,
+          0.3330000042915344,
+          0.3330000042915344
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HitNum",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DelayTime",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "SlashDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "SlashBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.30000001192092896,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ThrustDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.0,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mStat": 8,
+              "mDataValue": "CritChanceAmp",
+              "__type": "StatByNamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mFormulaParts": [
+          {
+            "mDataValue": "ThrustBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.8999999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6499999761581421,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinionMod": {
+        "mSimpleTooltipCalculationDisplay": 5,
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 50.0,
+            "mInitialBonusPerLevel": 3.3329999446868896,
+            "mBreakpoints": [
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 3.3399999141693115,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.30000001192092896,
+    "cooldownTime": [
+      12.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0
+    ],
+    "castRange": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/XinZhao/Spells/XinZhaoRAbility/XinZhaoR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -25.0,
+          75.0,
+          175.0,
+          275.0,
+          375.0,
+          475.0,
+          575.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentCurrentHealthDamage",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileDefenseBaseDuration",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileDefenseRadius",
+        "mValues": [
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 1.100000023841858,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      120.0,
+      120.0,
+      110.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "castRange": [
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0,
+      500.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/XinZhao/Spells/XinZhaoQAbility/XinZhaoQ": {
+    "mSpellTags": [
+      "Trait_AttackReset",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "BonusDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.4000000059604645,
+    "cooldownTime": [
+      7.0,
+      7.0,
+      6.5,
+      6.0,
+      5.5,
+      5.0,
+      5.0
+    ],
+    "castRange": [
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0,
+      375.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/XinZhao/Spells/XinZhaoPAbility/XinZhaoP": {
+    "DataValues": [
+      {
+        "mName": "HealAPRatio",
+        "mValues": [
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421,
+          0.6499999761581421
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mSubpart": {
+              "mLevel1Value": 0.15000000596046448,
+              "mBreakpoints": [
+                {
+                  "mLevel": 6,
+                  "mAdditionalBonusAtThisLevel": 0.15000000596046448,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 11,
+                  "mAdditionalBonusAtThisLevel": 0.15000000596046448,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 16,
+                  "mAdditionalBonusAtThisLevel": 0.15000000596046448,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 21,
+                  "mAdditionalBonusAtThisLevel": 0.15000000596046448,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 26,
+                  "mAdditionalBonusAtThisLevel": 0.15000000596046448,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalHealing": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mSubpart": {
+              "mLevel1Value": 0.029999999329447746,
+              "mBreakpoints": [
+                {
+                  "mLevel": 6,
+                  "mAdditionalBonusAtThisLevel": 0.004999999888241291,
+                  "__type": "Breakpoint"
+                },
+                {
+                  "mLevel": 11,
+                  "mAdditionalBonusAtThisLevel": 0.004999999888241291,
+                  "__type": "Breakpoint"
+                }
+              ],
+              "__type": "ByCharLevelBreakpointsCalculationPart"
+            },
+            "__type": "StatBySubPartCalculationPart"
+          },
+          {
+            "mDataValue": "HealAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

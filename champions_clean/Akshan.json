@@ -1,0 +1,536 @@
+{
+  "name": "Akshan",
+  "health": 610,
+  "healthPerLevel": 107,
+  "healthRegen": 3.75,
+  "healthRegenPerLevel": 0.65,
+  "armor": 26,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 52,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.638,
+  "attackSpeedPerLevel": 4,
+  "attackRange": 500,
+  "roles": [
+    "ASSASSIN",
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Dirty Fighting",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Avengerang",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  25,
+                  45,
+                  65,
+                  85
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Total Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  50,
+                  90,
+                  130,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  160,
+                  160,
+                  160,
+                  160,
+                  160
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Non-Champion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  50,
+                  60,
+                  70,
+                  80
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Going Rogue",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  90,
+                  100,
+                  110,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Heroic Swing",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage per Shot",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  30,
+                  45,
+                  60,
+                  75
+                ],
+                "units": [
+                  "  ×",
+                  "  ×",
+                  "  ×",
+                  "  ×",
+                  "  ×"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  " + 0.3 per 100% bonus attack speed",
+                  " + 0.3 per 100% bonus attack speed",
+                  " + 0.3 per 100% bonus attack speed",
+                  " + 0.3 per 100% bonus attack speed",
+                  " + 0.3 per 100% bonus attack speed"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Comeuppance",
+      "effects": [
+        [
+          {
+            "attribute": "Maximum Bullets Stored",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  6,
+                  7
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bullet Storing Interval Time",
+            "modifiers": [
+              {
+                "values": [
+                  0.625,
+                  0.5208,
+                  0.4167
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Minimum Physical Damage per Bullet",
+            "modifiers": [
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "[25 / 30 / 35 / 40 / 45 ] × [1",
+                  "[25 / 30 / 35 / 40 / 45 ] × [1",
+                  "[25 / 30 / 35 / 40 / 45 ] × [1"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "0 : 0.5 ",
+                  "0 : 0.5 ",
+                  "0 : 0.5 "
+                ]
+              },
+              {
+                "values": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "units": [
+                  "]",
+                  "]",
+                  "]"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "based on critical strike chance",
+                  "based on critical strike chance",
+                  "based on critical strike chance"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Physical Damage per Bullet",
+            "modifiers": [
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "[75 / 90 / 105 / 120 / 135 ] × [1",
+                  "[75 / 90 / 105 / 120 / 135 ] × [1",
+                  "[75 / 90 / 105 / 120 / 135 ] × [1"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "0 : 0.5 ",
+                  "0 : 0.5 ",
+                  "0 : 0.5 "
+                ]
+              },
+              {
+                "values": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "units": [
+                  "]",
+                  "]",
+                  "]"
+                ]
+              },
+              {
+                "values": [
+                  45,
+                  45,
+                  45
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "based on critical strike chance",
+                  "based on critical strike chance",
+                  "based on critical strike chance"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Charged Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "[125 / 210 / 315 ] × [1",
+                  "[125 / 210 / 315 ] × [1",
+                  "[125 / 210 / 315 ] × [1"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "0 : 0.5 ",
+                  "0 : 0.5 ",
+                  "0 : 0.5 "
+                ]
+              },
+              {
+                "values": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "units": [
+                  "]",
+                  "]",
+                  "]"
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  90,
+                  105
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "based on critical strike chance",
+                  "based on critical strike chance",
+                  "based on critical strike chance"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Damage to target on 67% missing hp",
+            "modifiers": [
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "[375 / 630 / 945 ] × [1",
+                  "[375 / 630 / 945 ] × [1",
+                  "[375 / 630 / 945 ] × [1"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "0 : 0.5 ",
+                  "0 : 0.5 ",
+                  "0 : 0.5 "
+                ]
+              },
+              {
+                "values": [
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "units": [
+                  "]",
+                  "]",
+                  "]"
+                ]
+              },
+              {
+                "values": [
+                  225,
+                  270,
+                  315
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "based on critical strike chance",
+                  "based on critical strike chance",
+                  "based on critical strike chance"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

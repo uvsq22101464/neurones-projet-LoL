@@ -1,0 +1,305 @@
+{
+  "name": "Thresh",
+  "health": 620,
+  "healthPerLevel": 120,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.55,
+  "armor": 33,
+  "armorPerLevel": 0,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.55,
+  "attackDamage": 56,
+  "attackDamagePerLevel": 2.2,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 450,
+  "roles": [
+    "CATCHER",
+    "SUPPORT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Damnation",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Death Sentence",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Dark Passage",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  70,
+                  90,
+                  110,
+                  130
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Flay",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  1.7,
+                  1.7,
+                  1.7,
+                  1.7,
+                  1.7
+                ],
+                "units": [
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected"
+                ]
+              },
+              {
+                "values": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  1.7,
+                  1.7,
+                  1.7,
+                  1.7,
+                  1.7
+                ],
+                "units": [
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected",
+                  " per Soul collected"
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  120,
+                  150,
+                  180,
+                  210
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  120,
+                  165,
+                  210,
+                  255
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "The Box",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  250,
+                  400,
+                  550
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

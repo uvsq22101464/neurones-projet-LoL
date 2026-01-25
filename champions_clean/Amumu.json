@@ -1,0 +1,263 @@
+{
+  "name": "Amumu",
+  "health": 685,
+  "healthPerLevel": 94,
+  "healthRegen": 9,
+  "healthRegenPerLevel": 0.85,
+  "armor": 33,
+  "armorPerLevel": 4,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 57,
+  "attackDamagePerLevel": 3.8,
+  "attackSpeed": 0.736,
+  "attackSpeedPerLevel": 2.18,
+  "attackRange": 125,
+  "roles": [
+    "SUPPORT",
+    "TANK",
+    "VANGUARD"
+  ],
+  "P": [
+    {
+      "name": "Cursed Touch",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Bandage Toss",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  95,
+                  120,
+                  145,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  85,
+                  85,
+                  85,
+                  85,
+                  85
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Despair",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.625,
+                  0.75,
+                  0.875,
+                  1
+                ],
+                "units": [
+                  "% (+ 0.25% per 100 AP) of target's maximum health",
+                  "% (+ 0.25% per 100 AP) of target's maximum health",
+                  "% (+ 0.25% per 100 AP) of target's maximum health",
+                  "% (+ 0.25% per 100 AP) of target's maximum health",
+                  "% (+ 0.25% per 100 AP) of target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Tantrum",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  7,
+                  9,
+                  11,
+                  13
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor",
+                  "% bonus armor"
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance",
+                  "% bonus magic resistance"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  65,
+                  95,
+                  125,
+                  155,
+                  185
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Curse of the Sad Mummy",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  300,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  80,
+                  80
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

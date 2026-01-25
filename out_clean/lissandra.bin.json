@@ -1,0 +1,497 @@
+{
+  "Characters/Lissandra/CharacterRecords/Root": {
+    "mCharacterName": "Lissandra",
+    "baseHP": 620.0,
+    "hpPerLevel": 110.0,
+    "baseStaticHPRegen": 1.4,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 475.0,
+      "arPerLevel": 30.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.07999999821186066,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 55.0,
+    "damagePerLevel": 2.7,
+    "baseArmor": 22.0,
+    "armorPerLevel": 4.9,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.656,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "mage",
+    "roles": "MAGE"
+  },
+  "Characters/Lissandra/Spells/LissandraWAbility/LissandraW": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.699999988079071,
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.5,
+      9.0,
+      8.5,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Lissandra/Spells/LissandraRAbility/LissandraR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          50.0,
+          150.0,
+          250.0,
+          350.0,
+          450.0,
+          550.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          -0.30000001192092896,
+          -0.44999998807907104,
+          -0.6000000238418579,
+          -0.75,
+          -0.8999999761581421,
+          -1.0499999523162842,
+          -1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnemyCastDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SelfCastDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SelfCastFlatHeal",
+        "mValues": [
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SelfCastMissingHPRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SelfCastMissingHPPerAbove",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StartingAoESize",
+        "mValues": [
+          292.0,
+          292.0,
+          292.0,
+          292.0,
+          292.0,
+          292.0,
+          292.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentMissingHPRatio",
+        "mValues": [
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929,
+          0.550000011920929
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "CalculatedDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "HealAmount": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "SelfCastFlatHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "PercentMissingHPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      120.0,
+      100.0,
+      80.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      400.0,
+      550.0,
+      550.0,
+      550.0,
+      400.0,
+      400.0,
+      550.0
+    ]
+  },
+  "Characters/Lissandra/Spells/LissandraEAbility/LissandraE": {
+    "mSpellTags": [
+      "PositiveEffect_Teleport"
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.6000000238418579,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.6000000238418579,
+    "cooldownTime": [
+      27.0,
+      24.0,
+      21.0,
+      18.0,
+      15.0,
+      12.0,
+      12.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0,
+      1050.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Lissandra/Spells/LissandraQAbility/LissandraQ": {
+    "DataValues": [
+      {
+        "mName": "damage",
+        "mValues": [
+          45.0,
+          80.0,
+          115.0,
+          150.0,
+          185.0,
+          220.0,
+          255.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "slowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "slowPercentage",
+        "mValues": [
+          -0.1599999964237213,
+          -0.20000000298023224,
+          -0.23999999463558197,
+          -0.2800000011920929,
+          -0.3199999928474426,
+          -0.36000001430511475,
+          -0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.75,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0,
+      4.0,
+      3.0
+    ],
+    "castRange": [
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0,
+      10000.0
+    ],
+    "castRangeDisplayOverride": [
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0,
+      725.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Lissandra/Spells/LissandraPassiveAbility/LissandraPassive": {
+    "DataValues": [
+      {
+        "mName": "MoveSpeedMod",
+        "mValues": [
+          -0.25,
+          -0.25,
+          -0.25,
+          -0.25,
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ExplosionDelay",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Range",
+        "mValues": [
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0,
+          1350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Radius",
+        "mValues": [
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0,
+          450.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 120.0,
+            "mInitialBonusPerLevel": 20.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 13,
+                "mBonusPerLevelAtAndAfter": 30.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

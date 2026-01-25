@@ -1,0 +1,387 @@
+{
+  "name": "Kindred",
+  "health": 595,
+  "healthPerLevel": 104,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.55,
+  "armor": 29,
+  "armorPerLevel": 4.7,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 65,
+  "attackDamagePerLevel": 3.25,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 3.5,
+  "attackRange": 500,
+  "roles": [
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Mark of the Kindred",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Dance of Arrows",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  65,
+                  90,
+                  115,
+                  140
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Static Cooldown",
+            "modifiers": [
+              {
+                "values": [
+                  4,
+                  3.5,
+                  3,
+                  2.5,
+                  2
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Wolf's Frenzy",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  30,
+                  35,
+                  40,
+                  45
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "units": [
+                  "% (+ 1% per mark) of target's current health",
+                  "% (+ 1% per mark) of target's current health",
+                  "% (+ 1% per mark) of target's current health",
+                  "% (+ 1% per mark) of target's current health",
+                  "% (+ 1% per mark) of target's current health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  37.5,
+                  45,
+                  52.5,
+                  60,
+                  67.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  2.25,
+                  2.25,
+                  2.25,
+                  2.25,
+                  2.25
+                ],
+                "units": [
+                  "% (+ 1.5% per mark) of target's current health",
+                  "% (+ 1.5% per mark) of target's current health",
+                  "% (+ 1.5% per mark) of target's current health",
+                  "% (+ 1.5% per mark) of target's current health",
+                  "% (+ 1.5% per mark) of target's current health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Mounting Dread",
+      "effects": [
+        [
+          {
+            "attribute": "Additional Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  110,
+                  140,
+                  170,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% (+ 0.5% per Mark) of target's missing health",
+                  "% (+ 0.5% per Mark) of target's missing health",
+                  "% (+ 0.5% per Mark) of target's missing health",
+                  "% (+ 0.5% per Mark) of target's missing health",
+                  "% (+ 0.5% per Mark) of target's missing health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Enhanced damage below threshold",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  110,
+                  140,
+                  170,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  7.5,
+                  7.5,
+                  7.5,
+                  7.5,
+                  7.5
+                ],
+                "units": [
+                  "% (+ 2%) (+ 0.75% (+ 0.2%) per Mark) of target's missing health",
+                  "% (+ 2%) (+ 0.75% (+ 0.2%) per Mark) of target's missing health",
+                  "% (+ 2%) (+ 0.75% (+ 0.2%) per Mark) of target's missing health",
+                  "% (+ 2%) (+ 0.75% (+ 0.2%) per Mark) of target's missing health",
+                  "% (+ 2%) (+ 0.75% (+ 0.2%) per Mark) of target's missing health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Lamb's Respite",
+      "effects": [
+        [
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  225,
+                  300,
+                  375
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies, Enemies"
+    }
+  ]
+}

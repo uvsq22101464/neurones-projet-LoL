@@ -1,0 +1,175 @@
+{
+  "name": "Zilean",
+  "health": 574,
+  "healthPerLevel": 96,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.5,
+  "armor": 24,
+  "armorPerLevel": 5,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 52,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.13,
+  "attackRange": 550,
+  "roles": [
+    "MAGE",
+    "SPECIALIST",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Time in a Bottle",
+      "effects": [],
+      "affects": "Allies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Time Bomb",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  115,
+                  165,
+                  230,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Stun Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.1,
+                  1.2,
+                  1.3,
+                  1.4,
+                  1.5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Rewind",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Time Warp",
+      "effects": [
+        [
+          {
+            "attribute": "Movement Speed Modifier",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  55,
+                  70,
+                  85,
+                  99
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies, Allies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Chronoshift",
+      "effects": [
+        [
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  600,
+                  850,
+                  1100
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  200,
+                  200,
+                  200
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ]
+}

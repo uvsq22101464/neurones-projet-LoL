@@ -1,0 +1,579 @@
+{
+  "name": "Nidalee",
+  "health": 610,
+  "healthPerLevel": 109,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.6,
+  "armor": 32,
+  "armorPerLevel": 5,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.45,
+  "attackDamage": 58,
+  "attackDamagePerLevel": 3.5,
+  "attackSpeed": 0.638,
+  "attackSpeedPerLevel": 3.22,
+  "attackRange": 525,
+  "roles": [
+    "ASSASSIN",
+    "MAGE",
+    "SPECIALIST"
+  ],
+  "P": [
+    {
+      "name": "Prowl",
+      "effects": [],
+      "affects": "Enemies, Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Javelin Toss",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  90,
+                  110,
+                  130,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  227.5,
+                  292.5,
+                  357.5,
+                  422.5,
+                  487.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  162.5
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Takedown",
+      "effects": [
+        [
+          {
+            "attribute": "Minimum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  30,
+                  55,
+                  80
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75
+                ],
+                "units": [
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  40
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  67.5,
+                  137.5,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  168.75,
+                  187.5,
+                  206.25
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  80,
+                  90,
+                  100,
+                  110
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Damage Modifier",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.25,
+                  1.5,
+                  1.75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Increased Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  125,
+                  150,
+                  175
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Prowl-Enhanced Minimum Damage",
+            "modifiers": [
+              {
+                "values": [
+                  6.5,
+                  39,
+                  71.5,
+                  104
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  97.5
+                ],
+                "units": [
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  52
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Prowl-Enhanced Maximum Damage",
+            "modifiers": [
+              {
+                "values": [
+                  13,
+                  87.75,
+                  178.75,
+                  286
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  195,
+                  219.375,
+                  243.75,
+                  268.125
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              },
+              {
+                "values": [
+                  104,
+                  117,
+                  130,
+                  143
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Bushwhack",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  80,
+                  120,
+                  160,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Pounce",
+      "effects": [
+        [
+          {
+            "attribute": "Reduced Cooldown",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  2.5,
+                  2,
+                  1.5
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  100,
+                  145,
+                  190
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50
+                ],
+                "units": [
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  30
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Primal Surge",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50,
+                  60,
+                  70
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Heal",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  35
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Heal",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    },
+    {
+      "name": "Swipe",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  130,
+                  190,
+                  250
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70
+                ],
+                "units": [
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  55
+                ],
+                "units": [
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Aspect of the Cougar",
+      "effects": [],
+      "affects": "Self"
+    }
+  ]
+}

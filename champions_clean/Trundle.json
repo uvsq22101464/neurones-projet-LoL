@@ -1,0 +1,388 @@
+{
+  "name": "Trundle",
+  "health": 650,
+  "healthPerLevel": 110,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.75,
+  "armor": 37,
+  "armorPerLevel": 3.9,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 68,
+  "attackDamagePerLevel": 4,
+  "attackSpeed": 0.67,
+  "attackSpeedPerLevel": 2.9,
+  "attackRange": 175,
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "King's Tribute",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Chomp",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  30,
+                  50,
+                  70,
+                  90
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  25,
+                  35,
+                  45,
+                  55
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Attack Damage Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12.5,
+                  15,
+                  17.5,
+                  20
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Frozen Domain",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  45,
+                  60,
+                  75,
+                  90
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  28,
+                  36,
+                  44,
+                  52
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Pillar of Ice",
+      "effects": [
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  34,
+                  38,
+                  42,
+                  46,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Subjugate",
+      "effects": [
+        [
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Healing",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  2,
+                  2,
+                  2
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Initial Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12.5,
+                  15
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage Per Second",
+            "modifiers": [
+              {
+                "values": [
+                  2.5,
+                  3.125,
+                  3.75
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  0.25,
+                  0.25,
+                  0.25
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Initial Healing",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  12.5,
+                  15
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Healing Per Second",
+            "modifiers": [
+              {
+                "values": [
+                  2.5,
+                  3.125,
+                  3.75
+                ],
+                "units": [
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health",
+                  "%  of the target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  0.25,
+                  0.25,
+                  0.25
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

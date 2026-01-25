@@ -1,0 +1,665 @@
+{
+  "Characters/Zaahen/CharacterRecords/Root": {
+    "mCharacterName": "Zaahen",
+    "baseHP": 640.0,
+    "hpPerLevel": 114.0,
+    "baseStaticHPRegen": 1.5,
+    "hpRegenPerLevel": 0.16,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 350.0,
+      "arPerLevel": 55.0,
+      "arBaseStaticRegen": 1.6299999952316284,
+      "arRegenPerLevel": 0.15000000596046448,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 63.0,
+    "damagePerLevel": 4.0,
+    "baseArmor": 36.0,
+    "armorPerLevel": 5.0,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 175.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "assassin",
+    "roles": "SUPPORT"
+  },
+  "Characters/Zaahen/Spells/ZaahenQAbility/ZaahenQ": {
+    "mSpellTags": [
+      "Trait_AttackReset",
+      "PositiveEffect_EmpowerAttack"
+    ],
+    "DataValues": [
+      {
+        "mName": "Q1BaseDamage",
+        "mValues": [
+          0.0,
+          15.0,
+          30.0,
+          45.0,
+          60.0,
+          75.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockUpDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RecastWindow",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TimeBetweenAttacks",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealPercent",
+        "mValues": [
+          0.03999999910593033,
+          0.05000000074505806,
+          0.05999999865889549,
+          0.07000000029802322,
+          0.07999999821186066,
+          0.09000000357627869,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionHealPercent",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Q2BaseDamage",
+        "mValues": [
+          0.0,
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "QBonusRange",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "QCoeff",
+        "mValues": [
+          0.15000000596046448,
+          0.20000000298023224,
+          0.25,
+          0.30000001192092896,
+          0.3499999940395355,
+          0.4000000059604645,
+          0.44999998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamagePercent",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Q1BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "QCoeff",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "SecondHitDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Q2BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "QCoeff",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Zaahen/Spells/ZaahenEAbility/ZaahenE": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "Damage_Base",
+        "mValues": [
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashDistance",
+        "mValues": [
+          350.0,
+          350.0,
+          350.0,
+          350.0,
+          350.0,
+          350.0,
+          350.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaximumRadius",
+        "mValues": [
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumRadius",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHPDamage",
+        "mValues": [
+          0.03500000014901161,
+          0.03999999910593033,
+          0.04500000178813934,
+          0.05000000074505806,
+          0.054999999701976776,
+          0.05999999865889549,
+          0.06499999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamageCap",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MonsterDamageBonus",
+        "mValues": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SweetSpotDamageMod",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageBonusBase",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BaseDamageCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage_Base",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "BonusDamageCalc": {
+        "mMultiplier": {
+          "mDataValue": "{3ea8f78a}",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "BaseDamageCalc",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.5,
+      9.0,
+      8.5,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Zaahen/Spells/ZaahenRAbility/ZaahenR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "DashMaxDistance",
+        "mValues": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashMinDistance",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EndDamage",
+        "mValues": [
+          100.0,
+          250.0,
+          400.0,
+          550.0,
+          700.0,
+          850.0,
+          1000.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          2800.0,
+          2800.0,
+          2800.0,
+          2800.0,
+          2800.0,
+          2800.0,
+          2800.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealPercent",
+        "mValues": [
+          0.33000001311302185,
+          0.33000001311302185,
+          0.33000001311302185,
+          0.33000001311302185,
+          0.33000001311302185,
+          0.33000001311302185,
+          0.33000001311302185
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AoESize",
+        "mValues": [
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0,
+          550.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DamageReduction",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ArmorPen",
+        "mValues": [
+          0.0,
+          0.10000000149011612,
+          0.20000000298023224,
+          0.30000001192092896,
+          0.4000000059604645,
+          0.5,
+          0.6000000238418579
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamageEndCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "EndDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 2.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      110.0,
+      110.0,
+      95.0,
+      80.0,
+      65.0,
+      60.0,
+      20.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Zaahen/Spells/ZaahenWAbility/ZaahenW": {
+    "DataValues": [
+      {
+        "mName": "InitialBaseDamage",
+        "mValues": [
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SecondaryBaseDamage",
+        "mValues": [
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaximumPullDistance",
+        "mValues": [
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PullSpeed",
+        "mValues": [
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0,
+          900.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "InitialDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "InitialBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "SecondaryDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "{96bfc63d}",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      16.0,
+      16.0,
+      15.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0
+    ],
+    "castRange": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "Characters/Zilean/CharacterRecords/Root": {
+    "mCharacterName": "Zilean",
+    "baseHP": 574,
+    "hpPerLevel": 96,
+    "baseStaticHPRegen": 1.1,
+    "hpRegenPerLevel": 0.1,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 452,
+      "arPerLevel": 50,
+      "arBaseStaticRegen": 2.2699999809265137,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 52,
+    "damagePerLevel": 3,
+    "baseArmor": 24,
+    "armorPerLevel": 5,
+    "baseSpellBlock": 30,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 335,
+    "attackRange": 550,
+    "attackSpeed": 0.658,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.13,
+    "acquisitionRange": 550,
+    "searchTags": "support",
+    "searchTagsSecondary": "mage",
+    "roles": "SUPPORT"
+  },
+  "Characters/Zilean/Spells/HeightenedLearningAbility/HeightenedLearning": {
+    "DataValues": [
+      {
+        "mName": "PassiveCooldown",
+        "mValues": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GamemodeInteger",
+        "mValues": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "{e359ec0d}": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 0.800000011920929,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": 0.6000000238418579,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": 0.6000000238418579,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 16,
+                "mAdditionalBonusAtThisLevel": 0.4000000059604645,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 21,
+                "mAdditionalBonusAtThisLevel": 0.6000000238418579,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 26,
+                "mAdditionalBonusAtThisLevel": 0.6000000238418579,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 31,
+                "mAdditionalBonusAtThisLevel": 0.6000000238418579,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalXP": {
+        "mSimpleTooltipCalculationDisplay": 5,
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mBuffName": "{79ba1a32}",
+            "mCoefficient": 1,
+            "__type": "BuffCounterByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "XPPer5": {
+        "mMultiplier": {
+          "mNumber": 2.5,
+          "__type": "NumberCalculationPart"
+        },
+        "mModifiedGameCalculation": "{e359ec0d}",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "castRange": [
+      825,
+      825,
+      825,
+      825,
+      825,
+      825,
+      825
+    ]
+  },
+  "Characters/Zilean/Spells/ZileanQAbility/ZileanQ": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BombBaseDamage",
+        "mValues": [
+          30,
+          75,
+          115,
+          165,
+          230,
+          300,
+          380
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          1,
+          1.100000023841858,
+          1.2000000476837158,
+          1.2999999523162842,
+          1.399999976158142,
+          1.5,
+          1.600000023841858
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BombBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.8999999761581421,
+    "cooldownTime": [
+      10.5,
+      10,
+      9.5,
+      9,
+      8.5,
+      8,
+      8
+    ],
+    "castRange": [
+      900,
+      900,
+      900,
+      900,
+      900,
+      900,
+      900
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Zilean/Spells/ChronoShiftAbility/ChronoShift": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "RBaseHeal",
+        "mValues": [
+          350,
+          600,
+          850,
+          1100,
+          1350,
+          1600,
+          1850
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RDuration",
+        "mValues": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ReviveStateDuration",
+        "mValues": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "RTotalHeal": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "RBaseHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 2,
+    "cooldownTime": [
+      10,
+      120,
+      90,
+      60,
+      0,
+      0,
+      10
+    ],
+    "castRange": [
+      900,
+      900,
+      900,
+      900,
+      900,
+      900,
+      900
+    ]
+  },
+  "Characters/Zilean/Spells/ZileanWAbility/ZileanW": {
+    "mCoefficient": 1,
+    "cooldownTime": [
+      16,
+      14,
+      12,
+      10,
+      8,
+      6,
+      6
+    ],
+    "castRange": [
+      600,
+      600,
+      600,
+      600,
+      600,
+      600,
+      600
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Zilean/Spells/TimeWarpAbility/TimeWarp": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "mCoefficient": 1,
+    "cooldownTime": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "castRange": [
+      550,
+      550,
+      550,
+      550,
+      550,
+      550,
+      550
+    ],
+    "castRangeDisplayOverride": [
+      550,
+      550,
+      550,
+      550,
+      550,
+      550,
+      550
+    ]
+  }
+}

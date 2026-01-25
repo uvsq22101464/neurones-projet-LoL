@@ -1,0 +1,439 @@
+{
+  "Characters/Singed/CharacterRecords/Root": {
+    "mCharacterName": "Singed",
+    "baseHP": 650.0,
+    "hpPerLevel": 96.0,
+    "baseStaticHPRegen": 1.9,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 330.0,
+      "arPerLevel": 45.0,
+      "arBaseStaticRegen": 1.5,
+      "arRegenPerLevel": 0.10999999940395355,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 63.0,
+    "damagePerLevel": 3.4,
+    "baseArmor": 34.0,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.7,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.9,
+    "acquisitionRange": 300.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "mage",
+    "roles": "TANK"
+  },
+  "Characters/Singed/Spells/SingedPAbility/SingedP": {
+    "DataValues": [
+      {
+        "mName": "MSPercent",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PerTargetCD",
+        "mValues": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TriggerArea",
+        "mValues": [
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "castRange": [
+      225.0,
+      225.0,
+      225.0,
+      225.0,
+      225.0,
+      225.0,
+      225.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Singed/Spells/PoisonTrailAbility/PoisonTrail": {
+    "DataValues": [
+      {
+        "mName": "BaseDamagePerSecond",
+        "mValues": [
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatioPerSecond",
+        "mValues": [
+          0.42500001192092896,
+          0.42500001192092896,
+          0.42500001192092896,
+          0.42500001192092896,
+          0.42500001192092896,
+          0.42500001192092896,
+          0.42500001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ToggleCooldown",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CloudDuration",
+        "mValues": [
+          3.25,
+          3.25,
+          3.25,
+          3.25,
+          3.25,
+          3.25,
+          3.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PoisonDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TicksPerSecond",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxLingerTicks",
+        "mValues": [
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "DamagePerSecond": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamagePerSecond",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatioPerSecond",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ApproximateTotalDamageTooltip": {
+        "mMultiplier": {
+          "mNumber": 4.75,
+          "__type": "NumberCalculationPart"
+        },
+        "tooltipOnly": true,
+        "mModifiedGameCalculation": "DamagePerSecond",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 0.10000000149011612,
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Singed/Spells/FlingAbility/Fling": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "mSpellCalculations": {
+      "BaseDamage": {
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.550000011920929,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.550000011920929,
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.5,
+      9.0,
+      8.5,
+      8.0,
+      8.0
+    ],
+    "castRange": [
+      125.0,
+      125.0,
+      125.0,
+      125.0,
+      125.0,
+      125.0,
+      125.0
+    ]
+  },
+  "Characters/Singed/Spells/InsanityPotionAbility/InsanityPotion": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "StatAmount",
+        "mValues": [
+          -10.0,
+          25.0,
+          60.0,
+          95.0,
+          130.0,
+          165.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Duration",
+        "mValues": [
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GrievousAmount",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "GrievousDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mCoefficient": 1.0,
+    "cooldownTime": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "castRange": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Singed/Spells/MegaAdhesiveAbility/MegaAdhesive": {
+    "DataValues": [
+      {
+        "mName": "SlowPercent",
+        "mValues": [
+          45.0,
+          50.0,
+          55.0,
+          60.0,
+          65.0,
+          70.0,
+          75.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "WDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "WRadius",
+        "mValues": [
+          265.0,
+          265.0,
+          265.0,
+          265.0,
+          265.0,
+          265.0,
+          265.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DelayExecute",
+        "mValues": [
+          0.375,
+          0.375,
+          0.375,
+          0.375,
+          0.375,
+          0.375,
+          0.375
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "cooldownTime": [
+      17.0,
+      17.0,
+      16.0,
+      15.0,
+      14.0,
+      13.0,
+      13.0
+    ],
+    "castRange": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  }
+}

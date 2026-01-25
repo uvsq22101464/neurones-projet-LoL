@@ -1,0 +1,494 @@
+{
+  "Characters/Alistar/CharacterRecords/Root": {
+    "mCharacterName": "Alistar",
+    "baseHP": 685.0,
+    "hpPerLevel": 120.0,
+    "baseStaticHPRegen": 1.7,
+    "hpRegenPerLevel": 0.17,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 350.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 1.7000000476837158,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 62.0,
+    "damagePerLevel": 3.75,
+    "baseArmor": 40.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 32.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 330.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.125,
+    "acquisitionRange": 600.0,
+    "searchTags": "tank",
+    "searchTagsSecondary": "support",
+    "roles": "TANK"
+  },
+  "Characters/Alistar/Spells/AlistarPassiveAbility/AlistarPassive": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "AlistarPassiveHealRatio",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AlistarPassiveAllyHealRatio",
+        "mValues": [
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveCooldown",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveMaxStacks",
+        "mValues": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveStacksChampionKill",
+        "mValues": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PassiveAllyNumHeal",
+        "mValues": [
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BaseHeal": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mDataValue": "AlistarPassiveHealRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "AllyHeal": {
+        "mMultiplier": {
+          "mDataValue": "AlistarPassiveAllyHealRatio",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mModifiedGameCalculation": "BaseHeal",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "castRange": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ]
+  },
+  "Characters/Alistar/Spells/FerociousHowlAbility/FerociousHowl": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "SpecialCase_StasisLocked"
+    ],
+    "DataValues": [
+      {
+        "mName": "RDuration",
+        "mValues": [
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RDamageReduction",
+        "mValues": [
+          45.0,
+          55.0,
+          65.0,
+          75.0,
+          85.0,
+          95.0,
+          105.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "cooldownTime": [
+      120.0,
+      120.0,
+      100.0,
+      80.0,
+      120.0,
+      120.0,
+      120.0
+    ],
+    "castRange": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Alistar/Spells/AlistarEAbility/AlistarE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mEffectIndex": 1,
+            "__type": "EffectValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "AttackBonusDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 20.0,
+            "mInitialBonusPerLevel": 15.0,
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.699999988079071,
+    "cooldownTime": [
+      12.5,
+      12.0,
+      11.5,
+      11.0,
+      10.5,
+      10.0,
+      9.5
+    ],
+    "castRange": [
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0,
+      350.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Alistar/Spells/PulverizeAbility/Pulverize": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          20.0,
+          60.0,
+          100.0,
+          140.0,
+          180.0,
+          220.0,
+          260.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AoERadius",
+        "mValues": [
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0,
+          375.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockupDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      15.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      9.0
+    ],
+    "castRange": [
+      330.0,
+      330.0,
+      330.0,
+      330.0,
+      330.0,
+      330.0,
+      330.0
+    ],
+    "castRangeDisplayOverride": [
+      365.0,
+      365.0,
+      365.0,
+      365.0,
+      365.0,
+      365.0,
+      365.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Alistar/Spells/HeadbuttAbility/Headbutt": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "KnockBackDistance",
+        "mValues": [
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Damage",
+        "mValues": [
+          0.0,
+          55.0,
+          110.0,
+          165.0,
+          220.0,
+          275.0,
+          330.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "KnockUpDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "Damage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      15.0,
+      14.0,
+      13.0,
+      12.0,
+      11.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0,
+      650.0
+    ]
+  }
+}

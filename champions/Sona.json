@@ -1,0 +1,765 @@
+{
+  "id": 37,
+  "key": "Sona",
+  "name": "Sona",
+  "title": "Maven of the Strings",
+  "fullName": "Sona Buvelle",
+  "icon": "http://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Sona.png",
+  "resource": "MANA",
+  "attackType": "RANGED",
+  "adaptiveType": "MAGIC_DAMAGE",
+  "stats": {
+    "health": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 91,
+      "percentPerLevel": 0.0
+    },
+    "healthRegen": {
+      "flat": 5.5,
+      "percent": 0.0,
+      "perLevel": 0.55,
+      "percentPerLevel": 0.0
+    },
+    "mana": {
+      "flat": 340,
+      "percent": 0.0,
+      "perLevel": 45,
+      "percentPerLevel": 0.0
+    },
+    "manaRegen": {
+      "flat": 11.5,
+      "percent": 0.0,
+      "perLevel": 0.4,
+      "percentPerLevel": 0.0
+    },
+    "armor": {
+      "flat": 26,
+      "percent": 0.0,
+      "perLevel": 4.2,
+      "percentPerLevel": 0.0
+    },
+    "magicResistance": {
+      "flat": 30,
+      "percent": 0.0,
+      "perLevel": 1.3,
+      "percentPerLevel": 0.0
+    },
+    "attackDamage": {
+      "flat": 49,
+      "percent": 0.0,
+      "perLevel": 3,
+      "percentPerLevel": 0.0
+    },
+    "movespeed": {
+      "flat": 325,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "acquisitionRadius": {
+      "flat": 800,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "selectionRadius": {
+      "flat": 110,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "pathingRadius": {
+      "flat": 35,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "gameplayRadius": {
+      "flat": 65,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamage": {
+      "flat": 175,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "criticalStrikeDamageModifier": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeed": {
+      "flat": 0.644,
+      "percent": 0.0,
+      "perLevel": 2.3,
+      "percentPerLevel": 0.0
+    },
+    "attackSpeedRatio": {
+      "flat": 0.643999993801116,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackCastTime": {
+      "flat": 0.3,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackTotalTime": {
+      "flat": 1.6,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackDelayOffset": {
+      "flat": -0.12817870080471,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "attackRange": {
+      "flat": 550,
+      "percent": 0.0,
+      "perLevel": 0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageTaken": {
+      "flat": 1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramDamageDealt": {
+      "flat": 1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramHealing": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramTenacity": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAbilityHaste": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramAttackSpeed": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "aramEnergyRegen": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageTaken": {
+      "flat": 1,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfDamageDealt": {
+      "flat": 0.9,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfHealing": {
+      "flat": 0.7,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    },
+    "urfShielding": {
+      "flat": 1.0,
+      "percent": 0.0,
+      "perLevel": 0.0,
+      "percentPerLevel": 0.0
+    }
+  },
+  "positions": [
+    "SUPPORT"
+  ],
+  "roles": [
+    "ENCHANTER",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "attributeRatings": {
+    "damage": 2,
+    "toughness": 1,
+    "control": 2,
+    "mobility": 1,
+    "utility": 2,
+    "abilityReliance": 90,
+    "difficulty": 1
+  },
+  "abilities": {
+    "P": [
+      {
+        "name": "Power Chord",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Sona/ability-icon/p",
+        "effects": [
+          {
+            "description": "Innate - Accelerando: Sona generates a stack of Accelerando each time she hits an enemy champion with Hymn of Valor and each time she mitigates sufficient damage or heals damaged allies with Aria of Perseverance, stacking up to 120 times. At maximum stacks, she instead reduces the current cooldown of Crescendo by 1.5 seconds each time.\n Accelerando: For each stack, Sona gains 0.5 basic ability haste, up to 60 at maximum stacks.",
+            "leveling": []
+          },
+          {
+            "description": "Innate - Melody: Whenever Sona casts a basic ability, her other basic abilities incur a 0.5-second global cooldown and she generates a unique aura for 3 seconds that empowers herself and nearby allied champions.",
+            "leveling": []
+          },
+          {
+            "description": "Innate - Power Chord: Sona's basic abilities generate a stack of Power Chord, stacking up to 3 times. At 3 stacks, her next basic attack is empowered to consume them all to have an uncancellable windup, deal 20 : 240 (based on level) (+ 20% AP) bonus magic damage, and apply an additional effect based on the last basic ability she cast:\n Hymn of Valor - Staccato: Bonus damage is modified to 30 : 360 (based on level) (+ 30% AP).\n Aria of Perseverance - Diminuendo: Reduces the target's size by 8% and damage dealt by 25% (+ 4% per 100 AP) for 3 seconds.\n Song of Celerity - Tempo: Slows the target by 50% (+ 4% per 100 AP) for 2 seconds, capped at 99%.",
+            "leveling": []
+          },
+          {
+            "description": "Gaining Power Chord's empowered attack resets Sona's basic attack timer.",
+            "leveling": []
+          }
+        ],
+        "cost": null,
+        "cooldown": null,
+        "targeting": "Passive",
+        "affects": "Self",
+        "spellshieldable": "True",
+        "resource": null,
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "proc",
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "Power Chord stacks are represented by a counter under Sona's health bar, visible to the player only. It will light up when the empowered effect is available.\nWhen Power Chord is ready, Sona gains a ring around her. This ring will have a different color depending on the last ability used ( blue,  green or  purple).\nThe effect does not change if abilities are used while the projectile is in motion.\nThe triggering attack will apply other  on-hit effects and can  critically strike as normal.\nSona retains Power Chord's stacks when entering  resurrection.\nThe empowered attack will trigger but not be consumed nor apply its effects against  wards and jungle plants.",
+        "blurb": "Innate - Accelerando:  Sona gains a permanent  stack of Accelerando each time she hits an enemy champion with  Hymn of Valor and each time she mitigates sufficient damage or heals damaged allies with  Aria of Perseverance. If she has max stacks, she instead  reduces the cooldown of  Crescendo each time.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": null,
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ],
+    "Q": [
+      {
+        "name": "Hymn of Valor",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Sona/ability-icon/q",
+        "effects": [
+          {
+            "description": "Active: Sona sends out bolts of sound to the two nearest visible enemies, prioritizing champions. Each bolt deals magic damage and grants sight of the area around the target for 1 second.Sona gains a stack of Accelerando for each bolt that hits an enemy champion.",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      50,
+                      85,
+                      120,
+                      155,
+                      190
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      40
+                    ],
+                    "units": [
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Melody Bonus: Sona and tagged allied champions deal bonus magic damage on their next basic attack within 5 seconds.",
+            "leveling": [
+              {
+                "attribute": "Bonus Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      15,
+                      20,
+                      25,
+                      30
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      10
+                    ],
+                    "units": [
+                      "% of Sona's AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                50,
+                55,
+                60,
+                65,
+                70
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                8
+              ],
+              "units": [
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "special",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "The bolts deal  area damage while the attacks, while the Melody empowered attacks deal  proc damage.\nSight of the targets' area is granted on-cast.\nThe Melody empowerment given to tagged allies respects  enchantment redirection.\nThe empowered attack will trigger but not be consumed against wards.",
+        "blurb": "Active:  Sona projects sound bolts to the two nearest enemies that each deal magic damage, and she gains a stack of  Accelerando for each bolt that damages an enemy  champion.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1300",
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": "825 /  400",
+        "targetRange": null
+      }
+    ],
+    "W": [
+      {
+        "name": "Aria of Perseverance",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Sona/ability-icon/w",
+        "effects": [
+          {
+            "description": "Active: Sona heals herself and sends out a tone to heal the most wounded allied champion nearby.",
+            "leveling": [
+              {
+                "attribute": "Heal",
+                "modifiers": [
+                  {
+                    "values": [
+                      30,
+                      45,
+                      60,
+                      75,
+                      90
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      30
+                    ],
+                    "units": [
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Melody Bonus: Sona and tagged allied champions are granted a shield for 1.5 seconds.",
+            "leveling": [
+              {
+                "attribute": "Shield Strength",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      45,
+                      65,
+                      85,
+                      105
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      25
+                    ],
+                    "units": [
+                      "% of Sona's AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Sona gains a stack of Accelerando whenever she heals a wounded ally or shields a minimum amount of damage for an ally with Aria of Perseverance.",
+            "leveling": [
+              {
+                "attribute": "Minimum Damage Mitigated",
+                "modifiers": [
+                  {
+                    "values": [
+                      25,
+                      45,
+                      65,
+                      85,
+                      105
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                80,
+                85,
+                90,
+                95,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                10
+              ],
+              "units": [
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self, Allies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "If no one is injured, Aria of Perseverance will target the closest allied champion.\nThe projectile of Aria of Perseverance will follow an ally in stealth but will not reveal them.",
+        "blurb": "Active:  Sona  heals herself and projects a sound bolt that heals the most wounded allied champion nearby.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "1300",
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": "1000 /  400",
+        "targetRange": null
+      }
+    ],
+    "E": [
+      {
+        "name": "Song of Celerity",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Sona/ability-icon/e",
+        "effects": [
+          {
+            "description": "Active: Sona gains 20% (+ 2% per 100 AP) bonus movement speed for 7 seconds. If she takes damage during this time, the duration ends prematurely once or if 3 seconds have elapsed.",
+            "leveling": []
+          },
+          {
+            "description": "Melody Bonus: Tagged allied champions gain bonus movement speed for 3 seconds.",
+            "leveling": [
+              {
+                "attribute": "Bonus Movement Speed",
+                "modifiers": [
+                  {
+                    "values": [
+                      10,
+                      12,
+                      14,
+                      16,
+                      18
+                    ],
+                    "units": [
+                      "%",
+                      "%",
+                      "%",
+                      "%",
+                      "%"
+                    ]
+                  },
+                  {
+                    "values": [
+                      2,
+                      2
+                    ],
+                    "units": [
+                      "% per 100 of Sona's AP",
+                      "% per 100 of Sona's AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                65
+              ],
+              "units": [
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                14
+              ],
+              "units": [
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Auto",
+        "affects": "Self, Allies",
+        "spellshieldable": null,
+        "resource": "MANA",
+        "damageType": null,
+        "spellEffects": null,
+        "projectile": null,
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "To achieve a 99%  slow with the empowered attack via  Power Chord, it would require at least 1475 AP.",
+        "blurb": "Active:  Sona gains  bonus movement speed for a short time, which is extended to a few seconds if she does not take damage during this time.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": null,
+        "width": null,
+        "angle": null,
+        "castTime": "none",
+        "effectRadius": "400",
+        "targetRange": null
+      }
+    ],
+    "R": [
+      {
+        "name": "Crescendo",
+        "icon": "https://cdn.communitydragon.org/latest/champion/Sona/ability-icon/r",
+        "effects": [
+          {
+            "description": "Active: Sona strikes an irresistible chord in the target direction that deals magic damage to enemies hit and stuns them for 1.5 seconds.",
+            "leveling": [
+              {
+                "attribute": "Magic Damage",
+                "modifiers": [
+                  {
+                    "values": [
+                      150,
+                      250,
+                      350
+                    ],
+                    "units": [
+                      "",
+                      "",
+                      ""
+                    ]
+                  },
+                  {
+                    "values": [
+                      50,
+                      50,
+                      50
+                    ],
+                    "units": [
+                      "% AP",
+                      "% AP",
+                      "% AP"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cost": {
+          "modifiers": [
+            {
+              "values": [
+                100,
+                100,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        "cooldown": {
+          "modifiers": [
+            {
+              "values": [
+                140,
+                120,
+                100
+              ],
+              "units": [
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "affectedByCdr": true
+        },
+        "targeting": "Direction",
+        "affects": "Enemies",
+        "spellshieldable": "True",
+        "resource": "MANA",
+        "damageType": "MAGIC_DAMAGE",
+        "spellEffects": "spellaoe",
+        "projectile": "TRUE",
+        "onHitEffects": null,
+        "occurrence": null,
+        "notes": "This ability will cast from wherever the caster is at the start of the cast time.\nWhile stunned by Crescendo, enemies will perform their Dance emote.",
+        "blurb": "Active:  Sona strikes an irresistible chord in the target direction that deals magic damage to enemies hit and briefly  stuns them.",
+        "missileSpeed": null,
+        "rechargeRate": null,
+        "collisionRadius": null,
+        "tetherRadius": null,
+        "onTargetCdStatic": null,
+        "innerRadius": null,
+        "speed": "2400",
+        "width": "280",
+        "angle": null,
+        "castTime": "0.25",
+        "effectRadius": null,
+        "targetRange": null
+      }
+    ]
+  },
+  "releaseDate": "2010-09-21",
+  "releasePatch": "1.0.0.101",
+  "patchLastChanged": "25.22",
+  "price": {
+    "blueEssence": 225,
+    "rp": 260,
+    "saleRp": 0
+  }
+}

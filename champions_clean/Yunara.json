@@ -1,0 +1,519 @@
+{
+  "name": "Yunara",
+  "health": 590,
+  "healthPerLevel": 110,
+  "healthRegen": 4,
+  "healthRegenPerLevel": 0.55,
+  "armor": 25,
+  "armorPerLevel": 4.4,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 55,
+  "attackDamagePerLevel": 2.5,
+  "attackSpeed": 0.65,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 575,
+  "roles": [
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "Vow of the First Lands",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Cultivation of Spirit",
+      "effects": [
+        [
+          {
+            "attribute": "Passive Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  35,
+                  45,
+                  55,
+                  65
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Active Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  20,
+                  20,
+                  20,
+                  20,
+                  20
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Combined Bonus Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Active Increased Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  12.5,
+                  25,
+                  37.5,
+                  50,
+                  62.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Combined Increased Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  50,
+                  75,
+                  100,
+                  125
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Arc of Judgment",
+      "effects": [
+        [
+          {
+            "attribute": "Initial Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  55,
+                  95,
+                  135,
+                  175,
+                  215
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  85,
+                  85,
+                  85,
+                  85,
+                  85
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Linger Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  8.25,
+                  14.25,
+                  20.25,
+                  26.25,
+                  32.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12.75,
+                  12.75,
+                  12.75,
+                  12.75,
+                  12.75
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  7.5,
+                  7.5,
+                  7.5,
+                  7.5,
+                  7.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Expanded Damage",
+            "modifiers": [
+              {
+                "values": [
+                  33,
+                  57,
+                  81,
+                  105,
+                  129
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  51,
+                  51,
+                  51,
+                  51,
+                  51
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Arc of Ruin",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Kanmei's Steps",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Move Speed",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Bonus Move Speed",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  52.5,
+                  60,
+                  67.5,
+                  75
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    },
+    {
+      "name": "Untouchable Shadow",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Transcend One's Self",
+      "effects": [
+        [
+          {
+            "attribute": "Arc of Ruin Base Damage",
+            "modifiers": [
+              {
+                "values": [
+                  175,
+                  350,
+                  525
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Untouchable Shadow Dash Speed",
+            "modifiers": [
+              {
+                "values": [
+                  1350,
+                  1500,
+                  1650
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

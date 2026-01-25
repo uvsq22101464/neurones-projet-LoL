@@ -1,0 +1,924 @@
+{
+  "Characters/Renekton/CharacterRecords/Root": {
+    "mCharacterName": "Renekton",
+    "baseHP": 660.0,
+    "hpPerLevel": 111.0,
+    "baseStaticHPRegen": 1.6,
+    "hpRegenPerLevel": 0.15,
+    "primaryAbilityResource": {
+      "arType": 6,
+      "arBaseStaticRegen": 0.0,
+      "arIncrements": 50.0,
+      "arMaxSegments": 2,
+      "arHasRegenText": false,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 69.0,
+    "damagePerLevel": 4.15,
+    "baseArmor": 35.0,
+    "armorPerLevel": 5.2,
+    "baseSpellBlock": 28.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 345.0,
+    "attackRange": 125.0,
+    "attackSpeed": 0.665,
+    "attackSpeedRatio": 0.665,
+    "attackSpeedPerLevel": 2.75,
+    "acquisitionRange": 600.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "tank",
+    "roles": "BRAWLER"
+  },
+  "Characters/Renekton/Spells/RenektonPreExecuteAbility/RenektonPreExecute": {
+    "mSpellTags": [
+      "PositiveEffect_EmpowerAttack",
+      "Trait_AttackReset",
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamagePerHit",
+        "mValues": [
+          -10.0,
+          5.0,
+          20.0,
+          35.0,
+          50.0,
+          65.0,
+          80.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TotalADPerHit",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnragedStunDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusFuryVsChamps",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BasicTotalDamage": {
+        "mMultiplier": {
+          "mNumber": 2.0,
+          "__type": "NumberCalculationPart"
+        },
+        "mModifiedGameCalculation": "HitDamage",
+        "__type": "GameCalculationModified"
+      },
+      "EmpTotalDamage": {
+        "mMultiplier": {
+          "mNumber": 3.0,
+          "__type": "NumberCalculationPart"
+        },
+        "mModifiedGameCalculation": "HitDamage",
+        "__type": "GameCalculationModified"
+      },
+      "HitDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamagePerHit",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mDataValue": "TotalADPerHit",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0,
+      8.0,
+      0.0
+    ],
+    "castRange": [
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0,
+      300.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Renekton/Spells/RenektonPredatorAbility/RenektonPredator": {
+    "DataValues": [
+      {
+        "mName": "FuryPerAttack",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryIncreasePercent",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "LowHealthPercentThreshold",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "InCombatDuration",
+        "mValues": [
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryCost",
+        "mValues": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Renekton/Spells/RenektonSliceAndDiceAbility/RenektonSliceAndDice": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          10.0,
+          40.0,
+          70.0,
+          100.0,
+          130.0,
+          160.0,
+          190.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseADRatio",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnragedBaseDamage",
+        "mValues": [
+          25.0,
+          70.0,
+          115.0,
+          160.0,
+          205.0,
+          250.0,
+          295.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnragedADRatio",
+        "mValues": [
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EnragedArmorShred",
+        "mValues": [
+          22.5,
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ShredTimer",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionRageGeneration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChampionRageGeneration",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryMax",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DiceTimer",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseDashSpeed",
+        "mValues": [
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0,
+          750.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BasicDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BaseADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "EnragedBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "EnragedADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "DashSpeed": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDashSpeed",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 7,
+            "mCoefficient": 1.0,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      16.0,
+      16.0,
+      14.5,
+      13.0,
+      11.5,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0,
+      450.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Renekton/Spells/RenektonCleaveAbility/RenektonCleave": {
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0,
+          210.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseADRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseMinionHeal",
+        "mValues": [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionHealADRatio",
+        "mValues": [
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164,
+          0.019999999552965164
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChampHeal",
+        "mValues": [
+          4.0,
+          12.0,
+          20.0,
+          28.0,
+          36.0,
+          44.0,
+          52.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChampionHealADRatio",
+        "mValues": [
+          0.17000000178813934,
+          0.17000000178813934,
+          0.17000000178813934,
+          0.17000000178813934,
+          0.17000000178813934,
+          0.17000000178813934,
+          0.17000000178813934
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BasicHealCap",
+        "mValues": [
+          25.0,
+          50.0,
+          75.0,
+          100.0,
+          125.0,
+          150.0,
+          175.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredBaseDamage",
+        "mValues": [
+          45.0,
+          90.0,
+          135.0,
+          180.0,
+          225.0,
+          270.0,
+          315.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredADRatio",
+        "mValues": [
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142,
+          1.399999976158142
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredHealCap",
+        "mValues": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredHealMultiplier",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "Range",
+        "mValues": [
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0,
+          400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "UltimateRangeMod",
+        "mValues": [
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158,
+          1.2000000476837158
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionFuryGain",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChampionFuryGain",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryGainCap",
+        "mValues": [
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "BasicDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "BaseADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "EmpoweredBaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "EmpoweredADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "NonChampHealing": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseMinionHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "MinionHealADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ChampHealing": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "ChampHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mDataValue": "ChampionHealADRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EmpNonChampHealing": {
+        "mMultiplier": {
+          "mDataValue": "EmpoweredHealMultiplier",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "NonChampHealing",
+        "__type": "GameCalculationModified"
+      },
+      "EmpChampHealing": {
+        "mMultiplier": {
+          "mDataValue": "EmpoweredHealMultiplier",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "ChampHealing",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0,
+      7.0
+    ],
+    "castRange": [
+      20.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      325.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Renekton/Spells/RenektonReignOfTheTyrantAbility/RenektonReignOfTheTyrant": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "HealthGain",
+        "mValues": [
+          100.0,
+          300.0,
+          500.0,
+          700.0,
+          900.0,
+          1100.0,
+          1300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AuraDamagePerSecond",
+        "mValues": [
+          -30.0,
+          60.0,
+          150.0,
+          240.0,
+          330.0,
+          420.0,
+          510.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryPerSecond",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "FuryOnCast",
+        "mValues": [
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0,
+          15.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TickRate",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamagePerSecond": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "AuraDamagePerSecond",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.10000000149011612,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.10000000149011612,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.10000000149011612,
+    "cooldownTime": [
+      120.0,
+      120.0,
+      100.0,
+      80.0,
+      80.0,
+      80.0,
+      80.0
+    ],
+    "castRange": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

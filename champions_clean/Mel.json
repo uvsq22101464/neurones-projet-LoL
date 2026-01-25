@@ -1,0 +1,598 @@
+{
+  "name": "Mel",
+  "health": 630,
+  "healthPerLevel": 93,
+  "healthRegen": 6,
+  "healthRegenPerLevel": 0.55,
+  "armor": 21,
+  "armorPerLevel": 5.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 54,
+  "attackDamagePerLevel": 3.3,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 550,
+  "roles": [
+    "ARTILLERY",
+    "MAGE",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Searing Brilliance",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Radiant Volley",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage per Explosion",
+            "modifiers": [
+              {
+                "values": [
+                  13,
+                  15.5,
+                  18,
+                  20.5,
+                  23
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8.5,
+                  8.5,
+                  8.5,
+                  8.5,
+                  8.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minion Damage per Explosion",
+            "modifiers": [
+              {
+                "values": [
+                  9.75,
+                  11.625,
+                  13.5,
+                  15.375,
+                  17.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6.375,
+                  6.375,
+                  6.375,
+                  6.375,
+                  6.375
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Number of Bolts",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  78,
+                  108.5,
+                  144,
+                  184.5,
+                  230
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  51,
+                  59.5,
+                  68,
+                  76.5,
+                  85
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  58.5,
+                  81.375,
+                  108,
+                  138.375,
+                  172.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  38.25,
+                  44.625,
+                  51,
+                  57.375,
+                  63.75
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Rebuttal",
+      "effects": [
+        [
+          {
+            "attribute": "Replicated Projectile Damage Modifier",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  45,
+                  50,
+                  55,
+                  60
+                ],
+                "units": [
+                  "%  of the original damage",
+                  "%  of the original damage",
+                  "%  of the original damage",
+                  "%  of the original damage",
+                  "%  of the original damage"
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Solar Snare",
+      "effects": [
+        [
+          {
+            "attribute": "Orb Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  60,
+                  100,
+                  140,
+                  180,
+                  220
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Orb Root Duration",
+            "modifiers": [
+              {
+                "values": [
+                  1.2,
+                  1.3,
+                  1.4,
+                  1.5,
+                  1.6
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Field Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  3.5,
+                  5,
+                  6.5,
+                  8
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Field Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  16,
+                  28,
+                  40,
+                  52,
+                  64
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Orb Minion Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  50,
+                  70,
+                  90,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Field Minion Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  1.75,
+                  2.5,
+                  3.25,
+                  4
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Field Magic Damage per Second",
+            "modifiers": [
+              {
+                "values": [
+                  8,
+                  14,
+                  20,
+                  26,
+                  32
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Golden Eclipse",
+      "effects": [
+        [
+          {
+            "attribute": "Increased Stored Damage",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  20,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Stored Damage Increase per Stack",
+            "modifiers": [
+              {
+                "values": [
+                  1,
+                  2,
+                  3
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  4,
+                  7,
+                  10
+                ],
+                "units": [
+                  " (+ 3.5% AP) per Overwhelm stack on the target",
+                  " (+ 3.5% AP) per Overwhelm stack on the target",
+                  " (+ 3.5% AP) per Overwhelm stack on the target"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

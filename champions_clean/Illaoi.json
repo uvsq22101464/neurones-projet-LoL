@@ -1,0 +1,213 @@
+{
+  "name": "Illaoi",
+  "health": 656,
+  "healthPerLevel": 115,
+  "healthRegen": 9.5,
+  "healthRegenPerLevel": 0.8,
+  "armor": 35,
+  "armorPerLevel": 5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 65,
+  "attackDamagePerLevel": 5,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 125,
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Prophet of an Elder God",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Tentacle Smash",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Increase",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Harsh Lesson",
+      "effects": [
+        [
+          {
+            "attribute": "Additional Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  3.5,
+                  4,
+                  4.5,
+                  5
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  3.5,
+                  3.5,
+                  3.5,
+                  3.5,
+                  3.5
+                ],
+                "units": [
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  20,
+                  30,
+                  40,
+                  50,
+                  60
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Test of Spirit",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Transmission",
+            "modifiers": [
+              {
+                "values": [
+                  25,
+                  30,
+                  35,
+                  40,
+                  45
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              },
+              {
+                "values": [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ],
+                "units": [
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD",
+                  "% per 100 AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Leap of Faith",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  150,
+                  250,
+                  350
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}

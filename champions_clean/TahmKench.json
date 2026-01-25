@@ -1,0 +1,382 @@
+{
+  "name": "Tahm Kench",
+  "health": 640,
+  "healthPerLevel": 103,
+  "healthRegen": 6.5,
+  "healthRegenPerLevel": 0.55,
+  "armor": 39,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 56,
+  "attackDamagePerLevel": 3.2,
+  "attackSpeed": 0.658,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 175,
+  "roles": [
+    "SUPPORT",
+    "TANK",
+    "WARDEN"
+  ],
+  "P": [
+    {
+      "name": "An Acquired Taste",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Tongue Lash",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  75,
+                  120,
+                  165,
+                  210,
+                  255
+                ],
+                "units": [
+                  " ",
+                  " ",
+                  " ",
+                  " ",
+                  " "
+                ]
+              },
+              {
+                "values": [
+                  6.0,
+                  8.470588235294118,
+                  10.941176470588236,
+                  13.411764705882353,
+                  15.882352941176471,
+                  18.352941176470587,
+                  20.823529411764707,
+                  23.294117647058826,
+                  25.764705882352942,
+                  28.235294117647058,
+                  30.705882352941178,
+                  33.1764705882353,
+                  35.64705882352941,
+                  38.11764705882353,
+                  40.58823529411765,
+                  43.05882352941177,
+                  45.529411764705884,
+                  48.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              },
+              {
+                "values": [
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "units": [
+                  "% AP per 100 bonus health",
+                  "% AP per 100 bonus health",
+                  "% AP per 100 bonus health",
+                  "% AP per 100 bonus health",
+                  "% AP per 100 bonus health"
+                ]
+              },
+              {
+                "values": [
+                  4.5,
+                  4.5,
+                  4.5,
+                  4.5,
+                  4.5
+                ],
+                "units": [
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health",
+                  "% bonus health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  5,
+                  5.5,
+                  6,
+                  6.5,
+                  7
+                ],
+                "units": [
+                  "% of missing health",
+                  "% of missing health",
+                  "% of missing health",
+                  "% of missing health",
+                  "% of missing health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Abyssal Dive",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  135,
+                  170,
+                  205,
+                  240
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  150,
+                  150,
+                  150,
+                  150,
+                  150
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Cooldown Refund",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  42.5,
+                  45,
+                  47.5,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Allies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Thick Skin",
+      "effects": [
+        [
+          {
+            "attribute": "Damage Stored into Grey Health",
+            "modifiers": [
+              {
+                "values": [
+                  15,
+                  23,
+                  31,
+                  39,
+                  47
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Damage Stored into Grey Health",
+            "modifiers": [
+              {
+                "values": [
+                  42,
+                  44,
+                  46,
+                  48,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Devour",
+      "effects": [
+        [
+          {
+            "attribute": "Shield Strength",
+            "modifiers": [
+              {
+                "values": [
+                  650,
+                  800,
+                  950
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies / Allies"
+    },
+    {
+      "name": "Regurgitate",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  250,
+                  400
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% (+ 7% per 100 AP) of the target's maximum health",
+                  "% (+ 7% per 100 AP) of the target's maximum health",
+                  "% (+ 7% per 100 AP) of the target's maximum health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies / Allies"
+    }
+  ]
+}

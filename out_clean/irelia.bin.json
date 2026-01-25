@@ -1,0 +1,792 @@
+{
+  "Characters/Irelia/CharacterRecords/Root": {
+    "mCharacterName": "Irelia",
+    "baseHP": 630.0,
+    "hpPerLevel": 115.0,
+    "baseStaticHPRegen": 0.7,
+    "hpRegenPerLevel": 0.17,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 350.0,
+      "arPerLevel": 50.0,
+      "arBaseStaticRegen": 1.600000023841858,
+      "arRegenPerLevel": 0.1599999964237213,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 65.0,
+    "damagePerLevel": 3.5,
+    "baseArmor": 36.0,
+    "armorPerLevel": 4.7,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 2.05,
+    "baseMoveSpeed": 335.0,
+    "attackRange": 200.0,
+    "attackSpeed": 0.656,
+    "attackSpeedRatio": 0.656,
+    "attackSpeedPerLevel": 2.5,
+    "acquisitionRange": 600.0,
+    "searchTags": "fighter",
+    "searchTagsSecondary": "assassin",
+    "roles": "BRAWLER"
+  },
+  "Characters/Irelia/Spells/IreliaRAbility/IreliaR": {
+    "mSpellTags": [
+      "Trait_Ultimate"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseMissileDamage",
+        "mValues": [
+          50.0,
+          125.0,
+          200.0,
+          275.0,
+          350.0,
+          425.0,
+          500.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseZoneDamage",
+        "mValues": [
+          50.0,
+          125.0,
+          200.0,
+          275.0,
+          350.0,
+          425.0,
+          500.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CCDuration",
+        "mValues": [
+          0.0,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          0.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0,
+          90.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          0.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ZoneDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CooldownAmount",
+        "mValues": [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071,
+          0.699999988079071
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "MissileDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseMissileDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "ZoneDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseZoneDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      125.0,
+      125.0,
+      105.0,
+      85.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0,
+      1000.0
+    ],
+    "castRangeDisplayOverride": [
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0,
+      950.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Irelia/Spells/IreliaPassiveAbility/IreliaPassive": {
+    "DataValues": [
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxStacks",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitStructureMod",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitBaseDamage",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitPerLevel",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "SingleStackAS": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStartValue": 10.0,
+            "mEndValue": 25.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          }
+        ],
+        "mPrecision": 1,
+        "__type": "GameCalculation"
+      },
+      "OnHitBonus": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "{91d404a5}": "OnHitBaseDamage",
+            "{b2cd0eb0}": "{73f1945a}",
+            "__type": "{b22609db}"
+          },
+          {
+            "mStat": 2,
+            "mStatFormula": 2,
+            "mCoefficient": 0.20000000298023224,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "Characters/Irelia/Spells/IreliaEAbility/IreliaE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          30.0,
+          70.0,
+          110.0,
+          150.0,
+          190.0,
+          230.0,
+          270.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StunDuration",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RevTime",
+        "mValues": [
+          0.0,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355,
+          0.3499999940395355
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          0.0,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CDBetweenCast",
+        "mValues": [
+          0.0,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxRange",
+        "mValues": [
+          0.0,
+          775.0,
+          775.0,
+          775.0,
+          775.0,
+          775.0,
+          775.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinRange",
+        "mValues": [
+          0.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MarkDuration",
+        "mValues": [
+          0.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      16.0,
+      16.0,
+      14.5,
+      13.0,
+      11.5,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "castRangeDisplayOverride": [
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0,
+      850.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Irelia/Spells/IreliaWAbility/IreliaW": {
+    "DataValues": [
+      {
+        "mName": "BasePhysicalDR",
+        "mValues": [
+          0.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          50.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDuration",
+        "mValues": [
+          0.0,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinDamage",
+        "mValues": [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxDamage",
+        "mValues": [
+          0.0,
+          30.0,
+          60.0,
+          90.0,
+          120.0,
+          150.0,
+          180.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxBonusRatio",
+        "mValues": [
+          0.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ChargeTimeForMax",
+        "mValues": [
+          0.0,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MRReductionAmount",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "FinalPhysicalDR": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStartValue": 40.0,
+            "mEndValue": 70.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          },
+          {
+            "mCoefficient": 0.07000000029802322,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinDamageCalc": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "MinDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MaxDamageCalc": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "tooltipOnly": true,
+        "mFormulaParts": [
+          {
+            "mDataValue": "MaxDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 1.2000000476837158,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mCoefficient": 1.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "FinalMagicDR": {
+        "mMultiplier": {
+          "mDataValue": "{297f7f37}",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "FinalPhysicalDR",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "cooldownTime": [
+      20.0,
+      20.0,
+      18.0,
+      16.0,
+      14.0,
+      12.0,
+      10.0
+    ],
+    "castRange": [
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0,
+      775.0
+    ],
+    "castRangeDisplayOverride": [
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0,
+      825.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Direction"
+    }
+  },
+  "Characters/Irelia/Spells/IreliaQAbility/IreliaQ": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          -15.0,
+          5.0,
+          25.0,
+          45.0,
+          65.0,
+          85.0,
+          105.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DashSpeedBonus",
+        "mValues": [
+          0.0,
+          1400.0,
+          1400.0,
+          1400.0,
+          1400.0,
+          1400.0,
+          1400.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealTADCoefficient",
+        "mValues": [
+          0.07999999821186066,
+          0.09000000357627869,
+          0.10000000149011612,
+          0.10999999940395355,
+          0.11999999731779099,
+          0.12999999523162842,
+          0.14000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "ChampionDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinionDamage": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mLevel1Value": 50.0,
+            "mInitialBonusPerLevel": 11.0,
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          },
+          {
+            "mStat": 2,
+            "mCoefficient": 0.699999988079071,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "HealAmount": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mStat": 2,
+            "mDataValue": "HealTADCoefficient",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      10.0,
+      10.0,
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0
+    ],
+    "castRange": [
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0,
+      600.0
+    ]
+  }
+}

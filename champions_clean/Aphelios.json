@@ -1,0 +1,176 @@
+{
+  "name": "Aphelios",
+  "health": 600,
+  "healthPerLevel": 102,
+  "healthRegen": 3.25,
+  "healthRegenPerLevel": 0.55,
+  "armor": 26,
+  "armorPerLevel": 4.2,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 55,
+  "attackDamagePerLevel": 2.3,
+  "attackSpeed": 0.665,
+  "attackSpeedPerLevel": 2.1,
+  "attackRange": 550,
+  "roles": [
+    "MARKSMAN"
+  ],
+  "P": [
+    {
+      "name": "The Hitman and the Seer",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Attack Damage",
+            "modifiers": [
+              {
+                "values": [
+                  5,
+                  10,
+                  15,
+                  20,
+                  25,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Attack Speed",
+            "modifiers": [
+              {
+                "values": [
+                  9,
+                  18,
+                  27,
+                  36,
+                  45,
+                  54
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Lethality",
+            "modifiers": [
+              {
+                "values": [
+                  5.5,
+                  11,
+                  16.5,
+                  22,
+                  27.5,
+                  33
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    },
+    {
+      "name": "Calibrum",
+      "effects": [],
+      "affects": "Self, Enemies"
+    },
+    {
+      "name": "Severum",
+      "effects": [],
+      "affects": "Self"
+    },
+    {
+      "name": "Gravitum",
+      "effects": [],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Infernum",
+      "effects": [],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Crescendum",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Weapons of the Faithful",
+      "effects": [],
+      "affects": null
+    },
+    {
+      "name": "Moonshot",
+      "effects": [],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Onslaught",
+      "effects": [],
+      "affects": "Self, Enemies"
+    },
+    {
+      "name": "Binding Eclipse",
+      "effects": [],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Duskwave",
+      "effects": [],
+      "affects": "Enemies"
+    },
+    {
+      "name": "Sentry",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Phase",
+      "effects": [],
+      "affects": null
+    }
+  ],
+  "E": [
+    {
+      "name": "Weapon Queue System",
+      "effects": [],
+      "affects": null
+    }
+  ],
+  "R": [
+    {
+      "name": "Moonlight Vigil",
+      "effects": [],
+      "affects": "Enemies"
+    }
+  ]
+}

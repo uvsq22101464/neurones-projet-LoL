@@ -1,0 +1,136 @@
+{
+  "name": "Pyke",
+  "health": 670,
+  "healthPerLevel": 110,
+  "healthRegen": 7,
+  "healthRegenPerLevel": 0.5,
+  "armor": 43,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 2,
+  "attackSpeed": 0.667,
+  "attackSpeedPerLevel": 2.5,
+  "attackRange": 150,
+  "roles": [
+    "ASSASSIN",
+    "CATCHER",
+    "SUPPORT"
+  ],
+  "P": [
+    {
+      "name": "Gift of the Drowned Ones",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Bone Skewer",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  75,
+                  75,
+                  75,
+                  75,
+                  75
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Ghostwater Dive",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Phantom Undertow",
+      "effects": [
+        [
+          {
+            "attribute": "Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  150,
+                  200,
+                  250,
+                  300
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD",
+                  "% bonus AD"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Death from Below",
+      "effects": [],
+      "affects": "Self, Enemies"
+    }
+  ]
+}

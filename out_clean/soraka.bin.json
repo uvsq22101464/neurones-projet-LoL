@@ -1,0 +1,521 @@
+{
+  "Characters/Soraka/CharacterRecords/Root": {
+    "mCharacterName": "Soraka",
+    "baseHP": 605.0,
+    "hpPerLevel": 88.0,
+    "baseStaticHPRegen": 0.5,
+    "hpRegenPerLevel": 0.1,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 425.0,
+      "arPerLevel": 40.0,
+      "arBaseStaticRegen": 2.299999952316284,
+      "arRegenPerLevel": 0.07999999821186066,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 50.0,
+    "damagePerLevel": 3.0,
+    "baseArmor": 32.0,
+    "armorPerLevel": 5.0,
+    "baseSpellBlock": 30.0,
+    "spellBlockPerLevel": 1.3,
+    "baseMoveSpeed": 325.0,
+    "attackRange": 550.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 2.14,
+    "acquisitionRange": 600.0,
+    "searchTags": "support",
+    "searchTagsSecondary": "mage",
+    "roles": "SUPPORT"
+  },
+  "Characters/Soraka/Spells/SorakaEAbility/SorakaE": {
+    "mSpellTags": [
+      "Trait_ImmobilizingCCSpell"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          45.0,
+          70.0,
+          95.0,
+          120.0,
+          145.0,
+          170.0,
+          195.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RootDuration",
+        "mValues": [
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "RootDelay",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.4000000059604645,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      20.0,
+      20.0,
+      19.0,
+      18.0,
+      17.0,
+      16.0,
+      16.0
+    ],
+    "castRange": [
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0,
+      875.0
+    ],
+    "castRangeDisplayOverride": [
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0,
+      925.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Soraka/Spells/SorakaQAbility/SorakaQ": {
+    "mSpellTags": [
+      ""
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseDamage",
+        "mValues": [
+          50.0,
+          85.0,
+          120.0,
+          155.0,
+          190.0,
+          225.0,
+          260.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseHoT",
+        "mValues": [
+          45.0,
+          60.0,
+          75.0,
+          90.0,
+          105.0,
+          120.0,
+          135.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HotDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedSlow",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedHaste",
+        "mValues": [
+          0.17499999701976776,
+          0.20000000298023224,
+          0.22499999403953552,
+          0.25,
+          0.2750000059604645,
+          0.30000001192092896,
+          0.32499998807907104
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MoveSpeedDuration",
+        "mValues": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealAPRatio",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.3499999940395355,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalHot": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseHot",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "HealAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      9.0,
+      8.0,
+      7.0,
+      6.0,
+      5.0,
+      4.0,
+      3.0
+    ],
+    "castRange": [
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0,
+      800.0
+    ],
+    "castRangeDisplayOverride": [
+      810.0,
+      810.0,
+      810.0,
+      810.0,
+      810.0,
+      810.0,
+      810.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Area"
+    }
+  },
+  "Characters/Soraka/Spells/Consecration_SelfAbility/Consecration_Self": {
+    "DataValues": [
+      {
+        "mName": "MovementSpeed",
+        "mValues": [
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421,
+          0.8999999761581421
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealthThreshold",
+        "mValues": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "castRange": [
+      2500.0,
+      2500.0,
+      2500.0,
+      2500.0,
+      2500.0,
+      2500.0,
+      2500.0
+    ]
+  },
+  "Characters/Soraka/Spells/SorakaRAbility/SorakaR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseHeal",
+        "mValues": [
+          50.0,
+          150.0,
+          250.0,
+          350.0,
+          450.0,
+          550.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealingAmpForLowHealthAllies",
+        "mValues": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "HealingCalc": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "AmpedHealing": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.0,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mDataValue": "HealingAmpForLowHealthAllies",
+              "__type": "NamedDataValueCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "HealingCalc",
+        "__type": "GameCalculationModified"
+      }
+    },
+    "mCoefficient": 0.550000011920929,
+    "cooldownTime": [
+      150.0,
+      150.0,
+      135.0,
+      120.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "SelfAoe"
+    }
+  },
+  "Characters/Soraka/Spells/SorakaWAbility/SorakaW": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "BaseHeal",
+        "mValues": [
+          70.0,
+          90.0,
+          110.0,
+          130.0,
+          150.0,
+          170.0,
+          190.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHealthCost",
+        "mValues": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinimumPercentHealth",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PercentHealthCostRefund",
+        "mValues": [
+          0.75,
+          0.800000011920929,
+          0.8500000238418579,
+          0.8999999761581421,
+          0.949999988079071,
+          1.0,
+          1.0499999523162842
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalHeal": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseHeal",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.5,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "MinimumHealth": {
+        "mFormulaParts": [
+          {
+            "mStat": 12,
+            "mDataValue": "MinimumPercentHealth",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      6.0,
+      6.0,
+      5.0,
+      4.0,
+      3.0,
+      2.0,
+      2.0
+    ],
+    "castRange": [
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0,
+      550.0
+    ]
+  }
+}

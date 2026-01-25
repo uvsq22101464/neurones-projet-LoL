@@ -1,0 +1,434 @@
+{
+  "name": "Nasus",
+  "health": 650,
+  "healthPerLevel": 104,
+  "healthRegen": 9,
+  "healthRegenPerLevel": 0.9,
+  "armor": 34,
+  "armorPerLevel": 4.7,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 67,
+  "attackDamagePerLevel": 4,
+  "attackSpeed": 0.638,
+  "attackSpeedPerLevel": 3.48,
+  "attackRange": 125,
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Soul Eater",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Siphoning Strike",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  60,
+                  80,
+                  100,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% of Siphoning Strike stacks",
+                  "% of Siphoning Strike stacks",
+                  "% of Siphoning Strike stacks",
+                  "% of Siphoning Strike stacks",
+                  "% of Siphoning Strike stacks"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Wither",
+      "effects": [
+        [
+          {
+            "attribute": "Maximum Slow",
+            "modifiers": [
+              {
+                "values": [
+                  47,
+                  59,
+                  71,
+                  83,
+                  95
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Additional Slow Per Second",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  6,
+                  9,
+                  12,
+                  15
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Maximum Cripple",
+            "modifiers": [
+              {
+                "values": [
+                  35.25,
+                  44.25,
+                  53.25,
+                  62.25,
+                  71.25
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Additional Cripple Per Second",
+            "modifiers": [
+              {
+                "values": [
+                  2.25,
+                  4.5,
+                  6.75,
+                  9,
+                  11.25
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Spirit Fire",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  80,
+                  110,
+                  140,
+                  170
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  10,
+                  16,
+                  22,
+                  28,
+                  34
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12,
+                  12,
+                  12,
+                  12,
+                  12
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  100,
+                  160,
+                  220,
+                  280,
+                  340
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  120,
+                  120,
+                  120,
+                  120,
+                  120
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Armor Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40,
+                  45,
+                  50
+                ],
+                "units": [
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Fury of the Sands",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Health",
+            "modifiers": [
+              {
+                "values": [
+                  300,
+                  450,
+                  600
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Resistances",
+            "modifiers": [
+              {
+                "values": [
+                  40,
+                  55,
+                  70
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Increased Size",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  35,
+                  40
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage Per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  1.5,
+                  2,
+                  2.5
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  0.5,
+                  0.5,
+                  0.5
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  45,
+                  60,
+                  75
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  15,
+                  15,
+                  15
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

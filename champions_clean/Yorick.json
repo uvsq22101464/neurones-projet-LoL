@@ -1,0 +1,429 @@
+{
+  "name": "Yorick",
+  "health": 650,
+  "healthPerLevel": 114,
+  "healthRegen": 8,
+  "healthRegenPerLevel": 0.8,
+  "armor": 36,
+  "armorPerLevel": 4.5,
+  "magicResistance": 32,
+  "magicResistancePerLevel": 2.05,
+  "attackDamage": 62,
+  "attackDamagePerLevel": 5,
+  "attackSpeed": 0.625,
+  "attackSpeedPerLevel": 2,
+  "attackRange": 175,
+  "roles": [
+    "FIGHTER",
+    "JUGGERNAUT",
+    "TANK"
+  ],
+  "P": [
+    {
+      "name": "Shepherd of Souls",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Last Rites",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Physical Damage",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  50,
+                  70,
+                  90,
+                  110
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD",
+                  "% AD"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Heal",
+            "modifiers": [
+              {
+                "values": [
+                  10.0,
+                  13.411764705882353,
+                  16.823529411764707,
+                  20.235294117647058,
+                  23.647058823529413,
+                  27.058823529411764,
+                  30.470588235294116,
+                  33.88235294117647,
+                  37.294117647058826,
+                  40.705882352941174,
+                  44.11764705882353,
+                  47.529411764705884,
+                  50.94117647058823,
+                  54.35294117647059,
+                  57.76470588235294,
+                  61.17647058823529,
+                  64.58823529411765,
+                  68.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10
+                ],
+                "units": [
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Non-Champion Heal",
+            "modifiers": [
+              {
+                "values": [
+                  5.0,
+                  6.705882352941177,
+                  8.411764705882353,
+                  10.117647058823529,
+                  11.823529411764707,
+                  13.529411764705882,
+                  15.235294117647058,
+                  16.941176470588236,
+                  18.647058823529413,
+                  20.352941176470587,
+                  22.058823529411764,
+                  23.764705882352942,
+                  25.470588235294116,
+                  27.176470588235293,
+                  28.88235294117647,
+                  30.588235294117645,
+                  32.294117647058826,
+                  34.0
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3.5,
+                  4,
+                  4.5,
+                  5
+                ],
+                "units": [
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health",
+                  "% of his missing health"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self, Enemies"
+    },
+    {
+      "name": "Awakening",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "W": [
+    {
+      "name": "Dark Procession",
+      "effects": [
+        [
+          {
+            "attribute": "Wall Health",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  2,
+                  3,
+                  3,
+                  4
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "E": [
+    {
+      "name": "Mourning Mist",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  6.5,
+                  7,
+                  7.5,
+                  8
+                ],
+                "units": [
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health",
+                  "%  of target's maximum health"
+                ]
+              },
+              {
+                "values": [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ],
+                "units": [
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP",
+                  "% per 100 AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Minimum Minion Damage",
+            "modifiers": [
+              {
+                "values": [
+                  70,
+                  105,
+                  140,
+                  175,
+                  210
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Capped Monster Damage",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  75,
+                  100,
+                  125,
+                  150
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  100,
+                  100,
+                  100,
+                  100,
+                  100
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Armor Reduction",
+            "modifiers": [
+              {
+                "values": [
+                  13,
+                  16,
+                  19,
+                  22,
+                  25
+                ],
+                "units": [
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor",
+                  "% of target's armor"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  18,
+                  21,
+                  24,
+                  27,
+                  30
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "R": [
+    {
+      "name": "Eulogy of the Isles",
+      "effects": [
+        [
+          {
+            "attribute": "Mist Walkers",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  3,
+                  4
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ]
+}

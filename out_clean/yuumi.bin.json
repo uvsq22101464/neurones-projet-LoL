@@ -1,0 +1,1070 @@
+{
+  "Characters/Yuumi/CharacterRecords/Root": {
+    "mCharacterName": "Yuumi",
+    "baseHP": 500.0,
+    "hpPerLevel": 69.0,
+    "hpRegenPerLevel": 0.11,
+    "primaryAbilityResource": {
+      "arType": 0,
+      "arBase": 440.0,
+      "arPerLevel": 45.0,
+      "arBaseStaticRegen": 2.0,
+      "arRegenPerLevel": 0.07999999821186066,
+      "__type": "AbilityResourceSlotInfo"
+    },
+    "baseDamage": 49.0,
+    "damagePerLevel": 3.1,
+    "baseArmor": 25.0,
+    "armorPerLevel": 4.2,
+    "baseSpellBlock": 25.0,
+    "spellBlockPerLevel": 1.1,
+    "baseMoveSpeed": 330.0,
+    "attackRange": 425.0,
+    "attackSpeed": 0.625,
+    "attackSpeedRatio": 0.625,
+    "attackSpeedPerLevel": 1.0,
+    "acquisitionRange": 525.0,
+    "searchTags": "support",
+    "searchTagsSecondary": "mage",
+    "roles": "SUPPORT"
+  },
+  "Characters/Yuumi/Spells/YuumiQAbility/YuumiQ": {
+    "DataValues": [
+      {
+        "mName": "MissileDamage",
+        "mValues": [
+          25.0,
+          60.0,
+          95.0,
+          130.0,
+          165.0,
+          200.0,
+          235.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowAmount",
+        "mValues": [
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SlowDuration",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TimeToAfterburners",
+        "mValues": [
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858,
+          1.350000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileLifetime",
+        "mValues": [
+          1.850000023841858,
+          1.850000023841858,
+          1.850000023841858,
+          1.850000023841858,
+          1.850000023841858,
+          1.850000023841858,
+          1.850000023841858
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "StartingSpeed",
+        "mValues": [
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0,
+          650.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AfterburnerSpeed",
+        "mValues": [
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0,
+          950.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "InitialTimeDelay",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileStartingOffset",
+        "mValues": [
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0,
+          75.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredSlowAmount",
+        "mValues": [
+          47.0,
+          50.0,
+          53.0,
+          56.0,
+          59.0,
+          62.0,
+          65.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredSlowDuration",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredMissileDamage",
+        "mValues": [
+          25.0,
+          80.0,
+          135.0,
+          190.0,
+          245.0,
+          300.0,
+          355.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OnHitBase",
+        "mValues": [
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AllyCritChanceMaxAmp",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BuffDuration",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "EmpoweredAPRatio",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalMissileDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "MissileDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalMissileDamageEmpowered": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "EmpoweredMissileDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "EmpoweredAPRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "OnHitDamageCalc": {
+        "mFormulaParts": [
+          {
+            "mCoefficient": 0.05000000074505806,
+            "__type": "StatByCoefficientCalculationPart"
+          },
+          {
+            "mDataValue": "OnHitBase",
+            "__type": "NamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Yuumi/Spells/YuumiWAbility/YuumiW": {
+    "mSpellTags": [
+      "PositiveEffect_MoveBlock"
+    ],
+    "DataValues": [
+      {
+        "mName": "DashSpeed",
+        "mValues": [
+          1250.0,
+          1300.0,
+          1350.0,
+          1400.0,
+          1450.0,
+          1500.0,
+          1550.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CastForgivenessRange",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CastRange",
+        "mValues": [
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0,
+          700.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxBonusHealShieldPower",
+        "mValues": [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448,
+          0.15000000596046448
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseHealthOnHit",
+        "mValues": [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealAndShieldPower",
+        "mValues": [
+          0.029999999329447746,
+          0.03999999910593033,
+          0.05000000074505806,
+          0.05999999865889549,
+          0.07000000029802322,
+          0.07999999821186066,
+          0.09000000357627869
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinBonusHealShieldPower",
+        "mValues": [
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806,
+          0.05000000074505806
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "AttachCooldown": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 10.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 6,
+                "mAdditionalBonusAtThisLevel": -5.0,
+                "__type": "Breakpoint"
+              },
+              {
+                "mLevel": 11,
+                "mAdditionalBonusAtThisLevel": -5.0,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "CCAttachLockout": {
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mExpandedTooltipCalculationDisplay": 5,
+        "mFormulaParts": [
+          {
+            "mNumber": 5.0,
+            "__type": "NumberCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "HealthOnHit": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseHealthOnHit",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.029999999329447746,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "cooldownTime": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "TargetOrLocation"
+    }
+  },
+  "Characters/Yuumi/Spells/YuumiPAbility/YuumiP": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "TakedownCompanionship",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "HealDelayTime",
+        "mValues": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MinionKillCompanionship",
+        "mValues": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "PityTimer",
+        "mValues": [
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "PassiveCooldown": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 20.0,
+            "mInitialBonusPerLevel": -1.0,
+            "mBreakpoints": [
+              {
+                "mLevel": 14,
+                "__type": "Breakpoint"
+              }
+            ],
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "{656dde8a}": {
+        "mFormulaParts": [
+          {
+            "mLevel1Value": 50.0,
+            "__type": "ByCharLevelBreakpointsCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "HealAmount": {
+        "mFormulaParts": [
+          {
+            "mStartValue": 20.0,
+            "mEndValue": 110.0,
+            "__type": "ByCharLevelInterpolationCalculationPart"
+          },
+          {
+            "mCoefficient": 0.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.20000000298023224,
+    "castRange": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  },
+  "Characters/Yuumi/Spells/YuumiRAbility/YuumiR": {
+    "mSpellTags": [
+      "Trait_Ultimate",
+      "Trait_ChannelSpell",
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "UltLength",
+        "mValues": [
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0,
+          1300.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseMissileDamage",
+        "mValues": [
+          25.0,
+          75.0,
+          125.0,
+          175.0,
+          225.0,
+          275.0,
+          325.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MultiMissileReduction",
+        "mValues": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "CCDuration",
+        "mValues": [
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25,
+          1.25
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "UltDuration",
+        "mValues": [
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5,
+          3.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "NumberOfWaves",
+        "mValues": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "WavesToRoot",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "TimeBetweenWaves",
+        "mValues": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MissileSlowPercent",
+        "mValues": [
+          -0.4000000059604645,
+          -0.4000000059604645,
+          -0.4000000059604645,
+          -0.4000000059604645,
+          -0.4000000059604645,
+          -0.4000000059604645,
+          -0.4000000059604645
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "SpaceBehindWave",
+        "mValues": [
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0,
+          200.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseHealPerWave",
+        "mValues": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseSlow",
+        "mValues": [
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BonusSlowPerWave",
+        "mValues": [
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612,
+          -0.10000000149011612
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "OvershieldBonusDuration",
+        "mValues": [
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "DegreesPerTick",
+        "mValues": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AllyHealingPerc",
+        "mValues": [
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842,
+          1.2999999523162842
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseBonusResistances",
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalMissileDamage": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseMissileDamage",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.25,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalSingleTargetDamage": {
+        "mMultiplier": {
+          "mSubparts": [
+            {
+              "mNumber": 1.0,
+              "__type": "NumberCalculationPart"
+            },
+            {
+              "mPart1": {
+                "mSubparts": [
+                  {
+                    "mDataValue": "NumberOfWaves",
+                    "__type": "NamedDataValueCalculationPart"
+                  },
+                  {
+                    "mNumber": -1.0,
+                    "__type": "NumberCalculationPart"
+                  }
+                ],
+                "__type": "SumOfSubPartsCalculationPart"
+              },
+              "mPart2": {
+                "mDataValue": "MultiMissileReduction",
+                "__type": "NamedDataValueCalculationPart"
+              },
+              "__type": "ProductOfSubPartsCalculationPart"
+            }
+          ],
+          "__type": "SumOfSubPartsCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalMissileDamage",
+        "__type": "GameCalculationModified"
+      },
+      "MultiMissileTotal": {
+        "mMultiplier": {
+          "mDataValue": "MultiMissileReduction",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mSimpleTooltipCalculationDisplay": 6,
+        "mModifiedGameCalculation": "TotalMissileDamage",
+        "__type": "GameCalculationModified"
+      },
+      "TotalHealPerWave": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseHealPerWave",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.10000000149011612,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "EnhancedHealPerWave": {
+        "mMultiplier": {
+          "mDataValue": "AllyHealingPerc",
+          "__type": "NamedDataValueCalculationPart"
+        },
+        "mModifiedGameCalculation": "TotalHealPerWave",
+        "__type": "GameCalculationModified"
+      },
+      "{ea105dd6}": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseBonusResistances",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.10000000149011612,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "mCoefficient": 0.05999999865889549,
+    "cooldownTime": [
+      120.0,
+      120.0,
+      110.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "castRange": [
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0,
+      1100.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Location"
+    }
+  },
+  "Characters/Yuumi/Spells/YuumiEAbility/YuumiE": {
+    "mSpellTags": [
+      "PositiveEffect_Boon"
+    ],
+    "DataValues": [
+      {
+        "mName": "MSDuration",
+        "mValues": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MSAmount",
+        "mValues": [
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "AttackSpeedAmount",
+        "mValues": [
+          22.5,
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "BaseShielding",
+        "mValues": [
+          40.0,
+          65.0,
+          90.0,
+          115.0,
+          140.0,
+          165.0,
+          190.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "ManaRestore",
+        "mValues": [
+          16.0,
+          20.0,
+          24.0,
+          28.0,
+          32.0,
+          36.0,
+          40.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "MaxManaPercIncrease",
+        "mValues": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "__type": "SpellDataValue"
+      },
+      {
+        "mName": "APRatio",
+        "mValues": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "__type": "SpellDataValue"
+      }
+    ],
+    "mSpellCalculations": {
+      "TotalShielding": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "BaseShielding",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mDataValue": "APRatio",
+            "__type": "StatByNamedDataValueCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      },
+      "TotalAttackSpeed": {
+        "mFormulaParts": [
+          {
+            "mDataValue": "AttackSpeedAmount",
+            "__type": "NamedDataValueCalculationPart"
+          },
+          {
+            "mCoefficient": 0.07999999821186066,
+            "__type": "StatByCoefficientCalculationPart"
+          }
+        ],
+        "__type": "GameCalculation"
+      }
+    },
+    "castRange": [
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0,
+      25000.0
+    ],
+    "mTargetingTypeData": {
+      "__type": "Self"
+    }
+  }
+}

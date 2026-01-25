@@ -1,0 +1,532 @@
+{
+  "name": "Teemo",
+  "health": 615,
+  "healthPerLevel": 104,
+  "healthRegen": 5.5,
+  "healthRegenPerLevel": 0.65,
+  "armor": 24,
+  "armorPerLevel": 4.95,
+  "magicResistance": 30,
+  "magicResistancePerLevel": 1.3,
+  "attackDamage": 54,
+  "attackDamagePerLevel": 3,
+  "attackSpeed": 0.69,
+  "attackSpeedPerLevel": 3.38,
+  "attackRange": 500,
+  "roles": [
+    "MAGE",
+    "MARKSMAN",
+    "SPECIALIST"
+  ],
+  "P": [
+    {
+      "name": "Guerrilla Warfare",
+      "effects": [],
+      "affects": "Self"
+    }
+  ],
+  "Q": [
+    {
+      "name": "Blinding Dart",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  80,
+                  125,
+                  170,
+                  215,
+                  260
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Blind Duration",
+            "modifiers": [
+              {
+                "values": [
+                  2,
+                  2.25,
+                  2.5,
+                  2.75,
+                  3
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Increased Blind Duration",
+            "modifiers": [
+              {
+                "values": [
+                  4,
+                  4.5,
+                  5,
+                  5.5,
+                  6
+                ],
+                "units": [
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds",
+                  " seconds"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ],
+  "W": [
+    {
+      "name": "Move Quick",
+      "effects": [
+        [
+          {
+            "attribute": "Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  12,
+                  16,
+                  20,
+                  24,
+                  28
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Enhanced Bonus Movement Speed",
+            "modifiers": [
+              {
+                "values": [
+                  24,
+                  32,
+                  40,
+                  48,
+                  56
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "E": [
+    {
+      "name": "Toxic Shot",
+      "effects": [
+        [
+          {
+            "attribute": "Magic Damage On-Hit",
+            "modifiers": [
+              {
+                "values": [
+                  9,
+                  23,
+                  37,
+                  51,
+                  65
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  6,
+                  12,
+                  18,
+                  24,
+                  30
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  10,
+                  10,
+                  10,
+                  10,
+                  10
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Poison Damage",
+            "modifiers": [
+              {
+                "values": [
+                  24,
+                  48,
+                  72,
+                  96,
+                  120
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  40,
+                  40,
+                  40,
+                  40,
+                  40
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Monster Damage On-Hit",
+            "modifiers": [
+              {
+                "values": [
+                  13.05,
+                  33.35,
+                  53.65,
+                  73.95,
+                  94.25
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  43.5,
+                  43.5,
+                  43.5,
+                  43.5,
+                  43.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Monster Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  8.7,
+                  17.4,
+                  26.1,
+                  34.8,
+                  43.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  14.5,
+                  14.5,
+                  14.5,
+                  14.5,
+                  14.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Monster Poison Damage",
+            "modifiers": [
+              {
+                "values": [
+                  34.8,
+                  69.6,
+                  104.4,
+                  139.2,
+                  174
+                ],
+                "units": [
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  58,
+                  58,
+                  58,
+                  58,
+                  58
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Self"
+    }
+  ],
+  "R": [
+    {
+      "name": "Noxious Trap",
+      "effects": [
+        [
+          {
+            "attribute": "Bounce Distance Cap",
+            "modifiers": [
+              {
+                "values": [
+                  350,
+                  450,
+                  550
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Maximum Charges",
+            "modifiers": [
+              {
+                "values": [
+                  3,
+                  4,
+                  5
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Slow",
+            "modifiers": [
+              {
+                "values": [
+                  30,
+                  40,
+                  50
+                ],
+                "units": [
+                  "%",
+                  "%",
+                  "%"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "attribute": "Magic Damage per Tick",
+            "modifiers": [
+              {
+                "values": [
+                  50,
+                  81.25,
+                  112.5
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  12.5,
+                  12.5,
+                  12.5
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          },
+          {
+            "attribute": "Total Magic Damage",
+            "modifiers": [
+              {
+                "values": [
+                  200,
+                  325,
+                  450
+                ],
+                "units": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              {
+                "values": [
+                  50,
+                  50,
+                  50
+                ],
+                "units": [
+                  "% AP",
+                  "% AP",
+                  "% AP"
+                ]
+              }
+            ]
+          }
+        ]
+      ],
+      "affects": "Enemies"
+    }
+  ]
+}
