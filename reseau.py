@@ -500,10 +500,13 @@ def plot(x=5, nb_epochs=80):
     plt.title("Moyenne des losses sur plusieurs runs")
     plt.show()
 
-def showPrediction(network=Network1(), loss=nn.BCEWithLogitsLoss()):
+def predict(network=Network1(), loss=nn.BCEWithLogitsLoss()):
+
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     network.to(device)
+
     optimizer = torch.optim.Adam(network.parameters(),lr=0.001,weight_decay=1e-4)
+
     train_losses, val_losses = train(model=network, loss=loss, optimizer=optimizer, 
                                     train_dataloader=train_dataloader, val_dataloader=val_dataloader, 
                                     nb_epochs=80)
@@ -523,28 +526,39 @@ def showPrediction(network=Network1(), loss=nn.BCEWithLogitsLoss()):
 
     plt.show()
 
-    # --- Prédictions sur test set avec noms ---
     network.eval()
     
     with torch.no_grad():
         X_test_device = X_test.to(device)
         logits = network(X_test_device)
         probs = torch.sigmoid(logits)  # Probabilités pour chaque classe
-        predictions = (probs > 0.5).int().cpu().numpy()
-        y_true = y_test.cpu().numpy()
+        
+
+    tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
+
+    champion_predictions = dict()
+
+    for i in range(len(X_test)):
+        champion_predictions[names_test[i]] = [probs[i][j].item() for j in range(len(tags))]
+
+    return champion_predictions
+
+def showPrediction(champion_prediction : dict):
 
     tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
 
     # Affichage avec le nom du champion
     for i in range(len(X_test)):
-        print(f"Champion : {names_test[i]}")
+
+        champ_name = names_test[i]
+        print(f"Champion : {champ_name}")
+
         for j, tag in enumerate(tags):
-            print(f"  {tag:10s} → {probs[i][j].item():.2f}")
-        print("Prédit :", [tags[j] for j in range(6) if predictions[i][j] == 1])
+            print(f"  {tag:10s} → {champion_prediction[champ_name][j]:0.2f}")
+
+        predictions = [(champion_prediction[champ_name][i] > 0.5) for i in range (6)]
+        print("Prédit :", [tags[k] for k in range(6) if predictions[k]])
+
+        y_true = y_test.cpu().numpy()
         print("Réel  :", [tags[j] for j in range(6) if y_true[i][j] == 1])
         print("-" * 40)
-
-
-#plot()
-
-showPrediction(network=Network1())
