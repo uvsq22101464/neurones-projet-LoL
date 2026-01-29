@@ -103,7 +103,7 @@ df = df.fillna(0)
 
 df.to_csv("dataframe.csv", index=False)'''
 
-predictions = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
+tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
 
 cols_to_scale = [
     "baseHP", "hpPerLevel", "baseStaticHPRegen", "hpRegenPerLevel",
@@ -121,9 +121,9 @@ cols_no_scale = [
 df = pd.read_csv("dataframeMain.csv")
 
 # charger les données
-X = df.drop(columns=predictions + ["name", "ADRatio", "APRatio", "TankyRatio"])
-#X = df.drop(columns=predictions + ["name", "TankyRatio"])
-y = df[predictions].values
+X = df.drop(columns=tags + ["name", "ADRatio", "APRatio", "TankyRatio"])
+#X = df.drop(columns=tags + ["name", "TankyRatio"])
+y = df[tags].values
 champ_names = df["name"].values
 
 scaler = StandardScaler()
@@ -534,8 +534,6 @@ def predict(network=Network1(), loss=nn.BCEWithLogitsLoss()):
         probs = torch.sigmoid(logits)  # Probabilités pour chaque classe
         
 
-    tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
-
     champion_predictions = dict()
 
     for i in range(len(X_test)):
@@ -544,8 +542,6 @@ def predict(network=Network1(), loss=nn.BCEWithLogitsLoss()):
     return champion_predictions
 
 def showPrediction(champion_prediction : dict):
-
-    tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
 
     # Affichage avec le nom du champion
     for i in range(len(X_test)):
@@ -562,3 +558,44 @@ def showPrediction(champion_prediction : dict):
         y_true = y_test.cpu().numpy()
         print("Réel  :", [tags[j] for j in range(6) if y_true[i][j] == 1])
         print("-" * 40)
+        
+def chart(champion_pred, champion_name):
+    
+    angles = np.linspace(0, 2 * np.pi, 6, endpoint=False).tolist()
+    champion_pred += champion_pred[:1]
+    angles += angles[:1]
+
+    fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(projection='polar'))
+
+    # Grille hexagonale
+    grid_levels = [0.2, 0.4, 0.6, 0.8, 1.0]
+    for level in grid_levels:
+        vertices = [[angle, level] for angle in angles[:-1]]
+        vertices.append(vertices[0])
+        vertices = np.array(vertices)
+        ax.plot(vertices[:, 0], vertices[:, 1], 'k-', linewidth=0.5, alpha=0.3)
+    
+    # Axes radiaux
+    for angle in angles[:-1]:
+        ax.plot([angle, angle], [0, 1], 'k-', linewidth=0.5, alpha=0.3)
+
+    ax.plot(angles, champion_pred, 'o-', linewidth=2, color='#1f77b4', label='Joueur A')
+    ax.fill(angles, champion_pred, alpha=0.25, color='#1f77b4')
+
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(tags, size=12)
+
+    ax.set_ylim(0, 1)
+    ax.set_yticks([])
+    ax.grid(False)
+
+    ax.spines['polar'].set_visible(False)
+
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)  # Sens horaire
+
+    plt.title(champion_name, size=16, y=1.08, fontweight='bold')
+    plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1.1))
+
+    plt.tight_layout()
+    plt.show()
