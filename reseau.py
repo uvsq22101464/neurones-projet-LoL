@@ -1,17 +1,18 @@
+from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
 import json
-import torch
-import torch.nn as nn
 import matplotlib.pyplot as plt
+import numpy as np
 import os
-from torch.utils.data import TensorDataset, DataLoader
+import pandas as pd
+import seaborn as sns
+from sklearn.compose import ColumnTransformer
+from sklearn.metrics import  multilabel_confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
-import pandas as pd
-from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
-import numpy as np
-from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
-
+import torch
+import torch.nn as nn
+from torch.utils.data import TensorDataset, DataLoader
 
 cpt = 0
 cpt1 = 0
@@ -579,7 +580,7 @@ def chart(champion_pred, champion_name):
     for angle in angles[:-1]:
         ax.plot([angle, angle], [0, 1], 'k-', linewidth=0.5, alpha=0.3)
 
-    ax.plot(angles, champion_pred, 'o-', linewidth=2, color='#1f77b4', label='Joueur A')
+    ax.plot(angles, champion_pred, 'o-', linewidth=2, color='#1f77b4')
     ax.fill(angles, champion_pred, alpha=0.25, color='#1f77b4')
 
     ax.set_xticks(angles[:-1])
@@ -599,3 +600,115 @@ def chart(champion_pred, champion_name):
 
     plt.tight_layout()
     plt.show()
+
+def analyze_predictions(predictions_dict, threshold=0.5):
+    
+    champion_names = list(predictions_dict.keys())
+    y_pred_probs = np.array([predictions_dict[name] for name in champion_names])
+    y_true = np.array(y_test)
+    
+    # Binarise les prédictions avec le seuil
+    y_pred = (y_pred_probs >= threshold).astype(int)
+    
+    # Matrices de confusion pour chaque label
+    mcm = multilabel_confusion_matrix(y_true, y_pred)
+    
+    _ , axes = plt.subplots(2, 3, figsize=(14, 9))
+    axes = axes.flatten()
+    
+    for idx, (tag, cm) in enumerate(zip(tags, mcm)):
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', ax=axes[idx],
+                    xticklabels=['Non', 'Oui'], yticklabels=['Non', 'Oui'],
+                    cbar_kws={'label': 'Nombre'})
+        axes[idx].set_title(f'{tag}', fontweight='bold', fontsize=14)
+        axes[idx].set_ylabel('Vérité', fontsize=12)
+        axes[idx].set_xlabel('Prédiction', fontsize=12)
+        
+        tn, fp, fn, tp = cm.ravel()
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+        
+        text = f'Precision: {precision:.2f}\nRecall: {recall:.2f}\nF1: {f1:.2f}'
+        axes[idx].text(1.5, 0.5, text, fontsize=10, 
+                      bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+    
+    plt.suptitle(f'Matrices de confusion par rôle (seuil = {threshold})', 
+                 fontsize=16, fontweight='bold', y=1.00)
+    plt.tight_layout()
+    plt.show()
+    
+    # Accuracy par label (moyenne)
+    label_accuracy = (y_true == y_pred).mean(axis=0)
+    print(f"\nAccuracy par label:")
+    for tag, acc in zip(tags, label_accuracy):
+        print(f"  {tag:12s}: {acc:.3f} ({acc*100:.1f}%)")
+    
+    # Analyse des confusions entre rôles
+    n_classes = len(tags)
+    confusion_add = np.zeros((n_classes, n_classes), dtype=int)  # Rôles ajoutés à tort
+    confusion_miss = np.zeros((n_classes, n_classes), dtype=int)  # Rôles manqués
+    
+    for champion_idx in range(len(champion_names)):
+        true_roles = set([j for j in range(n_classes) if y_true[champion_idx][j] == 1])
+        pred_roles = set([j for j in range(n_classes) if y_pred[champion_idx][j] == 1])
+        
+        # Rôles prédits en trop (faux positifs)
+        extra_roles = pred_roles - true_roles
+        for extra in extra_roles:
+            for true_role in true_roles:
+                confusion_add[true_role][extra] += 1
+        
+        # Rôles manqués (faux négatifs)
+        missing_roles = true_roles - pred_roles
+        for missing in missing_roles:
+            for pred_role in pred_roles:
+                confusion_miss[missing][pred_role] += 1
+    
+    # Graphiques des confusions
+    _ , (ax1, ax) = plt.subplots(1, 2, figsize=(18, 7))
+    
+    # Rôles ajoutés à tort quand un rôle est vrai
+    sns.heatmap(confusion_add, annot=True, fmt='d', cmap='Reds', 
+                xticklabels=tags, yticklabels=tags, ax=ax1,
+                cbar_kws={'label': 'Nombre d\'erreurs'})
+    ax1.set_title('Rôles ajoutés à tort\n(ligne = vrai rôle, colonne = rôle ajouté)', 
+                  fontsize=13, fontweight='bold')
+    ax1.set_ylabel('Rôle réel présent', fontsize=11, fontweight='bold')
+    ax1.set_xlabel('Rôle prédit en trop', fontsize=11, fontweight='bold')
+    
+    # Rôles manqués et remplacés par autre chose
+    sns.heatmap(confusion_miss, annot=True, fmt='d', cmap='Oranges', 
+                xticklabels=tags, yticklabels=tags, ax=ax,
+                cbar_kws={'label': 'Nombre d\'erreurs'})
+    ax.set_title('Rôles manqués\n(ligne = vrai rôle manqué, colonne = rôle prédit à la place)', 
+                  fontsize=13, fontweight='bold')
+    ax.set_ylabel('Rôle réel manqué', fontsize=11, fontweight='bold')
+    ax.set_xlabel('Rôle prédit à la place', fontsize=11, fontweight='bold')
+    
+    plt.tight_layout()
+    plt.show()
+    
+    _ , ax = plt.subplots(1, 1, figsize=(14, 9))
+    
+    # Distribution par label
+    true_counts = y_true.sum(axis=0)
+    pred_counts = y_pred.sum(axis=0)
+    
+    x = np.arange(len(tags))
+    width = 0.35
+    
+    ax.bar(x - width/2, true_counts, width, label='Vérité', color='#2ca02c', alpha=0.8)
+    ax.bar(x + width/2, pred_counts, width, label='Prédiction', color='#1f77b4', alpha=0.8)
+    ax.set_xlabel('Rôles', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Nombre de champions', fontsize=12, fontweight='bold')
+    ax.set_title('Distribution des rôles', fontsize=14, fontweight='bold')
+    ax.set_xticks(x)
+    ax.set_xticklabels(tags, rotation=45, ha='right')
+    ax.legend()
+    ax.grid(axis='y', alpha=0.3)
+    
+    plt.tight_layout()
+    plt.show()
+    
+    return y_true, y_pred, champion_names
