@@ -1,14 +1,3 @@
-# neurones-projet-LoL
-- le but du truc
-- explication des archétypes des champions
-- comment on a récup les données
-- explication de l'architecture du réseau et les choix
-- détail de la fct de loss et des paramètres
-- montrer des résultats
-- les commenter et expliquer pk c'est pas ouf
-- faiblesses du dataset + grande variété des champions unique
-- ptite conclu en disant que vu qu'on a pas beaucoup de données on a plus expérimenté facilement sur les différents paramètres et voir ce qui se passait..
-
 # League of Legends Classe Guesser
 
 Notre réseau de neurones a pour but de deviner la classe des personnages (ou champions) du jeu vidéo League of Legends.
@@ -26,13 +15,36 @@ On peut regrouper les champions dans différents groupes que l'on appelera des [
 * Support
 * Tireur (Marksman)
 
-Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statistiques de base, les statistiques obtenues à chaque niveau ainsi que le type de compétences de chaque personnage (dégâts, soin, mobilité, contrôle ...).
+Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statistiques de base, les statistiques obtenues à chaque niveau ainsi que des informations issues des compétences du personnage (dégâts, soin, mobilité, contrôle de foule...).
 
 ## Nos données
 
+Les données des champions ont été récupérées dans un fichier JSON, ces données étant très nombreuses, nous avons donc filtré celle qui nous intéressait, notamment les statistiques. Cependant les statistiques ne font pas tout pour représenter un champion, c'est pourquoi on a aussi essayé d'extraire des informations provenant des compétences comme la possibilité de devenir invisible, la faculté à se déplacer sur la carte...
+
 ## Architecture du réseau
 
+![Architecture du réseau](images/graphics/Réseau.png)
+Nous avons fractionné nos différentes données en fonction de leurs points communs et importances afin de créer plus de sens entre elles. Ensuite elles ont été réunies en fonction de si ces données sont des statistiques sur le champion ou si elles proviennent des capacités du champion. Et enfin, elles passent dans des couches denses pour nous donner nos six outputs.
+
+En détail nous avons :
+* En vert foncé : les statistiques liées aux points de vie.
+* En orange : les statistiques liées à la réduction des dégâts.
+* En rouge : les statistiques liées aux dégâts physiques.
+* En jaune : les statistiques liées à la vitesse d'attaque.
+* En bleu clair : la distance pour attaquer.
+
+* En jaune clair : la faculté de se donner des bonus de vitesse de déplacement.
+* En vert clair : la faculté à immobiliser un adversaire.
+* En violet : la faculté à se déplacer facilement sur la carte.
+* En rose : la faculté à protéger un allié.
+
 ## Loss et paramètres
+
+On utilise la fonction de loss BCEWithLogitsLoss car dans notre cas on a des champions qui appartiennent très souvent à plusieurs classes en même temps, donc cette fonction de loss nous permet d'obtenir une probabilité d'appartenir à chaque classe.
+
+Nos données étant peu nombreuses on utilise un facteur de dropout à 0.1 afin de réduire l'overfitting de notre réseau et amélioré la généralisation.
+
+La fonction d'activation sur les neurones est la LeakyReLu.
 
 ## Résultats obtenus
 
