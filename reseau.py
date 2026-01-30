@@ -1,108 +1,24 @@
 from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
-import json
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 import pandas as pd
 import seaborn as sns
 from sklearn.compose import ColumnTransformer
 from sklearn.metrics import  multilabel_confusion_matrix
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 import torch
 import torch.nn as nn
 from torch.utils.data import TensorDataset, DataLoader
 
-cpt = 0
-cpt1 = 0
-spells_without_datavalues = []
-
-dir = r"out_clean"
 
 useful_stats = [
     "baseHP", "hpPerLevel", "baseStaticHPRegen", "hpRegenPerLevel",
     "baseArmor", "armorPerLevel", "baseSpellBlock", "spellBlockPerLevel",
-    # stats de ressources ?
     "baseDamage", "damagePerLevel",
     "attackSpeed", "attackSpeedRatio", "attackSpeedPerLevel",
     "attackRange"
 ]
 
-'''
-rows = []
-
-for file in os.listdir(dir):
-    input_path = os.path.join(dir, file)
-    row = {}
-    with open(input_path, encoding="utf-8") as f:
-        raw = json.load(f)
-    champ_name = file.split(".")[0].lower()
-    for spell, data in raw.items():
-        row["name"] = champ_name
-        if "Root" in spell:
-            cpt1 += len(raw)-1
-            for stat in useful_stats:
-                row[stat] = data.get(stat, 0)
-            # rajouter les searchTag/roles pour les prédictions
-            for tag in ["fighter", "mage", "tank", "assassin", "support", "marksman"]:
-                row[tag] = 1 if tag in data.get("searchTags", "0") or tag in data.get("searchTagsSecondary", "0") else 0
-        else:
-            has_datavalues = False
-            for key, value in data.items():
-                if key == "mSpellTags":
-                    for elem in value:
-                        if "CC" in elem:
-                            tmp = row.get("CC", 0)
-                            row["CC"] = tmp + 1
-                        if "Boon" in elem:
-                            tmp = row.get("AllyBuff", 0)
-                            row["AllyBuff"] = tmp + 1
-                        if "MoveBlock" in elem or "Teleport" in elem:
-                            tmp = row.get("Dash/Blink", 0)
-                            row["Dash/Blink"] = tmp + 1
-                elif key == "DataValues":
-                    has_datavalues = True
-                    cpt += 1
-                    for elem in value:
-                        for name, val in elem.items():
-                            if "ADRatio" in val:
-                                tmp = row.get("ADRatio", 0)
-                                row["ADRatio"] = tmp + 1
-                            elif "APRatio" in val:
-                                tmp = row.get("APRatio", 0)
-                                row["APRatio"] = tmp + 1
-                            elif "ArmorRatio" in val or "MRRatio" in val or "BonusHealthRatio" in val:
-                                tmp = row.get("TankyRatio", 0)
-                                row["TankyRatio"] = tmp + 1
-                            elif "MovementSpeed" in val and val != "MovementSpeedReduction":
-                                tmp = row.get("MovementSpeedBuff", 0)
-                                row["MovementSpeedBuff"] = tmp + 1
-                            elif "StealthDuration" in val:
-                                tmp = row.get("Stealth", 0)
-                                row["Stealth"] = tmp + 1
-                            elif "AttackSpeed" in val or "ASBuff" in val:
-                                tmp = row.get("AttackSpeedBuff", 0)
-                                row["AttackSpeedBuff"] = tmp + 1
-            if not has_datavalues:
-                spells_without_datavalues.append(f"{champ_name} - {spell}")
-                #elif key == "mSpellCalculations":
-                #elif key == "cooldownTime":
-
-                #else:
-
-    rows.append(row)
-    
-print("nombre de datavalues : " + str(cpt))
-print("nombre de spells " + str(cpt1))
-print("Nombre de spells sans DataValues :", len(spells_without_datavalues))
-for s in spells_without_datavalues:
-    print(s)
-
-df = pd.DataFrame(rows)
-df = df.fillna(0)
-
-df.to_csv("dataframe.csv", index=False)'''
 
 tags = ["fighter", "mage", "tank", "assassin", "support", "marksman"]
 
@@ -123,12 +39,10 @@ df = pd.read_csv("dataframeMain.csv")
 
 # charger les données
 X = df.drop(columns=tags + ["name", "ADRatio", "APRatio", "TankyRatio"])
-#X = df.drop(columns=tags + ["name", "TankyRatio"])
 y = df[tags].values
 champ_names = df["name"].values
 
 scaler = StandardScaler()
-#X = scaler.fit_transform(X)
 preprocessor = ColumnTransformer(
     transformers=[
         ("num", StandardScaler(), cols_to_scale),
@@ -331,7 +245,6 @@ def train(model, loss=None, optimizer=None, train_dataloader=None, val_dataloade
     train_losses = []
     val_losses = []
 
-    # Iterrate over epochs
     for e in range(nb_epochs):
         # Training
         model.train()
@@ -343,11 +256,8 @@ def train(model, loss=None, optimizer=None, train_dataloader=None, val_dataloade
             if torch.cuda.is_available():
                 data, labels = data.cuda(), labels.cuda()
             
-            # Reset gradients to 0
             optimizer.zero_grad()
 
-            # Forward Pass (on reshaped data)
-            #data, labels = reshape_batch([data, labels])
             targets = model(data)
 
             # Compute training loss
@@ -363,7 +273,6 @@ def train(model, loss=None, optimizer=None, train_dataloader=None, val_dataloade
         # Validation
         val_loss = 0.0
 
-        # Put model in eval mode
         model.eval()
 
         for data, labels in val_dataloader:
@@ -372,8 +281,6 @@ def train(model, loss=None, optimizer=None, train_dataloader=None, val_dataloade
             if torch.cuda.is_available():
                 data, labels = data.cuda(), labels.cuda()
 
-            # Forward Pass (on reshaped data)
-            #data, labels = reshape_batch([data, labels])
             targets = model(data)
 
             # Compute validation loss
@@ -412,7 +319,6 @@ def runXTest(x, nb_epochs=80, base_seed=42):
     for i in range(x):
         print(f"\n===== RUN {i+1}/{x} =====")
 
-        # 🔁 Seed différent mais contrôlé
         set_seed(base_seed + i)
 
         network = Network1()
@@ -553,7 +459,7 @@ def showPrediction(champion_prediction : dict):
         for j, tag in enumerate(tags):
             print(f"  {tag:10s} → {champion_prediction[champ_name][j]:0.2f}")
 
-        predictions = [(champion_prediction[champ_name][i] > 0.5) for i in range (6)]
+        predictions = [(champion_prediction[champ_name][i] > 0.4) for i in range (6)]
         print("Prédit :", [tags[k] for k in range(6) if predictions[k]])
 
         y_true = y_test.cpu().numpy()
@@ -633,7 +539,7 @@ def analyze_predictions(predictions_dict, threshold=0.5):
         axes[idx].text(1.5, 0.5, text, fontsize=10, 
                       bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
     
-    plt.suptitle(f'Matrices de confusion par rôle (seuil = {threshold})', 
+    plt.suptitle(f'Matrices de confusion par classe (seuil = {threshold})', 
                  fontsize=16, fontweight='bold', y=1.00)
     plt.tight_layout()
     plt.show()
@@ -644,22 +550,22 @@ def analyze_predictions(predictions_dict, threshold=0.5):
     for tag, acc in zip(tags, label_accuracy):
         print(f"  {tag:12s}: {acc:.3f} ({acc*100:.1f}%)")
     
-    # Analyse des confusions entre rôles
+    # Analyse des confusions entre classes
     n_classes = len(tags)
-    confusion_add = np.zeros((n_classes, n_classes), dtype=int)  # Rôles ajoutés à tort
-    confusion_miss = np.zeros((n_classes, n_classes), dtype=int)  # Rôles manqués
+    confusion_add = np.zeros((n_classes, n_classes), dtype=int)  # classes ajoutés à tort
+    confusion_miss = np.zeros((n_classes, n_classes), dtype=int)  # classes manqués
     
     for champion_idx in range(len(champion_names)):
         true_roles = set([j for j in range(n_classes) if y_true[champion_idx][j] == 1])
         pred_roles = set([j for j in range(n_classes) if y_pred[champion_idx][j] == 1])
         
-        # Rôles prédits en trop (faux positifs)
+        # classes prédits en trop (faux positifs)
         extra_roles = pred_roles - true_roles
         for extra in extra_roles:
             for true_role in true_roles:
                 confusion_add[true_role][extra] += 1
         
-        # Rôles manqués (faux négatifs)
+        # classes manqués (faux négatifs)
         missing_roles = true_roles - pred_roles
         for missing in missing_roles:
             for pred_role in pred_roles:
@@ -668,23 +574,23 @@ def analyze_predictions(predictions_dict, threshold=0.5):
     # Graphiques des confusions
     _ , (ax1, ax) = plt.subplots(1, 2, figsize=(18, 7))
     
-    # Rôles ajoutés à tort quand un rôle est vrai
+    # classes ajoutés à tort quand un classe est vrai
     sns.heatmap(confusion_add, annot=True, fmt='d', cmap='Reds', 
                 xticklabels=tags, yticklabels=tags, ax=ax1,
                 cbar_kws={'label': 'Nombre d\'erreurs'})
-    ax1.set_title('Rôles ajoutés à tort\n(ligne = vrai rôle, colonne = rôle ajouté)', 
+    ax1.set_title('classes ajoutés à tort\n(ligne = vrai classe, colonne = classe ajouté)', 
                   fontsize=13, fontweight='bold')
-    ax1.set_ylabel('Rôle réel présent', fontsize=11, fontweight='bold')
-    ax1.set_xlabel('Rôle prédit en trop', fontsize=11, fontweight='bold')
+    ax1.set_ylabel('classe réel présent', fontsize=11, fontweight='bold')
+    ax1.set_xlabel('classe prédit en trop', fontsize=11, fontweight='bold')
     
-    # Rôles manqués et remplacés par autre chose
+    # classes manqués et remplacés par autre chose
     sns.heatmap(confusion_miss, annot=True, fmt='d', cmap='Oranges', 
                 xticklabels=tags, yticklabels=tags, ax=ax,
                 cbar_kws={'label': 'Nombre d\'erreurs'})
-    ax.set_title('Rôles manqués\n(ligne = vrai rôle manqué, colonne = rôle prédit à la place)', 
+    ax.set_title('classes manqués\n(ligne = vrai classe manqué, colonne = classe prédit à la place)', 
                   fontsize=13, fontweight='bold')
-    ax.set_ylabel('Rôle réel manqué', fontsize=11, fontweight='bold')
-    ax.set_xlabel('Rôle prédit à la place', fontsize=11, fontweight='bold')
+    ax.set_ylabel('classe réel manqué', fontsize=11, fontweight='bold')
+    ax.set_xlabel('classe prédit à la place', fontsize=11, fontweight='bold')
     
     plt.tight_layout()
     plt.show()
@@ -700,9 +606,9 @@ def analyze_predictions(predictions_dict, threshold=0.5):
     
     ax.bar(x - width/2, true_counts, width, label='Vérité', color='#2ca02c', alpha=0.8)
     ax.bar(x + width/2, pred_counts, width, label='Prédiction', color='#1f77b4', alpha=0.8)
-    ax.set_xlabel('Rôles', fontsize=12, fontweight='bold')
+    ax.set_xlabel('classes', fontsize=12, fontweight='bold')
     ax.set_ylabel('Nombre de champions', fontsize=12, fontweight='bold')
-    ax.set_title('Distribution des rôles', fontsize=14, fontweight='bold')
+    ax.set_title('Distribution des classes', fontsize=14, fontweight='bold')
     ax.set_xticks(x)
     ax.set_xticklabels(tags, rotation=45, ha='right')
     ax.legend()
