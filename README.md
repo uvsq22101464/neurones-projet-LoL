@@ -1,3 +1,9 @@
+# Auteurs
+
+DUPUY Raphael
+MACHE Ethan
+THIBAUDEAU Cyriac
+
 # League of Legends Classe Guesser
 
 Notre réseau de neurones a pour but de deviner la classe des personnages (ou champions) du jeu vidéo League of Legends.
@@ -19,7 +25,7 @@ Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statist
 
 ## Nos données
 
-Les données des champions ont été récupérées dans un fichier JSON, ces données étant très nombreuses, nous avons donc filtré celle qui nous intéressait, notamment les statistiques. Cependant les statistiques ne font pas tout pour représenter un champion, c'est pourquoi on a aussi essayé d'extraire des informations provenant des compétences comme la possibilité de devenir invisible, la faculté à se déplacer sur la carte...
+Les données des champions ont été récupérées dans un fichier JSON à partir de plusieurs sources dont [community dragon](https://raw.communitydragon.org/pbe/game/data/characters/) et d'autres rajoutées à la main, ces données étant très nombreuses, nous avons donc filtré celles qui nous intéressaient, notamment les statistiques. Cependant les statistiques ne font pas tout pour représenter un champion, c'est pourquoi on a aussi essayé d'extraire des informations provenant des compétences comme la possibilité de devenir invisible, la faculté à se déplacer sur la carte...
 
 ## Architecture du réseau
 
