@@ -9,15 +9,15 @@
 - faiblesses du dataset + grande variété des champions unique
 - ptite conclu en disant que vu qu'on a pas beaucoup de données on a plus expérimenté facilement sur les différents paramètres et voir ce qui se passait..
 
-# Leauge of Legends Classe Guesser
+# League of Legends Classe Guesser
 
-Notre réseau de neurones à pour but de deviner la classe des personnages (ou champions) du jeu vidéo League of Legends.
+Notre réseau de neurones a pour but de deviner la classe des personnages (ou champions) du jeu vidéo League of Legends.
 
 ## League of Legends ?
 
-LoL est un jeu dit MOBA (Multiplayer Online Battle Arena) où une partie consiste en deux équipes de 5 joueurs qui s'affrontent pour détruire la base adverse. Chaque joueur choisit au début de la partie un champion parmis les 170+ disponibles. Ces champions ont chacun une identité propre que l'on retrouve dans leurs [sorts utilisables](https://leagueoflegends.fandom.com/wiki/Champion_ability) et leurs  [statistiques](https://leagueoflegends.fandom.com/wiki/Champion_statistic).
+[League of Legends](https://wiki.leagueoflegends.com/en-us/) est un jeu de type MOBA (Multiplayer Online Battle Arena) où une partie consiste en deux équipes de 5 joueurs qui s'affrontent pour détruire la base adverse. Chaque joueur choisit au début de la partie un champion, un personnage jouable, parmi les 170+ disponibles. Ces champions ont chacun une identité propre que l'on retrouve dans leurs [sorts utilisables](https://leagueoflegends.fandom.com/wiki/Champion_ability) et leurs  [statistiques](https://leagueoflegends.fandom.com/wiki/Champion_statistic).
 
-On peut regrouper les champions dans différents groupes que l'on appelera des [classes](https://leagueoflegends.fandom.com/wiki/Champion_classes). On retrouve comme classes principales : 
+On peut regrouper les champions dans différents groupes que l'on appelera des [classes](https://leagueoflegends.fandom.com/wiki/Champion_classes). Elles ne sont pas toujours strictement définies et un champion peut être présent dans plusieurs classe à la fois. On retrouve comme classes principales : 
 
 * Combattant (Fighter)
 * Mage
@@ -26,7 +26,7 @@ On peut regrouper les champions dans différents groupes que l'on appelera des [
 * Support
 * Tireur (Marksman)
 
-Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statistiques de base, les statistiques obtenues à chaque niveau ainsi que le type de compétences de chaque personnage.
+Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statistiques de base, les statistiques obtenues à chaque niveau ainsi que le type de compétences de chaque personnage (dégâts, soin, mobilité, contrôle ...).
 
 ## Nos données
 
@@ -35,13 +35,6 @@ Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statist
 ## Loss et paramètres
 
 ## Résultats obtenus
-
-- () Mage : nécessite les objets
-- () Assassin : idem
--() Fighter parfois plus prédit car proportionnellement plus de fightert existant, donc entrainement mène plus dessus
-- Champions méca spéciales (stats growth (tresh) ou passif (jhin, rengar))
-- Non prise en compte des runes
-- Choix :  50% minimum (parfois aucune prédictions, ou alors qu'une sur deux)
 
 Pour analyser les résultats obtenus sur une exécution d'entrainement, on va regarder plusieurs graphiques.
 
@@ -55,6 +48,8 @@ En prenant comme exemple la première matrice, on a un total de 34 champion. Sur
 
 On remarque que sur ces 6 classes, les "Mages" et les "Assassin" ont été les moins bien prédits. Cela s'explique par le fait que les champions de ces classes se base beaucoup plus que les autres sur les statistiques qu'apportent des objets achetés durant la partie, données que l'on ne prend pas en compte puisque beaucoup trop volumineux.
 
+#
+
 ![distribution](/images/graphics/distrib.png)
 
 Ce second graphique représente sur notre dataset de test la distribution des différentes classe prédites. On ne prend pas en compte uniquement le rôle principale prédit (celui avec le plus haut taux de prédiciton) mais aussi tout ceux dépassant notre seuil de 50%. 
@@ -65,16 +60,20 @@ On ne peut pas vraiment analyser plus que cela les autres classes, puisque cette
 
 Cependant, en le croisant avec les matrices de confusion précédentes, on peut lier le fait que les prédictions pour les "Marksman", les "Support" et les "Tank" semblent assez juste.
 
+#
+
 ![matrice de confusion 2](/images/graphics/matrice_confondu2.png)
 
 Sur ce dernier graphique, on évalue les classes ajoutés à tort ou manqués.
 
 On remarque que le problème de surreprésentation des "Fighter" est visible ici, dans le cas des rôles ajoutés à tort ou manqués. Sur certains "Fighter" ont été ajoutés les classes "Tank" et "Assassin", et de nombreux champions ont été prédit "Fighter" à la place de leur classe réelle (ici "Support", "Assassin", "Tank" et "Mage"). On observe aussi qu'aucun fighter n'a été manqué d'être prédit.
 
-On retrouve aussi des erreurs liées aux "Mage", où des réels champion de cette classe se sont vu attribué des classes supplémentaires ou alors la classe "Mage" à été ajouté à tort. De plus, 
+On retrouve aussi des erreurs liées aux "Mage", où des réels champion de cette classe se sont vu attribué des classes supplémentaires ou alors la classe "Mage" à été ajouté à tort. De plus, la classe a largement été manqués dans les prédiction, ce qui est encore un indicateur de la difficultés qu'a notre modèle à prédire les champions "Mages".
 
 
 
 ## Conclusion
 
 Pour conclure ce projet, on retrouve de bonnes prédictions pour certaines classe, mais le réseau est un peu plus confus pour d'autres. Cela s'explique par un dataset qui ne comporte pas toutes les données utilisables et possiblement nécessaire à la prédiction parfaite. Mais aussi par des champions utilisant des mécaniques uniques difficiles à évaluer, leur attribuant des statistiques sous conditions, ou encore notre seuil pour accepter une prédiction qui pourrait être différent.
+
+En citant tout ces problèmes, on se rend compte qu'il est compliqué d'avoir un dataset parfait pour ce type de prédiction, et encore plus en sachant que ces données liées aux champions peuvent changer assez souvent entre chaque mises à jour du jeu.
