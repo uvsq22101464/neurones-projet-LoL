@@ -19,12 +19,12 @@ LoL est un jeu dit MOBA (Multiplayer Online Battle Arena) où une partie consist
 
 On peut regrouper les champions dans différents groupes que l'on appelera des [classes](https://leagueoflegends.fandom.com/wiki/Champion_classes). On retrouve comme classes principales : 
 
-* Combattant
+* Combattant (Fighter)
 * Mage
 * Tank
 * Assassin
 * Support
-* Tireur
+* Tireur (Marksman)
 
 Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statistiques de base, les statistiques obtenues à chaque niveau ainsi que le type de compétences de chaque personnage.
 
@@ -36,7 +36,45 @@ Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statist
 
 ## Résultats obtenus
 
-- Explication des résultats avec graphiques et conséquences/faiblesse du dataset + champions avec mécaniques spéciales et non prise en compte d'autres paramètres : items, runes
+- () Mage : nécessite les objets
+- () Assassin : idem
+-() Fighter parfois plus prédit car proportionnellement plus de fightert existant, donc entrainement mène plus dessus
+- Champions méca spéciales (stats growth (tresh) ou passif (jhin, rengar))
+- Non prise en compte des runes
+- Choix :  50% minimum (parfois aucune prédictions, ou alors qu'une sur deux)
+
+Pour analyser les résultats obtenus sur une exécution d'entrainement, on va regarder plusieurs graphiques.
+
+Le premier comporte plusieurs matrices de confusion, une par classe : 
+
+![matrice de confusion par rôle](images/graphics/matrice_confusion.png)
+
+Pour évaluer simplement une matrice présente dans ce graphique, on peut dire que plus les diagonales sont foncées, plus la classe a été bien prédite. À l'inverse, plus les cases qui ne sont pas des diagonales sont foncées, moins la classe a été bien prédite.
+
+En prenant comme exemple la première matrice, on a un total de 34 champion. Sur ces 34 champions, il y en avait 21 (13 + 3) qui ne sont pas de la classe "Fighter" et 12 qui le sont. On voit alors que 3 champions ont été prédit comme "Fighter" alors qu'ils ne le sont réellement pas.
+
+On remarque que sur ces 6 classes, les "Mages" et les "Assassin" ont été les moins bien prédits. Cela s'explique par le fait que les champions de ces classes se base beaucoup plus que les autres sur les statistiques qu'apportent des objets achetés durant la partie, données que l'on ne prend pas en compte puisque beaucoup trop volumineux.
+
+![distribution](/images/graphics/distrib.png)
+
+Ce second graphique représente sur notre dataset de test la distribution des différentes classe prédites. On ne prend pas en compte uniquement le rôle principale prédit (celui avec le plus haut taux de prédiciton) mais aussi tout ceux dépassant notre seuil de 50%. 
+
+On retrouve à nouveau l'écart entre la réalité et la prédiction pour les "Mages", mais on observe aussi un écart assez visible pour les "Fighter". Cet écart résulte du grand nombre de champion de la classe "Fighter" présent dans le jeu, et donc très probablement d'un entrainement sur une proportion plus élevée de champions de cette classe. 
+
+On ne peut pas vraiment analyser plus que cela les autres classes, puisque cette distribution ne nous indique pas si les rôles sont correctement prédits et associés aux bons champions.
+
+Cependant, en le croisant avec les matrices de confusion précédentes, on peut lier le fait que les prédictions pour les "Marksman", les "Support" et les "Tank" semblent assez juste.
+
+![matrice de confusion 2](/images/graphics/matrice_confondu2.png)
+
+Sur ce dernier graphique, on évalue les classes ajoutés à tort ou manqués.
+
+On remarque que le problème de surreprésentation des "Fighter" est visible ici, dans le cas des rôles ajoutés à tort ou manqués. Sur certains "Fighter" ont été ajoutés les classes "Tank" et "Assassin", et de nombreux champions ont été prédit "Fighter" à la place de leur classe réelle (ici "Support", "Assassin", "Tank" et "Mage"). On observe aussi qu'aucun fighter n'a été manqué d'être prédit.
+
+On retrouve aussi des erreurs liées aux "Mage", où des réels champion de cette classe se sont vu attribué des classes supplémentaires ou alors la classe "Mage" à été ajouté à tort. De plus, 
+
+
 
 ## Conclusion
 
+Pour conclure ce projet, on retrouve de bonnes prédictions pour certaines classe, mais le réseau est un peu plus confus pour d'autres. Cela s'explique par un dataset qui ne comporte pas toutes les données utilisables et possiblement nécessaire à la prédiction parfaite. Mais aussi par des champions utilisant des mécaniques uniques difficiles à évaluer, leur attribuant des statistiques sous conditions, ou encore notre seuil pour accepter une prédiction qui pourrait être différent.
