@@ -41,10 +41,13 @@ En détail nous avons :
 ## Loss et paramètres
 
 On utilise la fonction de loss BCEWithLogitsLoss car dans notre cas on a des champions qui appartiennent très souvent à plusieurs classes en même temps, donc cette fonction de loss nous permet d'obtenir une probabilité d'appartenir à chaque classe.
+![fonction de loss](images/graphics/loss.png)
 
 Nos données étant peu nombreuses on utilise un facteur de dropout à 0.1 afin de réduire l'overfitting de notre réseau et amélioré la généralisation.
 
 La fonction d'activation sur les neurones est la LeakyReLu.
+
+Notre dataset comporte 172 champions différents, et nous avons 21 données d'entrées pour ces champions. Notre set d'entraînement comporte 60% de ces champions car un des problèmes est qu'un bon nombre de champions appartiennent à une classe particulière mais en étant totalement unique, par exemple dans la classe des tireurs, souvent catégorisée par une vitesse d'attaque élevée, il y a des champions qui, contrairement, en ont une faible.
 
 ## Résultats obtenus
 
@@ -58,7 +61,7 @@ Pour évaluer simplement une matrice présente dans ce graphique, on peut dire q
 
 En prenant comme exemple la première matrice, on a un total de 34 champion. Sur ces 34 champions, il y en avait 21 (13 + 3) qui ne sont pas de la classe "Fighter" et 12 qui le sont. On voit alors que 3 champions ont été prédit comme "Fighter" alors qu'ils ne le sont réellement pas.
 
-On remarque que sur ces 6 classes, les "Mages" et les "Assassin" ont été les moins bien prédits. Cela s'explique par le fait que les champions de ces classes se base beaucoup plus que les autres sur les statistiques qu'apportent des objets achetés durant la partie, données que l'on ne prend pas en compte puisque beaucoup trop volumineux.
+On remarque que sur ces 6 classes, les "Mages" et les "Assassin" ont été les moins bien prédits. Cela s'explique par le fait que les champions de ces classes se base beaucoup plus que les autres sur les statistiques qu'apportent des objets achetés durant la partie, données que l'on ne prend pas en compte puisque beaucoup trop volumineux et compliquées à évaluer.
 
 #
 
@@ -87,5 +90,7 @@ On retrouve aussi des erreurs liées aux "Mage", où des réels champion de cett
 ## Conclusion
 
 Pour conclure ce projet, on retrouve de bonnes prédictions pour certaines classe, mais le réseau est un peu plus confus pour d'autres. Cela s'explique par un dataset qui ne comporte pas toutes les données utilisables et possiblement nécessaire à la prédiction parfaite. Mais aussi par des champions utilisant des mécaniques uniques difficiles à évaluer, leur attribuant des statistiques sous conditions, ou encore notre seuil pour accepter une prédiction qui pourrait être différent.
+
+Néanmoins, notre jeu de données étant petit, cela nous a permis de beaucoup expérimenter sur les différents paramètres de notre réseau et de mieux saisir leur impact afin de trouver des résultats convenants.
 
 En citant tout ces problèmes, on se rend compte qu'il est compliqué d'avoir un dataset parfait pour ce type de prédiction, et encore plus en sachant que ces données liées aux champions peuvent changer assez souvent entre chaque mises à jour du jeu.
