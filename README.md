@@ -1,7 +1,9 @@
 # Auteurs
 
 DUPUY Raphael
+
 MACHE Ethan
+
 THIBAUDEAU Cyriac
 
 # League of Legends Classe Guesser
@@ -25,7 +27,7 @@ Ces classes sont ce que l'on veut prédire ici. On utilise pour cela les statist
 
 ## Nos données
 
-Les données des champions ont été récupérées dans un fichier JSON à partir de plusieurs sources dont [community dragon](https://raw.communitydragon.org/pbe/game/data/characters/) et d'autres rajoutées à la main, ces données étant très nombreuses, nous avons donc filtré celles qui nous intéressaient, notamment les statistiques. Cependant les statistiques ne font pas tout pour représenter un champion, c'est pourquoi on a aussi essayé d'extraire des informations provenant des compétences comme la possibilité de devenir invisible, la faculté à se déplacer sur la carte...
+Les données des champions ont été récupérées dans un fichier JSON à partir de plusieurs sources dont [community dragon](https://raw.communitydragon.org/pbe/game/data/characters/) et d'autres rajoutées à la main. Ces données étant très nombreuses, nous avons donc filtré celles qui nous intéressaient, notamment les statistiques. Cependant les statistiques ne font pas tout pour représenter un champion. C'est pourquoi on a aussi essayé d'extraire des informations provenant des compétences comme la possibilité de devenir invisible, la faculté à se déplacer sur la carte...
 
 ## Architecture du réseau
 
@@ -53,7 +55,7 @@ Nos données étant peu nombreuses on utilise un facteur de dropout à 0.1 afin 
 
 La fonction d'activation sur les neurones est la LeakyReLu.
 
-Notre dataset comporte 172 champions différents, et nous avons 21 données d'entrées pour ces champions. Notre set d'entraînement comporte 60% de ces champions car un des problèmes est qu'un bon nombre de champions appartiennent à une classe particulière mais en étant totalement unique, par exemple dans la classe des tireurs, souvent catégorisée par une vitesse d'attaque élevée, il y a des champions qui, contrairement, en ont une faible.
+Notre dataset comporte 172 champions différents, et nous avons 21 données d'entrées pour ces champions. Notre set d'entraînement comporte 60% de ces champions car un des problèmes est qu'un bon nombre de champions appartiennent à une classe particulière mais en étant totalement unique. Par exemple dans la classe des tireurs, souvent catégorisée par une vitesse d'attaque élevée, il y a des champions qui, contrairement, en ont une faible.
 
 ## Résultats obtenus
 
